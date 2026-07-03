@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>大栗川 Water Observatory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Open river observation dataset</p>
+        <h1>大栗川 Water Observatory</h1>
+      </div>
+      <nav>
+        <a href="data/observations.jsonl">JSONL</a>
+        <a href="data/data-dictionary.md">Data Dictionary</a>
+        <a href="https://github.com/hiroshi75/ohgurigawa-water-observatory">GitHub</a>
+      </nav>
+    </header>
+
+    <section class="panel intro">
+      <p>大栗川で測定した pH、DO、PAR を中心に、水中の光環境と日中の水質応答を追跡するための公開データセットです。</p>
+    </section>
+
+    <section class="metric-grid" id="summary"></section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>時系列</h2>
+        <select id="metric-select">
+          <option value="pH">pH</option>
+          <option value="DO_mgL">DO mg/L</option>
+          <option value="DO_pct">DO %</option>
+          <option value="PAR_air_mean">水面上PAR</option>
+          <option value="PAR_bottom_mean">川底近くPAR</option>
+          <option value="bottom_PAR_ratio">川底PAR比</option>
+        </select>
+      </div>
+      <svg id="chart" class="chart" role="img" aria-label="観測値の時系列チャート"></svg>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>最新データ</h2>
+        <input id="filter" type="search" placeholder="日付・session・eventで絞り込み" />
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>日時</th>
+              <th>pH</th>
+              <th>DO</th>
+              <th>PAR</th>
+              <th>状態</th>
+            </tr>
+          </thead>
+          <tbody id="records"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
