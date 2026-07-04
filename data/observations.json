@@ -790,6 +790,51 @@
       "turbidity_direction": "なし",
       "event_type": "none",
       "measurement_confidence": "good"
+    },
+    {
+      "schema_version": "1.0",
+      "public_id": "a4fb22aa5a3ecddd",
+      "observed_at": "2026-07-04T02:08:00.000Z",
+      "date": "2026-07-04",
+      "time_jst": "11:08:00",
+      "timezone": "Asia/Tokyo",
+      "session": "other",
+      "location_label": "大栗川",
+      "pH": 7.8,
+      "DO_mgL": 8.1,
+      "DO_pct": 91.9,
+      "DO_temp_C": 21.2,
+      "water_temp_C": 22.6,
+      "EC_uScm": 270,
+      "PAR_air": [
+        870.4,
+        872.9,
+        869.2
+      ],
+      "PAR_air_mean": 870.833,
+      "PAR_bottom": [
+        446.7,
+        442,
+        443
+      ],
+      "PAR_bottom_mean": 443.9,
+      "PAR_subsurface": [
+        614,
+        580.5,
+        659.2
+      ],
+      "PAR_subsurface_mean": 617.9,
+      "bottom_PAR_ratio": 0.5097,
+      "depth_cm": 50,
+      "water_level": "平常",
+      "flow": "平常",
+      "water_clarity": "透明",
+      "bed_visibility": "よく見える",
+      "odor": "なし",
+      "foam": "なし",
+      "turbidity_direction": "なし",
+      "event_type": "none",
+      "measurement_confidence": "good"
     }
   ]
 }
