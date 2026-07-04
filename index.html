@@ -76,17 +76,14 @@
           <h2>1日内の時間別変動</h2>
           <div class="control-row">
             <select id="intraday-date-select" aria-label="otherを含む日"></select>
-            <select id="intraday-metric-select" aria-label="表示項目">
-              <option value="pH">pH</option>
-              <option value="DO_mgL">DO mg/L</option>
-              <option value="DO_pct">DO %</option>
-              <option value="PAR_air_mean">水面上PAR</option>
-              <option value="PAR_bottom_mean">川底近くPAR</option>
-              <option value="bottom_PAR_ratio">川底PAR比</option>
-            </select>
           </div>
         </div>
-        <svg id="intraday-chart" class="chart" role="img" aria-label="1日内の時間別変動チャート"></svg>
+        <div class="mini-legend" aria-label="session凡例">
+          <span><i class="legend-swatch legend-dot"></i>morning</span>
+          <span><i class="legend-swatch legend-square"></i>afternoon</span>
+          <span><i class="legend-swatch legend-diamond"></i>other</span>
+        </div>
+        <div id="intraday-charts" class="stacked-charts" aria-label="1日内の指標別時間変動チャート"></div>
       </section>
 
       <section class="panel">

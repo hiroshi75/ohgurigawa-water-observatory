@@ -148,6 +148,50 @@ nav a.is-active {
   font-size: 13px;
 }
 
+.empty {
+  margin: 0;
+  color: #55716a;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.mini-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 12px;
+  color: #55716a;
+  font-size: 13px;
+}
+
+.mini-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #176c57;
+}
+
+.legend-dot {
+  border-radius: 50%;
+}
+
+.legend-square {
+  background: #b6465f;
+}
+
+.legend-diamond {
+  width: 9px;
+  height: 9px;
+  background: #7a5ca8;
+  transform: rotate(45deg);
+}
+
 select,
 input {
   min-height: 40px;
@@ -190,6 +234,42 @@ input {
 .intraday-line {
   stroke: #55716a;
   stroke-dasharray: 4 4;
+}
+
+.stacked-charts {
+  display: grid;
+  gap: 12px;
+}
+
+.intraday-chart-card {
+  border: 1px solid #e2e9e7;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fbfdfc;
+}
+
+.intraday-chart-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.intraday-chart-head h3 {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0;
+}
+
+.intraday-chart-head span {
+  color: #55716a;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.intraday-chart {
+  height: 190px;
 }
 
 .series-point {
@@ -274,8 +354,26 @@ td span {
     justify-content: flex-start;
   }
 
+  .control-row {
+    justify-content: flex-start;
+  }
+
+  select,
+  input {
+    width: 100%;
+  }
+
   .metric-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .intraday-chart-head {
+    display: grid;
+    gap: 4px;
+  }
+
+  .intraday-chart-head span {
+    white-space: normal;
   }
 }
 

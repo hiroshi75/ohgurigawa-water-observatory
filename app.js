@@ -6,14 +6,27 @@ const filterInput = document.querySelector("#filter");
 const pageLinks = [...document.querySelectorAll("[data-page-link]")];
 const pageViews = [...document.querySelectorAll("[data-page-view]")];
 const intradayDateSelect = document.querySelector("#intraday-date-select");
-const intradayMetricSelect = document.querySelector("#intraday-metric-select");
-const intradayChartEl = document.querySelector("#intraday-chart");
+const intradayChartsEl = document.querySelector("#intraday-charts");
 const intradayRecordsEl = document.querySelector("#intraday-records");
 const intradayCountEl = document.querySelector("#intraday-count");
 
 let records = [];
 let summary = null;
 let intradayDates = [];
+const intradayMetrics = [
+  { key: "pH", label: "pH" },
+  { key: "DO_mgL", label: "DO mg/L" },
+  { key: "DO_pct", label: "DO %" },
+  { key: "DO_temp_C", label: "DO計水温 ℃" },
+  { key: "water_temp_C", label: "水温 ℃" },
+  { key: "EC_uScm", label: "EC μS/cm" },
+  { key: "PAR_air_mean", label: "水面上PAR" },
+  { key: "PAR_subsurface_mean", label: "水面直下PAR" },
+  { key: "PAR_bottom_mean", label: "川底近くPAR" },
+  { key: "bottom_PAR_ratio", label: "川底PAR比" },
+  { key: "depth_cm", label: "水深 cm" },
+  { key: "measured_depth_cm", label: "測定水深 cm" },
+];
 
 init();
 
@@ -32,7 +45,6 @@ async function init() {
   metricSelect.addEventListener("change", renderChart);
   filterInput.addEventListener("input", renderTable);
   intradayDateSelect.addEventListener("change", renderIntraday);
-  intradayMetricSelect.addEventListener("change", renderIntraday);
   window.addEventListener("hashchange", routePage);
 }
 
@@ -155,34 +167,56 @@ function renderIntradayDateOptions() {
 
 function renderIntraday() {
   if (!intradayDates.length) {
-    intradayChartEl.innerHTML = '<text x="24" y="48">other を含む日はまだありません</text>';
+    intradayChartsEl.innerHTML = '<p class="empty">other を含む日はまだありません</p>';
     intradayRecordsEl.innerHTML = '<tr><td colspan="6">other を含む日はまだありません</td></tr>';
     intradayCountEl.textContent = "";
     return;
   }
   const selectedDate = intradayDates.includes(intradayDateSelect.value) ? intradayDateSelect.value : intradayDates[0];
   if (intradayDateSelect.value !== selectedDate) intradayDateSelect.value = selectedDate;
-  const key = intradayMetricSelect.value;
   const dayRecords = records
     .filter((record) => record.date === selectedDate)
     .sort((a, b) => String(a.observed_at).localeCompare(String(b.observed_at)));
-  const values = dayRecords
-    .map((record) => ({ x: new Date(record.observed_at).getTime(), y: record[key], record }))
-    .filter((point) => Number.isFinite(point.x) && typeof point.y === "number" && Number.isFinite(point.y));
 
   intradayCountEl.textContent = `${dayRecords.length}件`;
   renderIntradayTable(dayRecords);
-  if (!values.length) {
-    intradayChartEl.innerHTML = '<text x="24" y="48">選択日のこの項目にはグラフ対象データがありません</text>';
+  renderIntradayCharts(selectedDate, dayRecords);
+}
+
+function renderIntradayCharts(selectedDate, dayRecords) {
+  const timeValues = dayRecords
+    .map((record) => new Date(record.observed_at).getTime())
+    .filter((value) => Number.isFinite(value));
+  if (!timeValues.length) {
+    intradayChartsEl.innerHTML = '<p class="empty">選択日の時刻データがありません</p>';
     return;
   }
+  const minX = Math.min(...timeValues);
+  const maxX = Math.max(...timeValues);
+  intradayChartsEl.innerHTML = intradayMetrics
+    .map((metric) => renderIntradayMetricChart(selectedDate, dayRecords, metric, minX, maxX))
+    .join("");
+}
 
-  const width = intradayChartEl.clientWidth || 680;
-  const height = 300;
-  intradayChartEl.setAttribute("viewBox", `0 0 ${width} ${height}`);
-  const pad = { left: 48, right: 22, top: 18, bottom: 54 };
-  const minX = Math.min(...values.map((point) => point.x));
-  const maxX = Math.max(...values.map((point) => point.x));
+function renderIntradayMetricChart(selectedDate, dayRecords, metric, minX, maxX) {
+  const values = dayRecords
+    .map((record) => ({ x: new Date(record.observed_at).getTime(), y: record[metric.key], record }))
+    .filter((point) => Number.isFinite(point.x) && typeof point.y === "number" && Number.isFinite(point.y));
+  if (!values.length) {
+    return `
+      <article class="intraday-chart-card">
+        <div class="intraday-chart-head">
+          <h3>${escapeHtml(metric.label)}</h3>
+          <span>データなし</span>
+        </div>
+        <p class="empty">この日の ${escapeHtml(metric.label)} は記録されていません。</p>
+      </article>
+    `;
+  }
+
+  const width = intradayChartsEl.clientWidth || 680;
+  const height = 190;
+  const pad = { left: 54, right: 22, top: 14, bottom: 34 };
   const minY = Math.min(...values.map((point) => point.y));
   const maxY = Math.max(...values.map((point) => point.y));
   const ySpan = maxY - minY || 1;
@@ -193,25 +227,24 @@ function renderIntraday() {
   const path = values.length >= 2
     ? values.map((point, index) => `${index ? "L" : "M"} ${x(point.x).toFixed(1)} ${y(point.y).toFixed(1)}`).join(" ")
     : "";
-  intradayChartEl.innerHTML = `
-    <rect x="0" y="0" width="${width}" height="${height}" fill="transparent"></rect>
-    ${ticks.map((tick) => `
-      <line x1="${pad.left}" x2="${width - pad.right}" y1="${y(tick)}" y2="${y(tick)}" class="grid-line"></line>
-      <text x="8" y="${y(tick) + 4}" class="axis-label">${formatNumber(tick)}</text>
-    `).join("")}
-    ${path ? `<path d="${path}" class="series-line intraday-line"></path>` : ""}
-    <g class="chart-legend">
-      <circle cx="${pad.left}" cy="12" r="4" class="legend-point legend-point-morning"></circle>
-      <text x="${pad.left + 10}" y="16" class="axis-label">morning</text>
-      <rect x="${pad.left + 86}" y="8" width="8" height="8" class="legend-point legend-point-afternoon"></rect>
-      <text x="${pad.left + 100}" y="16" class="axis-label">afternoon</text>
-      <polygon points="${pad.left + 196},12 ${pad.left + 202},6 ${pad.left + 208},12 ${pad.left + 202},18" class="legend-point legend-point-other"></polygon>
-      <text x="${pad.left + 214}" y="16" class="axis-label">other</text>
-    </g>
-    ${values.map((point) => renderIntradayPoint(point, x(point.x), y(point.y))).join("")}
-    <text x="${pad.left}" y="${height - 30}" class="axis-label">${escapeHtml(selectedDate)} / ${escapeHtml(metricLabel(key))}</text>
-    <text x="${pad.left}" y="${height - 12}" class="axis-label">${formatTime(values[0].record.observed_at)}</text>
-    <text x="${width - 72}" y="${height - 12}" class="axis-label">${formatTime(values.at(-1).record.observed_at)}</text>
+  return `
+    <article class="intraday-chart-card">
+      <div class="intraday-chart-head">
+        <h3>${escapeHtml(metric.label)}</h3>
+        <span>${escapeHtml(selectedDate)} / ${escapeHtml(rangeFromValues(values.map((point) => point.y)))}</span>
+      </div>
+      <svg class="chart intraday-chart" role="img" aria-label="${escapeHtml(metric.label)}の1日内変動" viewBox="0 0 ${width} ${height}">
+        <rect x="0" y="0" width="${width}" height="${height}" fill="transparent"></rect>
+        ${ticks.map((tick) => `
+          <line x1="${pad.left}" x2="${width - pad.right}" y1="${y(tick)}" y2="${y(tick)}" class="grid-line"></line>
+          <text x="8" y="${y(tick) + 4}" class="axis-label">${formatNumber(tick)}</text>
+        `).join("")}
+        ${path ? `<path d="${path}" class="series-line intraday-line"></path>` : ""}
+        ${values.map((point) => renderIntradayPoint(point, x(point.x), y(point.y))).join("")}
+        <text x="${pad.left}" y="${height - 12}" class="axis-label">${formatTime(new Date(minX).toISOString())}</text>
+        <text x="${width - 72}" y="${height - 12}" class="axis-label">${formatTime(new Date(maxX).toISOString())}</text>
+      </svg>
+    </article>
   `;
 }
 
@@ -279,6 +312,14 @@ function rangeText(metric) {
   return `${formatNumber(metric.min)} - ${formatNumber(metric.max)}`;
 }
 
+function rangeFromValues(values) {
+  const finite = values.filter((value) => typeof value === "number" && Number.isFinite(value));
+  if (!finite.length) return "-";
+  const min = Math.min(...finite);
+  const max = Math.max(...finite);
+  return min === max ? formatNumber(min) : `${formatNumber(min)} - ${formatNumber(max)}`;
+}
+
 function numberOrDash(value) {
   return typeof value === "number" && Number.isFinite(value) ? formatNumber(value) : "-";
 }
@@ -301,17 +342,6 @@ function formatTime(value) {
 
 function formatDate(value) {
   return value ? value.slice(5) : "";
-}
-
-function metricLabel(key) {
-  return ({
-    pH: "pH",
-    DO_mgL: "DO mg/L",
-    DO_pct: "DO %",
-    PAR_air_mean: "水面上PAR",
-    PAR_bottom_mean: "川底近くPAR",
-    bottom_PAR_ratio: "川底PAR比",
-  })[key] ?? key;
 }
 
 function escapeHtml(value) {
