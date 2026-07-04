@@ -69,6 +69,16 @@ nav a {
   text-decoration: none;
 }
 
+nav a.is-active {
+  border-color: #176c57;
+  background: #176c57;
+  color: #fff;
+}
+
+.page-view[hidden] {
+  display: none;
+}
+
 .panel,
 .metric-card {
   border: 1px solid #d7e1de;
@@ -126,6 +136,18 @@ nav a {
   margin-bottom: 12px;
 }
 
+.control-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.panel-note {
+  color: #55716a;
+  font-size: 13px;
+}
+
 select,
 input {
   min-height: 40px;
@@ -157,6 +179,19 @@ input {
   stroke-width: 2.5;
 }
 
+.series-line-morning {
+  stroke: #176c57;
+}
+
+.series-line-afternoon {
+  stroke: #b6465f;
+}
+
+.intraday-line {
+  stroke: #55716a;
+  stroke-dasharray: 4 4;
+}
+
 .series-point {
   fill: #176c57;
   stroke: #fff;
@@ -171,6 +206,10 @@ input {
   fill: #b6465f;
 }
 
+.series-point-other {
+  fill: #7a5ca8;
+}
+
 .legend-point {
   stroke: #fff;
   stroke-width: 1.5;
@@ -182,6 +221,10 @@ input {
 
 .legend-point-afternoon {
   fill: #b6465f;
+}
+
+.legend-point-other {
+  fill: #7a5ca8;
 }
 
 .table-wrap {

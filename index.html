@@ -14,52 +14,102 @@
         <h1>大栗川 Water Observatory</h1>
       </div>
       <nav>
+        <a href="#daily" data-page-link="daily">日別</a>
+        <a href="#intraday" data-page-link="intraday">1日内変動</a>
         <a href="data/observations.jsonl">JSONL</a>
         <a href="data/data-dictionary.md">Data Dictionary</a>
         <a href="https://github.com/hiroshi75/ohgurigawa-water-observatory">GitHub</a>
       </nav>
     </header>
 
-    <section class="panel intro">
-      <p>大栗川で測定した pH、DO、PAR を中心に、水中の光環境と日中の水質応答を追跡するための公開データセットです。</p>
+    <section class="page-view" data-page-view="daily">
+      <section class="panel intro">
+        <p>大栗川で測定した pH、DO、PAR を中心に、水中の光環境と日中の水質応答を追跡するための公開データセットです。</p>
+      </section>
+
+      <section class="metric-grid" id="summary"></section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>日別 morning / afternoon</h2>
+          <select id="metric-select">
+            <option value="pH">pH</option>
+            <option value="DO_mgL">DO mg/L</option>
+            <option value="DO_pct">DO %</option>
+            <option value="PAR_air_mean">水面上PAR</option>
+            <option value="PAR_bottom_mean">川底近くPAR</option>
+            <option value="bottom_PAR_ratio">川底PAR比</option>
+          </select>
+        </div>
+        <svg id="chart" class="chart" role="img" aria-label="日別 morning afternoon チャート"></svg>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>最新データ</h2>
+          <input id="filter" type="search" placeholder="日付・session・eventで絞り込み" />
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>日時</th>
+                <th>pH</th>
+                <th>DO</th>
+                <th>PAR</th>
+                <th>状態</th>
+              </tr>
+            </thead>
+            <tbody id="records"></tbody>
+          </table>
+        </div>
+      </section>
     </section>
 
-    <section class="metric-grid" id="summary"></section>
+    <section class="page-view" data-page-view="intraday" hidden>
+      <section class="panel intro">
+        <p>通常の日別グラフには出していない other セッションを含む日だけを対象に、1日の中での時間別変動を表示します。</p>
+      </section>
 
-    <section class="panel">
-      <div class="panel-head">
-        <h2>日別 morning / afternoon</h2>
-        <select id="metric-select">
-          <option value="pH">pH</option>
-          <option value="DO_mgL">DO mg/L</option>
-          <option value="DO_pct">DO %</option>
-          <option value="PAR_air_mean">水面上PAR</option>
-          <option value="PAR_bottom_mean">川底近くPAR</option>
-          <option value="bottom_PAR_ratio">川底PAR比</option>
-        </select>
-      </div>
-      <svg id="chart" class="chart" role="img" aria-label="日別 morning afternoon チャート"></svg>
-    </section>
+      <section class="panel">
+        <div class="panel-head">
+          <h2>1日内の時間別変動</h2>
+          <div class="control-row">
+            <select id="intraday-date-select" aria-label="otherを含む日"></select>
+            <select id="intraday-metric-select" aria-label="表示項目">
+              <option value="pH">pH</option>
+              <option value="DO_mgL">DO mg/L</option>
+              <option value="DO_pct">DO %</option>
+              <option value="PAR_air_mean">水面上PAR</option>
+              <option value="PAR_bottom_mean">川底近くPAR</option>
+              <option value="bottom_PAR_ratio">川底PAR比</option>
+            </select>
+          </div>
+        </div>
+        <svg id="intraday-chart" class="chart" role="img" aria-label="1日内の時間別変動チャート"></svg>
+      </section>
 
-    <section class="panel">
-      <div class="panel-head">
-        <h2>最新データ</h2>
-        <input id="filter" type="search" placeholder="日付・session・eventで絞り込み" />
-      </div>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>日時</th>
-              <th>pH</th>
-              <th>DO</th>
-              <th>PAR</th>
-              <th>状態</th>
-            </tr>
-          </thead>
-          <tbody id="records"></tbody>
-        </table>
-      </div>
+      <section class="panel">
+        <div class="panel-head">
+          <h2>選択日のデータ</h2>
+          <span id="intraday-count" class="panel-note"></span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>時刻</th>
+                <th>session</th>
+                <th>pH</th>
+                <th>DO</th>
+                <th>PAR</th>
+                <th>状態</th>
+              </tr>
+            </thead>
+            <tbody id="intraday-records"></tbody>
+          </table>
+        </div>
+      </section>
     </section>
   </main>
   <script src="app.js"></script>
