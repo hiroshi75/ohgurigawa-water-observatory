@@ -93,17 +93,32 @@ function renderChart() {
     return;
   }
   const width = chartEl.clientWidth || 680;
-  const height = 300;
+  const height = 320;
   chartEl.setAttribute("viewBox", `0 0 ${width} ${height}`);
-  const pad = { left: 48, right: 22, top: 18, bottom: 54 };
+  const pad = { left: 48, right: 64, top: 24, bottom: 62 };
   const minY = Math.min(...values.map((point) => point.y));
   const maxY = Math.max(...values.map((point) => point.y));
   const ySpan = maxY - minY || 1;
   const plotWidth = width - pad.left - pad.right;
+  const plotHeight = height - pad.top - pad.bottom;
   const x = (index) => dates.length === 1 ? pad.left + plotWidth / 2 : pad.left + (index / (dates.length - 1)) * plotWidth;
-  const y = (value) => pad.top + (1 - ((value - minY) / ySpan)) * (height - pad.top - pad.bottom);
+  const y = (value) => pad.top + (1 - ((value - minY) / ySpan)) * plotHeight;
   const ticks = [minY, minY + ySpan / 2, maxY];
   const dateTicks = dates.filter((_, index) => dates.length <= 10 || index === 0 || index === dates.length - 1 || index % Math.ceil(dates.length / 6) === 0);
+  const rainValues = dates
+    .map((date) => {
+      const record = chartRecords.find((entry) =>
+        entry.date === date
+        && typeof entry.amedas_precipitation_24h_07_jst_mm === "number"
+        && Number.isFinite(entry.amedas_precipitation_24h_07_jst_mm));
+      return record ? { date, x: dateIndex.get(date), y: record.amedas_precipitation_24h_07_jst_mm } : null;
+    })
+    .filter(Boolean);
+  const rainMax = rainValues.length ? Math.max(...rainValues.map((point) => point.y)) : 0;
+  const rainAxisMax = rainMax > 0 ? rainMax : 1;
+  const rainY = (value) => pad.top + (1 - (value / rainAxisMax)) * plotHeight;
+  const rainTicks = rainValues.length ? (rainMax > 0 ? [0, rainAxisMax / 2, rainAxisMax] : [0]) : [];
+  const rainBarWidth = Math.max(8, Math.min(28, plotWidth / Math.max(dates.length * 2.5, 1)));
   const morningValues = values.filter((point) => point.record.session === "morning").sort((a, b) => a.x - b.x);
   const afternoonValues = values.filter((point) => point.record.session === "afternoon").sort((a, b) => a.x - b.x);
   const linePath = (points) => points.length >= 2
@@ -113,10 +128,24 @@ function renderChart() {
   const afternoonPath = linePath(afternoonValues);
   chartEl.innerHTML = `
     <rect x="0" y="0" width="${width}" height="${height}" fill="transparent"></rect>
+    ${rainValues.map((point) => {
+      const barTop = rainY(point.y);
+      const barHeight = Math.max(0, height - pad.bottom - barTop);
+      return `
+        <rect x="${(x(point.x) - rainBarWidth / 2).toFixed(1)}" y="${barTop.toFixed(1)}" width="${rainBarWidth.toFixed(1)}" height="${barHeight.toFixed(1)}" class="rain-bar">
+          <title>${escapeHtml(point.date)} 07:00時点24h雨量 / ${formatNumber(point.y)} mm</title>
+        </rect>
+      `;
+    }).join("")}
     ${ticks.map((tick) => `
       <line x1="${pad.left}" x2="${width - pad.right}" y1="${y(tick)}" y2="${y(tick)}" class="grid-line"></line>
       <text x="8" y="${y(tick) + 4}" class="axis-label">${formatNumber(tick)}</text>
     `).join("")}
+    ${rainValues.length ? `<line x1="${width - pad.right}" x2="${width - pad.right}" y1="${pad.top}" y2="${height - pad.bottom}" class="rain-axis-line"></line>` : ""}
+    ${rainTicks.map((tick) => `
+      <text x="${width - 8}" y="${rainY(tick) + 4}" class="axis-label rain-axis-label" text-anchor="end">${formatNumber(tick)}</text>
+    `).join("")}
+    ${rainValues.length ? `<text x="${width - 8}" y="${pad.top - 8}" class="axis-label rain-axis-label" text-anchor="end">24h雨量 mm</text>` : ""}
     ${dateTicks.map((date) => `
       <text x="${x(dateIndex.get(date))}" y="${height - 30}" class="axis-label date-label" text-anchor="middle">${formatDate(date)}</text>
     `).join("")}
@@ -127,6 +156,7 @@ function renderChart() {
       <text x="${pad.left + 10}" y="16" class="axis-label">morning</text>
       <rect x="${pad.left + 86}" y="8" width="8" height="8" class="legend-point legend-point-afternoon"></rect>
       <text x="${pad.left + 100}" y="16" class="axis-label">afternoon</text>
+      ${rainValues.length ? `<rect x="${pad.left + 190}" y="8" width="10" height="8" class="rain-legend-bar"></rect><text x="${pad.left + 206}" y="16" class="axis-label">07:00時点24h雨量</text>` : ""}
     </g>
     ${values.map((point) => renderSessionPoint(point, x(point.x), y(point.y))).join("")}
   `;

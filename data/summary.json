@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-04T17:44:27+09:00",
+  "generated_at": "2026-07-04T18:02:37+09:00",
   "project": "大栗川 Water Observatory",
   "github_repository": "hiroshi75/ohgurigawa-water-observatory",
   "public_record_count": 22,
@@ -53,7 +53,13 @@
       "min": 0.0045,
       "max": 0.5581,
       "mean": 0.407
+    },
+    "amedas_precipitation_24h_07_jst_mm": {
+      "count": 22,
+      "min": 0,
+      "max": 73.5,
+      "mean": 7.727
     }
   },
-  "export_hash": "669a7c9708e56a0adab704d261c60ae291f8fc2a913be768ec9c9768361ee6c5"
+  "export_hash": "ca433f88e279a17b78062e71056e311c3c3f8113e2b49572672470c3e455c547"
 }

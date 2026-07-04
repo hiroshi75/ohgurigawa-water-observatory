@@ -30,7 +30,38 @@
       "water_clarity": "泥濁り",
       "bed_visibility": "見えない",
       "event_type": "human_input_suspected",
-      "measurement_confidence": "usable"
+      "measurement_confidence": "usable",
+      "amedas_precipitation_24h_07_jst_mm": 0,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-06-22T07:00:00+09:00",
+        "window_end_at": "2026-06-23T07:00:00+09:00",
+        "station_mean_mm": 0,
+        "station_min_mm": 0,
+        "station_max_mm": 0,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -70,7 +101,38 @@
       "foam": "少し",
       "turbidity_direction": "なし",
       "event_type": "none",
-      "measurement_confidence": "usable"
+      "measurement_confidence": "usable",
+      "amedas_precipitation_24h_07_jst_mm": 0,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-06-23T07:00:00+09:00",
+        "window_end_at": "2026-06-24T07:00:00+09:00",
+        "station_mean_mm": 0,
+        "station_min_mm": 0,
+        "station_max_mm": 0,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1410,
+            "coverage_ratio": 0.979,
+            "source_record_count": 141,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1410,
+            "coverage_ratio": 0.979,
+            "source_record_count": 141,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -114,7 +176,38 @@
       "foam": "少し",
       "turbidity_direction": "上流から全体",
       "event_type": "none",
-      "measurement_confidence": "usable"
+      "measurement_confidence": "usable",
+      "amedas_precipitation_24h_07_jst_mm": 0,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-06-23T07:00:00+09:00",
+        "window_end_at": "2026-06-24T07:00:00+09:00",
+        "station_mean_mm": 0,
+        "station_min_mm": 0,
+        "station_max_mm": 0,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1410,
+            "coverage_ratio": 0.979,
+            "source_record_count": 141,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1410,
+            "coverage_ratio": 0.979,
+            "source_record_count": 141,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -159,7 +252,38 @@
       "foam": "なし",
       "turbidity_direction": "上流から全体",
       "event_type": "rain_turbid",
-      "measurement_confidence": "good"
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 16.75,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-06-25T07:00:00+09:00",
+        "window_end_at": "2026-06-26T07:00:00+09:00",
+        "station_mean_mm": 16.75,
+        "station_min_mm": 16.5,
+        "station_max_mm": 17,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 17,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 16.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -204,7 +328,38 @@
       "foam": "なし",
       "turbidity_direction": "上流から全体",
       "event_type": "rain_turbid",
-      "measurement_confidence": "usable"
+      "measurement_confidence": "usable",
+      "amedas_precipitation_24h_07_jst_mm": 16.75,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-06-25T07:00:00+09:00",
+        "window_end_at": "2026-06-26T07:00:00+09:00",
+        "station_mean_mm": 16.75,
+        "station_min_mm": 16.5,
+        "station_max_mm": 17,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 17,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 16.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -250,7 +405,38 @@
       "foam": "なし",
       "turbidity_direction": "上流から全体",
       "event_type": "rain_turbid",
-      "measurement_confidence": "usable"
+      "measurement_confidence": "usable",
+      "amedas_precipitation_24h_07_jst_mm": 73.5,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-06-26T07:00:00+09:00",
+        "window_end_at": "2026-06-27T07:00:00+09:00",
+        "station_mean_mm": 73.5,
+        "station_min_mm": 69.5,
+        "station_max_mm": 77.5,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 69.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 77.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -294,7 +480,38 @@
       "foam": "なし",
       "turbidity_direction": "なし",
       "event_type": "none",
-      "measurement_confidence": "usable"
+      "measurement_confidence": "usable",
+      "amedas_precipitation_24h_07_jst_mm": 5.75,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-06-27T07:00:00+09:00",
+        "window_end_at": "2026-06-28T07:00:00+09:00",
+        "station_mean_mm": 5.75,
+        "station_min_mm": 3.5,
+        "station_max_mm": 8,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 8,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 3.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -339,7 +556,38 @@
       "foam": "なし",
       "turbidity_direction": "なし",
       "event_type": "none",
-      "measurement_confidence": "usable"
+      "measurement_confidence": "usable",
+      "amedas_precipitation_24h_07_jst_mm": 4.75,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-06-28T07:00:00+09:00",
+        "window_end_at": "2026-06-29T07:00:00+09:00",
+        "station_mean_mm": 4.75,
+        "station_min_mm": 3.5,
+        "station_max_mm": 6,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 6,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 3.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -384,7 +632,38 @@
       "foam": "少し",
       "turbidity_direction": "上流から全体",
       "event_type": "none",
-      "measurement_confidence": "good"
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 4.75,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-06-28T07:00:00+09:00",
+        "window_end_at": "2026-06-29T07:00:00+09:00",
+        "station_mean_mm": 4.75,
+        "station_min_mm": 3.5,
+        "station_max_mm": 6,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 6,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 3.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -429,7 +708,38 @@
       "foam": "なし",
       "turbidity_direction": "なし",
       "event_type": "none",
-      "measurement_confidence": "good"
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 0,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-06-29T07:00:00+09:00",
+        "window_end_at": "2026-06-30T07:00:00+09:00",
+        "station_mean_mm": 0,
+        "station_min_mm": 0,
+        "station_max_mm": 0,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -474,7 +784,38 @@
       "foam": "少し",
       "turbidity_direction": "上流から全体",
       "event_type": "human_input_suspected",
-      "measurement_confidence": "good"
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 0,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-06-29T07:00:00+09:00",
+        "window_end_at": "2026-06-30T07:00:00+09:00",
+        "station_mean_mm": 0,
+        "station_min_mm": 0,
+        "station_max_mm": 0,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -519,7 +860,38 @@
       "foam": "少し",
       "turbidity_direction": "なし",
       "event_type": "none",
-      "measurement_confidence": "good"
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 0,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-06-30T07:00:00+09:00",
+        "window_end_at": "2026-07-01T07:00:00+09:00",
+        "station_mean_mm": 0,
+        "station_min_mm": 0,
+        "station_max_mm": 0,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -564,7 +936,38 @@
       "foam": "なし",
       "turbidity_direction": "なし",
       "event_type": "none",
-      "measurement_confidence": "good"
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 0,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-06-30T07:00:00+09:00",
+        "window_end_at": "2026-07-01T07:00:00+09:00",
+        "station_mean_mm": 0,
+        "station_min_mm": 0,
+        "station_max_mm": 0,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -609,7 +1012,38 @@
       "foam": "なし",
       "turbidity_direction": "なし",
       "event_type": "none",
-      "measurement_confidence": "usable"
+      "measurement_confidence": "usable",
+      "amedas_precipitation_24h_07_jst_mm": 21.25,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-07-02T07:00:00+09:00",
+        "window_end_at": "2026-07-03T07:00:00+09:00",
+        "station_mean_mm": 21.25,
+        "station_min_mm": 20,
+        "station_max_mm": 22.5,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 20,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 22.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -654,7 +1088,38 @@
       "foam": "なし",
       "turbidity_direction": "なし",
       "event_type": "none",
-      "measurement_confidence": "good"
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 21.25,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-07-02T07:00:00+09:00",
+        "window_end_at": "2026-07-03T07:00:00+09:00",
+        "station_mean_mm": 21.25,
+        "station_min_mm": 20,
+        "station_max_mm": 22.5,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 20,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 22.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -699,7 +1164,38 @@
       "foam": "なし",
       "turbidity_direction": "なし",
       "event_type": "none",
-      "measurement_confidence": "good"
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 0.75,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-07-03T07:00:00+09:00",
+        "window_end_at": "2026-07-04T07:00:00+09:00",
+        "station_mean_mm": 0.75,
+        "station_min_mm": 0.5,
+        "station_max_mm": 1,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 1,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 0.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -744,7 +1240,38 @@
       "foam": "なし",
       "turbidity_direction": "なし",
       "event_type": "none",
-      "measurement_confidence": "good"
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 0.75,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-07-03T07:00:00+09:00",
+        "window_end_at": "2026-07-04T07:00:00+09:00",
+        "station_mean_mm": 0.75,
+        "station_min_mm": 0.5,
+        "station_max_mm": 1,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 1,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 0.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -789,7 +1316,38 @@
       "foam": "なし",
       "turbidity_direction": "なし",
       "event_type": "none",
-      "measurement_confidence": "good"
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 0.75,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-07-03T07:00:00+09:00",
+        "window_end_at": "2026-07-04T07:00:00+09:00",
+        "station_mean_mm": 0.75,
+        "station_min_mm": 0.5,
+        "station_max_mm": 1,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 1,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 0.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -834,7 +1392,38 @@
       "foam": "なし",
       "turbidity_direction": "なし",
       "event_type": "none",
-      "measurement_confidence": "good"
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 0.75,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-07-03T07:00:00+09:00",
+        "window_end_at": "2026-07-04T07:00:00+09:00",
+        "station_mean_mm": 0.75,
+        "station_min_mm": 0.5,
+        "station_max_mm": 1,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 1,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 0.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -879,7 +1468,38 @@
       "foam": "なし",
       "turbidity_direction": "なし",
       "event_type": "none",
-      "measurement_confidence": "good"
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 0.75,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-07-03T07:00:00+09:00",
+        "window_end_at": "2026-07-04T07:00:00+09:00",
+        "station_mean_mm": 0.75,
+        "station_min_mm": 0.5,
+        "station_max_mm": 1,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 1,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 0.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -924,7 +1544,38 @@
       "foam": "なし",
       "turbidity_direction": "なし",
       "event_type": "none",
-      "measurement_confidence": "good"
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 0.75,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-07-03T07:00:00+09:00",
+        "window_end_at": "2026-07-04T07:00:00+09:00",
+        "station_mean_mm": 0.75,
+        "station_min_mm": 0.5,
+        "station_max_mm": 1,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 1,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 0.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     },
     {
       "schema_version": "1.0",
@@ -969,7 +1620,38 @@
       "foam": "なし",
       "turbidity_direction": "なし",
       "event_type": "none",
-      "measurement_confidence": "good"
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 0.75,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-07-03T07:00:00+09:00",
+        "window_end_at": "2026-07-04T07:00:00+09:00",
+        "station_mean_mm": 0.75,
+        "station_min_mm": 0.5,
+        "station_max_mm": 1,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 1,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 0.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     }
   ]
 }

@@ -21,6 +21,8 @@
 | `PAR_subsurface` | 水面直下PARの反復測定配列 |
 | `PAR_subsurface_mean` | 水面直下PAR平均 |
 | `bottom_PAR_ratio` | 川底近くPAR / 水面上PAR |
+| `amedas_precipitation_24h_07_jst_mm` | その日07:00 JSTを終端にした直近24時間AMeDAS雨量（府中・八王子平均）mm |
+| `amedas_precipitation_24h_07_jst` | 07:00 JST直近24時間雨量の計算メタデータ |
 | `depth_cm` | 水深 cm |
 | `measured_depth_cm` | 測定できた水深 cm |
 | `water_level` | 水位の観察カテゴリ |
