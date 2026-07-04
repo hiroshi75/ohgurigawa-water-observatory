@@ -163,6 +163,27 @@ input {
   stroke-width: 1.5;
 }
 
+.series-point-morning {
+  fill: #176c57;
+}
+
+.series-point-afternoon {
+  fill: #b6465f;
+}
+
+.legend-point {
+  stroke: #fff;
+  stroke-width: 1.5;
+}
+
+.legend-point-morning {
+  fill: #176c57;
+}
+
+.legend-point-afternoon {
+  fill: #b6465f;
+}
+
 .table-wrap {
   max-width: 100%;
   overflow-x: auto;

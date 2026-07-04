@@ -41,40 +41,65 @@ function renderSummary() {
 
 function renderChart() {
   const key = metricSelect.value;
+  const chartRecords = records.filter((record) => record.session === "morning" || record.session === "afternoon");
+  const dates = [...new Set(chartRecords.map((record) => record.date).filter(Boolean))].sort();
+  const dateIndex = new Map(dates.map((date, index) => [date, index]));
   const values = records
-    .map((record) => ({ x: new Date(record.observed_at).getTime(), y: record[key], record }))
-    .filter((point) => typeof point.y === "number" && Number.isFinite(point.y));
-  if (values.length < 2) {
-    chartEl.innerHTML = '<text x="24" y="48">チャートに必要なデータがまだありません</text>';
+    .filter((record) => record.session === "morning" || record.session === "afternoon")
+    .map((record) => ({ x: dateIndex.get(record.date), y: record[key], record }))
+    .filter((point) => typeof point.x === "number" && typeof point.y === "number" && Number.isFinite(point.y));
+  if (!values.length || !dates.length) {
+    chartEl.innerHTML = '<text x="24" y="48">morning / afternoon のグラフ対象データがまだありません</text>';
     return;
   }
   const width = chartEl.clientWidth || 680;
   const height = 300;
   chartEl.setAttribute("viewBox", `0 0 ${width} ${height}`);
-  const pad = { left: 48, right: 16, top: 18, bottom: 42 };
-  const minX = Math.min(...values.map((point) => point.x));
-  const maxX = Math.max(...values.map((point) => point.x));
+  const pad = { left: 48, right: 22, top: 18, bottom: 54 };
   const minY = Math.min(...values.map((point) => point.y));
   const maxY = Math.max(...values.map((point) => point.y));
   const ySpan = maxY - minY || 1;
-  const x = (value) => pad.left + ((value - minX) / Math.max(1, maxX - minX)) * (width - pad.left - pad.right);
+  const plotWidth = width - pad.left - pad.right;
+  const x = (index, session) => {
+    const base = dates.length === 1 ? pad.left + plotWidth / 2 : pad.left + (index / (dates.length - 1)) * plotWidth;
+    const offset = session === "morning" ? -5 : 5;
+    return Math.max(pad.left, Math.min(width - pad.right, base + offset));
+  };
   const y = (value) => pad.top + (1 - ((value - minY) / ySpan)) * (height - pad.top - pad.bottom);
-  const path = values.map((point, index) => `${index ? "L" : "M"} ${x(point.x).toFixed(1)} ${y(point.y).toFixed(1)}`).join(" ");
   const ticks = [minY, minY + ySpan / 2, maxY];
+  const dateTicks = dates.filter((_, index) => dates.length <= 10 || index === 0 || index === dates.length - 1 || index % Math.ceil(dates.length / 6) === 0);
   chartEl.innerHTML = `
     <rect x="0" y="0" width="${width}" height="${height}" fill="transparent"></rect>
     ${ticks.map((tick) => `
       <line x1="${pad.left}" x2="${width - pad.right}" y1="${y(tick)}" y2="${y(tick)}" class="grid-line"></line>
       <text x="8" y="${y(tick) + 4}" class="axis-label">${formatNumber(tick)}</text>
     `).join("")}
-    <path d="${path}" class="series-line"></path>
-    ${values.map((point) => `
-      <circle cx="${x(point.x)}" cy="${y(point.y)}" r="3.5" class="series-point">
-        <title>${formatDateTime(point.record.observed_at)} / ${formatNumber(point.y)}</title>
-      </circle>
+    ${dateTicks.map((date) => `
+      <text x="${x(dateIndex.get(date), "morning") + 5}" y="${height - 30}" class="axis-label date-label" text-anchor="middle">${formatDate(date)}</text>
     `).join("")}
-    <text x="${pad.left}" y="${height - 12}" class="axis-label">${formatDate(values[0].record.date)}</text>
-    <text x="${width - 120}" y="${height - 12}" class="axis-label">${formatDate(values.at(-1).record.date)}</text>
+    <g class="chart-legend">
+      <circle cx="${pad.left}" cy="12" r="4" class="legend-point legend-point-morning"></circle>
+      <text x="${pad.left + 10}" y="16" class="axis-label">morning</text>
+      <rect x="${pad.left + 86}" y="8" width="8" height="8" class="legend-point legend-point-afternoon"></rect>
+      <text x="${pad.left + 100}" y="16" class="axis-label">afternoon</text>
+    </g>
+    ${values.map((point) => renderSessionPoint(point, x(point.x, point.record.session), y(point.y))).join("")}
+  `;
+}
+
+function renderSessionPoint(point, cx, cy) {
+  const title = `${point.record.date} ${point.record.session} / ${formatNumber(point.y)}`;
+  if (point.record.session === "afternoon") {
+    return `
+      <rect x="${(cx - 4).toFixed(1)}" y="${(cy - 4).toFixed(1)}" width="8" height="8" class="series-point series-point-afternoon">
+        <title>${escapeHtml(title)}</title>
+      </rect>
+    `;
+  }
+  return `
+    <circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="4" class="series-point series-point-morning">
+      <title>${escapeHtml(title)}</title>
+    </circle>
   `;
 }
 
