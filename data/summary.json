@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-04T07:48:08+09:00",
+  "generated_at": "2026-07-04T09:34:56+09:00",
   "project": "大栗川 Water Observatory",
   "github_repository": "hiroshi75/ohgurigawa-water-observatory",
-  "public_record_count": 17,
+  "public_record_count": 18,
   "date_start": "2026-06-23",
   "date_end": "2026-07-04",
-  "latest_observed_at": "2026-07-03T22:07:00.000Z",
+  "latest_observed_at": "2026-07-04T00:07:00.000Z",
   "field_policy": {
     "included_when": "pH and DO and at least one PAR value are present",
     "excluded": [
@@ -19,41 +19,41 @@
   },
   "metrics": {
     "pH": {
-      "count": 17,
+      "count": 18,
       "min": 7.56,
       "max": 8.78,
-      "mean": 7.951
+      "mean": 7.938
     },
     "DO_mgL": {
-      "count": 17,
+      "count": 18,
       "min": 7.5,
       "max": 8.3,
-      "mean": 7.876
+      "mean": 7.889
     },
     "DO_pct": {
-      "count": 17,
+      "count": 18,
       "min": 84.8,
       "max": 95.6,
-      "mean": 89.312
+      "mean": 89.306
     },
     "PAR_air_mean": {
-      "count": 17,
+      "count": 18,
       "min": 77.7,
       "max": 901.867,
-      "mean": 342.061
+      "mean": 346.174
     },
     "PAR_bottom_mean": {
-      "count": 17,
+      "count": 18,
       "min": 0.6,
       "max": 302.867,
-      "mean": 124.496
+      "mean": 129.891
     },
     "bottom_PAR_ratio": {
-      "count": 17,
+      "count": 18,
       "min": 0.0045,
       "max": 0.5451,
-      "mean": 0.373
+      "mean": 0.382
     }
   },
-  "export_hash": "4f51cc6c0bd6702e6366bf71d208e746dd9547f190da2f05fc0c57d9d12fa9d7"
+  "export_hash": "bfa19e21e53bf978c8ae5ec11c25696df21892b4d2940a452a3f2dfda2e080e3"
 }
