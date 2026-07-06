@@ -2084,6 +2084,89 @@
           }
         ]
       }
+    },
+    {
+      "schema_version": "1.0",
+      "public_id": "4b8dfc0b3f94507c",
+      "observed_at": "2026-07-06T22:20:00.000Z",
+      "date": "2026-07-07",
+      "time_jst": "07:20:00",
+      "timezone": "Asia/Tokyo",
+      "session": "morning",
+      "location_label": "大栗川",
+      "pH": 7.49,
+      "DO_mgL": 7.9,
+      "DO_pct": 86.4,
+      "DO_temp_C": 19.4,
+      "water_temp_C": 21,
+      "EC_uScm": 238,
+      "PAR_air": [
+        396.2,
+        397.5,
+        397.6
+      ],
+      "PAR_air_mean": 397.1,
+      "PAR_bottom": [
+        193.1,
+        194.1,
+        196.3
+      ],
+      "PAR_bottom_mean": 194.5,
+      "PAR_subsurface": [
+        290.9,
+        264.1,
+        281.4
+      ],
+      "PAR_subsurface_mean": 278.8,
+      "bottom_PAR_ratio": 0.4898,
+      "depth_cm": 47,
+      "water_level": "平常",
+      "flow": "平常",
+      "water_clarity": "透明",
+      "bed_visibility": "よく見える",
+      "bed_visibility_score": 3,
+      "visual_algae": "薄い茶色・緑色の膜",
+      "visual_algae_score": 1,
+      "mud_cover": "泥被覆なし",
+      "mud_cover_score": 0,
+      "bare_stone": "裸石感なし。膜や沈着物がある",
+      "bare_stone_score": 0,
+      "odor": "なし",
+      "foam": "なし",
+      "turbidity_direction": "なし",
+      "event_type": "none",
+      "measurement_confidence": "usable",
+      "amedas_precipitation_24h_07_jst_mm": 3,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-07-06T07:00:00+09:00",
+        "window_end_at": "2026-07-07T07:00:00+09:00",
+        "station_mean_mm": 3,
+        "station_min_mm": 1,
+        "station_max_mm": 5,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 1,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     }
   ]
 }
