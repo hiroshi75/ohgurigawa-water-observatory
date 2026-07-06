@@ -1804,6 +1804,82 @@
           }
         ]
       }
+    },
+    {
+      "schema_version": "1.0",
+      "public_id": "99b8437f152c30d5",
+      "observed_at": "2026-07-06T04:10:00.000Z",
+      "date": "2026-07-06",
+      "time_jst": "13:10:00",
+      "timezone": "Asia/Tokyo",
+      "session": "afternoon",
+      "location_label": "大栗川",
+      "pH": 7.96,
+      "DO_mgL": 8,
+      "DO_pct": 91,
+      "DO_temp_C": 21.4,
+      "water_temp_C": 22.6,
+      "EC_uScm": 256,
+      "PAR_air": [
+        214.9,
+        214.7,
+        214.4
+      ],
+      "PAR_air_mean": 214.667,
+      "PAR_bottom": [
+        111.3,
+        112.4,
+        111.5
+      ],
+      "PAR_bottom_mean": 111.733,
+      "PAR_subsurface": [
+        145.7,
+        136.3,
+        144.5
+      ],
+      "PAR_subsurface_mean": 142.167,
+      "bottom_PAR_ratio": 0.5205,
+      "depth_cm": 45,
+      "water_level": "平常",
+      "flow": "平常",
+      "water_clarity": "透明",
+      "bed_visibility": "よく見える",
+      "odor": "なし",
+      "foam": "なし",
+      "turbidity_direction": "なし",
+      "event_type": "none",
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 7.75,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-07-05T07:00:00+09:00",
+        "window_end_at": "2026-07-06T07:00:00+09:00",
+        "station_mean_mm": 7.75,
+        "station_min_mm": 6,
+        "station_max_mm": 9.5,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 6,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 9.5,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      }
     }
   ]
 }
