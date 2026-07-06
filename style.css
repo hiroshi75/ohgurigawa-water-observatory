@@ -370,62 +370,50 @@ h3 {
 
 .series-ph {
   stroke: var(--green);
-  fill: var(--green);
 }
 
 .series-do {
   stroke: var(--blue);
-  fill: var(--blue);
 }
 
 .series-light {
   stroke: #c98b1a;
-  fill: #c98b1a;
 }
 
 .series-ratio {
   stroke: var(--violet);
-  fill: var(--violet);
 }
 
 .series-algae {
   stroke: #3f8d48;
-  fill: #3f8d48;
 }
 
 .series-mud {
   stroke: #9a6d3a;
-  fill: #9a6d3a;
 }
 
 .series-stone {
   stroke: #68747b;
-  fill: #68747b;
 }
 
 .series-visibility {
   stroke: #2f8fb0;
-  fill: #2f8fb0;
 }
 
 .series-morning {
   stroke: var(--green);
-  fill: var(--green);
 }
 
 .series-afternoon {
   stroke: var(--red);
-  fill: var(--red);
 }
 
 .series-ec-delta {
   stroke: var(--amber);
-  fill: var(--amber);
 }
 
 .series-ec-shift {
   stroke: var(--violet);
-  fill: var(--violet);
 }
 
 .intraday-line {
