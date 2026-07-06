@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">大栗川の浅い河川区間の観察模式図</title>
+  <desc id="desc">水面、川底の石、光、測定点を示す模式図</desc>
+  <rect width="1200" height="720" fill="#f4f8f7"/>
+  <path d="M0 180 C160 130 270 210 420 165 C610 110 770 210 940 160 C1050 130 1130 145 1200 120 L1200 430 C1060 470 930 430 780 475 C610 526 460 430 300 486 C190 524 90 500 0 548 Z" fill="#7bb7ca" opacity=".78"/>
+  <path d="M0 382 C150 330 290 370 430 342 C620 305 790 375 965 335 C1075 310 1145 318 1200 292 L1200 720 L0 720 Z" fill="#d7c28b"/>
+  <path d="M120 520 C165 490 215 503 238 534 C205 559 155 564 120 520Z" fill="#8f8b72"/>
+  <path d="M330 570 C380 525 445 538 485 585 C430 623 370 622 330 570Z" fill="#757f72"/>
+  <path d="M610 545 C675 500 738 522 772 575 C720 612 650 612 610 545Z" fill="#8a8f7a"/>
+  <path d="M875 590 C940 545 1008 562 1046 616 C987 650 920 650 875 590Z" fill="#777b6a"/>
+  <path d="M220 95 L360 435 M445 70 L525 425 M690 78 L680 420 M900 74 L795 438" stroke="#f2c94c" stroke-width="10" stroke-linecap="round" opacity=".45"/>
+  <circle cx="520" cy="250" r="58" fill="#ffffff" opacity=".78"/>
+  <path d="M500 275 C500 235 540 225 548 197 C567 228 590 245 590 276 C590 310 570 333 545 333 C520 333 500 310 500 275Z" fill="#176c57"/>
+  <path d="M548 235 L548 315 M526 279 L570 279" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  <text x="64" y="88" fill="#12312c" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="30" font-weight="700">pH / DO% / PAR / EC</text>
+  <text x="64" y="128" fill="#49635d" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="22">朝と午後の差から、川底を含む浅い区間の光応答を追跡</text>
+</svg>

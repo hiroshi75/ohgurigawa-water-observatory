@@ -29,8 +29,20 @@
 | `flow` | 流速の観察カテゴリ |
 | `water_clarity` | 透明度カテゴリ |
 | `bed_visibility` | 川底視認カテゴリ |
+| `bed_visibility_score` | 川底の見え方 0-3 |
+| `visual_algae` | 藻類・膜の見え方カテゴリ |
+| `visual_algae_score` | 藻類・膜の見え方 0-3 |
+| `mud_cover` | 泥被覆カテゴリ |
+| `mud_cover_score` | 泥被覆 0-3 |
+| `bare_stone` | 裸石感カテゴリ |
+| `bare_stone_score` | 裸石感 0-3 |
 | `odor` | 異臭 |
 | `foam` | 泡 |
 | `turbidity_direction` | 濁りの入り方 |
 | `event_type` | 観察時のイベント型 |
 | `measurement_confidence` | 測定信頼度 |
+
+## Derived Files
+
+- `data/daily_metrics.json` / `data/daily_metrics.csv`: morning と afternoon を日付で結合し、`delta_pH`、`delta_DO_pct`、`delta_EC_uScm`、川底PAR平均、雨後フェーズ、簡易イベントコメントを計算した日次データです。
+- `data/observations.csv`: `observations.jsonl` と同じ公開対象レコードをCSVにしたものです。

@@ -3,57 +3,201 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>大栗川 Water Observatory</title>
+  <title>大栗川の川底は、光にどれくらい反応しているか</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="app">
-    <header class="topbar">
-      <div>
-        <p class="eyebrow">Open river observation dataset</p>
-        <h1>大栗川 Water Observatory</h1>
-      </div>
-      <nav>
-        <a href="#daily" data-page-link="daily">日別</a>
-        <a href="#intraday" data-page-link="intraday">1日内変動</a>
-        <a href="data/observations.jsonl">JSONL</a>
-        <a href="data/data-dictionary.md">Data Dictionary</a>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-mark" href="#top">大栗川</a>
+      <nav class="site-nav" aria-label="ページ内ナビゲーション">
+        <a href="#response">日中応答</a>
+        <a href="#light">光</a>
+        <a href="#photos">写真スコア</a>
+        <a href="#events">イベント</a>
+        <a href="#intraday">1日内変動</a>
+        <a href="#data">データ</a>
         <a href="https://github.com/hiroshi75/ohgurigawa-water-observatory">GitHub</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <section class="page-view" data-page-view="daily">
-      <section class="panel intro">
-        <p>大栗川で測定した pH、DO、PAR を中心に、水中の光環境と日中の水質応答を追跡するための公開データセットです。</p>
-      </section>
+  <main id="top" class="app">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Open river observation dataset</p>
+        <h1>大栗川の川底は、光にどれくらい反応しているか</h1>
+        <p class="lead">朝と午後の pH / DO% / 光 / 写真から見る、川底バイオフィルムを含む浅い河川区間の非破壊モニタリング</p>
+        <p>大栗川の同じ浅い区間で、朝と午後に pH、DO%、光量、写真を記録しています。朝から午後に pH や DO% がどれだけ上がるかを見ることで、川底の藻類・微生物膜を含む環境が、その日の光にどれくらい反応しているかを追跡しています。</p>
+      </div>
+      <figure class="hero-media">
+        <img src="assets/river-monitoring.svg" alt="浅い河川区間で光、水質、川底を観察する模式図" />
+      </figure>
+    </section>
 
-      <section class="metric-grid" id="summary"></section>
+    <section class="latest-grid" id="latest-cards" aria-label="最新状態カード"></section>
+    <p class="auto-comment" id="latest-comment"></p>
 
-      <section class="panel">
-        <div class="panel-head">
-          <h2>日別 morning / afternoon</h2>
-          <select id="metric-select">
-            <option value="pH">pH</option>
-            <option value="DO_mgL">DO mg/L</option>
-            <option value="DO_pct">DO %</option>
-            <option value="PAR_air_mean">水面上PAR</option>
-            <option value="PAR_bottom_mean">川底近くPAR</option>
-            <option value="bottom_PAR_ratio">川底PAR比</option>
-          </select>
+    <section class="section" id="overview">
+      <div class="section-head">
+        <p class="eyebrow">What this shows</p>
+        <h2>この調査で見ているもの</h2>
+        <p>雨や濁りで川底の状態が変わったあと、光が戻ったときに pH / DO% の日中応答がすぐ戻るのか、それとも数日遅れて戻るのかを見ます。</p>
+      </div>
+      <div class="explain-grid">
+        <article>
+          <h3>朝と午後の差</h3>
+          <p>pH と DO% の朝午後差を、日中の光応答 proxy として見ます。DO%は流れや再曝気の影響も受けるため、pHや光と合わせて読みます。</p>
+        </article>
+        <article>
+          <h3>川底に届く光</h3>
+          <p>PAR と川底光到達率から、応答が弱い理由が光不足なのか、光はあるのに川底側の応答が弱いのかを分けます。</p>
+        </article>
+        <article>
+          <h3>写真スコアとEC</h3>
+          <p>泥、裸石感、藻類っぽさ、ECの変化を合わせ、遮光型、洗い流し型、化学・流入イベント候補を分けて読みます。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="response">
+      <div class="section-head">
+        <p class="eyebrow">Main signal</p>
+        <h2>朝から午後までの pH / DO% の変化</h2>
+        <p>川底を含む浅い区間が、その日の光にどれくらい反応したかを見る主グラフです。</p>
+      </div>
+      <div id="response-charts" class="chart-stack"></div>
+      <aside class="interpretation">光があるのに値が低い日は、雨後回復の遅れや、濁り・泥・流入イベントの候補として見ます。</aside>
+      <details class="method-detail">
+        <summary>計算式を見る</summary>
+        <code>delta_pH = pH_afternoon - pH_morning</code><br />
+        <code>delta_DO_pct = DO_pct_afternoon - DO_pct_morning</code>
+      </details>
+    </section>
+
+    <section class="section" id="light">
+      <div class="section-head">
+        <p class="eyebrow">Light environment</p>
+        <h2>光は川底まで届いていたか</h2>
+        <p>光が少ない日は pH や DO% の上昇が小さくても自然です。重要なのは、光が戻った日でも応答が弱いかどうかです。</p>
+      </div>
+      <div id="light-charts" class="chart-stack"></div>
+    </section>
+
+    <section class="section" id="photos">
+      <div class="section-head">
+        <p class="eyebrow">Riverbed state</p>
+        <h2>川底写真スコア</h2>
+        <p>写真スコアは主観的な指標ですが、同じ基準で毎日つけることで、雨後に泥が増えたのか、石が洗われたのか、水が澄んだのかを追いやすくなります。</p>
+      </div>
+      <div id="photo-charts" class="chart-stack"></div>
+      <div class="note-box">写真ファイル自体はプライバシーと位置情報の扱いを整理してから公開します。このページでは、入力されたスコアと公開可能な測定値だけを表示しています。</div>
+    </section>
+
+    <section class="section" id="scatter">
+      <div class="section-head">
+        <p class="eyebrow">Same brightness comparison</p>
+        <h2>同じ明るさでも応答が違うか</h2>
+        <p>横軸は川底に届いた光、縦軸は朝午後差です。同じくらい明るい日でも雨後直後の点が下側に集まるなら、光は戻っていても応答がまだ弱い可能性があります。</p>
+      </div>
+      <div class="chart-grid">
+        <article class="chart-card">
+          <h3>川底PAR vs pHの日中上昇</h3>
+          <svg id="scatter-ph" class="chart chart-compact" role="img" aria-label="PAR_bottom と delta pH の散布図"></svg>
+        </article>
+        <article class="chart-card">
+          <h3>川底PAR vs DO%の日中上昇</h3>
+          <svg id="scatter-do" class="chart chart-compact" role="img" aria-label="PAR_bottom と delta DO percent の散布図"></svg>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="section-head">
+        <p class="eyebrow">Rain and event reading</p>
+        <h2>雨後・イベントの読み分け</h2>
+        <p>雨後の変化は「雨の影響」とまとめず、洗い流し型、遮光型、化学・流入イベント候補に分けて読みます。</p>
+      </div>
+      <div id="event-list" class="event-list"></div>
+    </section>
+
+    <section class="section" id="ec">
+      <div class="section-head">
+        <p class="eyebrow">EC check</p>
+        <h2>ECとイベント候補</h2>
+        <p>ECは水に溶けているイオンの多さの目安です。雨水希釈や側溝・排水など、光や泥だけでは説明しにくい日を探します。</p>
+      </div>
+      <div id="ec-charts" class="chart-stack"></div>
+    </section>
+
+    <section class="section" id="intraday">
+      <div class="section-head section-head-row">
+        <div>
+          <p class="eyebrow">Intraday reference</p>
+          <h2>1日内の時間別変動</h2>
+          <p>other セッションを含む日だけを対象に、1日の中での pH、DO%、光、EC の動きを複数グラフで並べます。</p>
         </div>
-        <svg id="chart" class="chart" role="img" aria-label="日別 morning afternoon チャート"></svg>
-      </section>
+        <select id="intraday-date-select" aria-label="otherを含む日"></select>
+      </div>
+      <div class="mini-legend" aria-label="session凡例">
+        <span><i class="legend-swatch legend-dot"></i>morning</span>
+        <span><i class="legend-swatch legend-square"></i>afternoon</span>
+        <span><i class="legend-swatch legend-diamond"></i>other</span>
+      </div>
+      <div id="intraday-charts" class="chart-stack" aria-label="1日内の指標別時間変動チャート"></div>
+      <div class="table-wrap compact-table">
+        <table>
+          <thead>
+            <tr>
+              <th>時刻</th>
+              <th>session</th>
+              <th>pH</th>
+              <th>DO</th>
+              <th>PAR</th>
+              <th>状態</th>
+            </tr>
+          </thead>
+          <tbody id="intraday-records"></tbody>
+        </table>
+      </div>
+    </section>
 
-      <section class="panel">
-        <div class="panel-head">
-          <h2>最新データ</h2>
-          <input id="filter" type="search" placeholder="日付・session・eventで絞り込み" />
+    <section class="section" id="data">
+      <div class="section-head section-head-row">
+        <div>
+          <p class="eyebrow">Data table</p>
+          <h2>日次サマリー表</h2>
+          <p>朝午後差分を中心にした公開用の派生データです。欠測や poor は通常データと分けて読んでください。</p>
         </div>
+        <input id="daily-filter" type="search" placeholder="日付・イベント・メモで検索" />
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>日付</th>
+              <th>イベント</th>
+              <th>pH日中上昇</th>
+              <th>DO%日中上昇</th>
+              <th>川底PAR</th>
+              <th>川底光到達率</th>
+              <th>EC変化</th>
+              <th>川底状態</th>
+              <th>メモ</th>
+            </tr>
+          </thead>
+          <tbody id="daily-table"></tbody>
+        </table>
+      </div>
+
+      <details class="method-detail">
+        <summary>測定回ごとの元データを見る</summary>
         <div class="table-wrap">
           <table>
             <thead>
               <tr>
                 <th>日時</th>
+                <th>session</th>
                 <th>pH</th>
                 <th>DO</th>
                 <th>PAR</th>
@@ -63,50 +207,51 @@
             <tbody id="records"></tbody>
           </table>
         </div>
-      </section>
+      </details>
     </section>
 
-    <section class="page-view" data-page-view="intraday" hidden>
-      <section class="panel intro">
-        <p>通常の日別グラフには出していない other セッションを含む日だけを対象に、1日の中での時間別変動を表示します。</p>
-      </section>
+    <section class="section" id="method">
+      <div class="section-head">
+        <p class="eyebrow">Method and limits</p>
+        <h2>このページで言えること・言えないこと</h2>
+      </div>
+      <div class="limits-grid">
+        <article>
+          <h3>言えること</h3>
+          <ul>
+            <li>川底付近の光環境が日ごとにどう変わったか。</li>
+            <li>pH と DO% の朝午後差が、光、雨後日数、川底写真状態とどう対応したか。</li>
+            <li>雨後の proxy 変化が、洗い流し型、遮光型、化学イベント候補のどれに近いか。</li>
+          </ul>
+        </article>
+        <article>
+          <h3>言えないこと</h3>
+          <ul>
+            <li>付着藻のクロロフィルa量や種組成を測った、とは言えません。</li>
+            <li>正式なGPP / ERや、付着藻だけの光合成量ではありません。</li>
+            <li>栄養塩濃度の増減や雨の因果を断定するものではありません。</li>
+          </ul>
+        </article>
+      </div>
+      <details class="method-detail">
+        <summary>方法の詳細</summary>
+        <p>この観察では、石を採取したり、川に機材を設置したりせず、同じ河川区間で朝と午後の水質・光・写真を記録しています。個別の石ではなく、同じ画角の川底パッチ全体を観察単位にしています。</p>
+        <p>朝は夜間の呼吸後に近い状態、午後は日中の光を受けた後の状態です。この2回の差を見ることで、正式な河川代謝推定ではありませんが、日中の光応答の手がかりを得ます。</p>
+      </details>
+    </section>
 
-      <section class="panel">
-        <div class="panel-head">
-          <h2>1日内の時間別変動</h2>
-          <div class="control-row">
-            <select id="intraday-date-select" aria-label="otherを含む日"></select>
-          </div>
-        </div>
-        <div class="mini-legend" aria-label="session凡例">
-          <span><i class="legend-swatch legend-dot"></i>morning</span>
-          <span><i class="legend-swatch legend-square"></i>afternoon</span>
-          <span><i class="legend-swatch legend-diamond"></i>other</span>
-        </div>
-        <div id="intraday-charts" class="stacked-charts" aria-label="1日内の指標別時間変動チャート"></div>
-      </section>
-
-      <section class="panel">
-        <div class="panel-head">
-          <h2>選択日のデータ</h2>
-          <span id="intraday-count" class="panel-note"></span>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>時刻</th>
-                <th>session</th>
-                <th>pH</th>
-                <th>DO</th>
-                <th>PAR</th>
-                <th>状態</th>
-              </tr>
-            </thead>
-            <tbody id="intraday-records"></tbody>
-          </table>
-        </div>
-      </section>
+    <section class="section downloads" id="downloads">
+      <div class="section-head">
+        <p class="eyebrow">Downloads</p>
+        <h2>データダウンロード</h2>
+      </div>
+      <div class="download-links">
+        <a href="data/daily_metrics.csv">daily_metrics.csv</a>
+        <a href="data/daily_metrics.json">daily_metrics.json</a>
+        <a href="data/observations.csv">observations.csv</a>
+        <a href="data/observations.jsonl">observations.jsonl</a>
+        <a href="data/data-dictionary.md">data dictionary</a>
+      </div>
     </section>
   </main>
   <script src="app.js"></script>

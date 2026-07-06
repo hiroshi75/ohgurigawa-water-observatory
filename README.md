@@ -10,7 +10,7 @@
 
 - 公開対象: pH、DO、PAR の最低限の測定値が揃った記録
 - 除外対象: 登録システムの内部ID、operator、自由記述メモ、写真ID、削除済み記録、過去revision
-- 最新生成: 2026-07-06T18:20:14+09:00
+- 最新生成: 2026-07-06T20:50:17+09:00
 - 公開レコード数: 26
 - 期間: 2026-06-23 から 2026-07-06
 
@@ -18,6 +18,9 @@
 
 - `data/observations.jsonl`: 1行1記録の公開データ
 - `data/observations.json`: GitHub Pages ダッシュボード用JSON
+- `data/observations.csv`: 測定回ごとのCSV
+- `data/daily_metrics.json`: 朝午後差分などの日次指標JSON
+- `data/daily_metrics.csv`: 朝午後差分などの日次指標CSV
 - `data/summary.json`: 件数・期間・主要項目の集計
 - `data/data-dictionary.md`: フィールド定義
 
