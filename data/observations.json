@@ -62,6 +62,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 0.35,
+      "amedas_global_solar_estimated_day_MJ_m2": 8.348,
+      "amedas_surface_PAR_estimated_day_mol_m2": 19.2,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.35,
+        "station_mean_global_solar_estimated_MJ_m2": 8.348,
+        "station_min_global_solar_estimated_MJ_m2": 7.757,
+        "station_max_global_solar_estimated_MJ_m2": 8.939,
+        "station_diff_global_solar_estimated_MJ_m2": 1.182,
+        "surface_PAR_estimated_mol_m2": 19.2,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "06",
+          "a": 0.204253,
+          "b": 0.5652,
+          "fit_n": 907,
+          "fit_rmse_MJ_m2_day": 2.5328,
+          "fit_r2_MJ_m2_day": 0.88228
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.6,
+            "total_global_solar_estimated_MJ_m2": 8.939,
+            "covered_hours": 23,
+            "source_record_count": 23
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0.1,
+            "total_global_solar_estimated_MJ_m2": 7.757,
+            "covered_hours": 23,
+            "source_record_count": 23
+          }
+        ]
       }
     },
     {
@@ -140,6 +193,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 2.4,
+      "amedas_global_solar_estimated_day_MJ_m2": 14.247,
+      "amedas_surface_PAR_estimated_day_mol_m2": 32.768,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 2.4,
+        "station_mean_global_solar_estimated_MJ_m2": 14.247,
+        "station_min_global_solar_estimated_MJ_m2": 13.482,
+        "station_max_global_solar_estimated_MJ_m2": 15.013,
+        "station_diff_global_solar_estimated_MJ_m2": 1.531,
+        "surface_PAR_estimated_mol_m2": 32.768,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "06",
+          "a": 0.204253,
+          "b": 0.5652,
+          "fit_n": 907,
+          "fit_rmse_MJ_m2_day": 2.5328,
+          "fit_r2_MJ_m2_day": 0.88228
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 2.1,
+            "total_global_solar_estimated_MJ_m2": 13.482,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 2.7,
+            "total_global_solar_estimated_MJ_m2": 15.013,
+            "covered_hours": 24,
+            "source_record_count": 24
+          }
+        ]
       }
     },
     {
@@ -214,6 +320,59 @@
             "coverage_ratio": 0.979,
             "source_record_count": 141,
             "source_granularity": "10min"
+          }
+        ]
+      },
+      "amedas_sunshine_day_h": 2.4,
+      "amedas_global_solar_estimated_day_MJ_m2": 14.247,
+      "amedas_surface_PAR_estimated_day_mol_m2": 32.768,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 2.4,
+        "station_mean_global_solar_estimated_MJ_m2": 14.247,
+        "station_min_global_solar_estimated_MJ_m2": 13.482,
+        "station_max_global_solar_estimated_MJ_m2": 15.013,
+        "station_diff_global_solar_estimated_MJ_m2": 1.531,
+        "surface_PAR_estimated_mol_m2": 32.768,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "06",
+          "a": 0.204253,
+          "b": 0.5652,
+          "fit_n": 907,
+          "fit_rmse_MJ_m2_day": 2.5328,
+          "fit_r2_MJ_m2_day": 0.88228
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 2.1,
+            "total_global_solar_estimated_MJ_m2": 13.482,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 2.7,
+            "total_global_solar_estimated_MJ_m2": 15.013,
+            "covered_hours": 24,
+            "source_record_count": 24
           }
         ]
       }
@@ -293,6 +452,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 0,
+      "amedas_global_solar_estimated_day_MJ_m2": 8.501,
+      "amedas_surface_PAR_estimated_day_mol_m2": 19.552,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0,
+        "station_mean_global_solar_estimated_MJ_m2": 8.501,
+        "station_min_global_solar_estimated_MJ_m2": 8.501,
+        "station_max_global_solar_estimated_MJ_m2": 8.501,
+        "station_diff_global_solar_estimated_MJ_m2": 0,
+        "surface_PAR_estimated_mol_m2": 19.552,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "06",
+          "a": 0.204253,
+          "b": 0.5652,
+          "fit_n": 907,
+          "fit_rmse_MJ_m2_day": 2.5328,
+          "fit_r2_MJ_m2_day": 0.88228
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.501,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.501,
+            "covered_hours": 24,
+            "source_record_count": 24
+          }
+        ]
       }
     },
     {
@@ -368,6 +580,59 @@
             "coverage_ratio": 1,
             "source_record_count": 144,
             "source_granularity": "10min"
+          }
+        ]
+      },
+      "amedas_sunshine_day_h": 0,
+      "amedas_global_solar_estimated_day_MJ_m2": 8.501,
+      "amedas_surface_PAR_estimated_day_mol_m2": 19.552,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0,
+        "station_mean_global_solar_estimated_MJ_m2": 8.501,
+        "station_min_global_solar_estimated_MJ_m2": 8.501,
+        "station_max_global_solar_estimated_MJ_m2": 8.501,
+        "station_diff_global_solar_estimated_MJ_m2": 0,
+        "surface_PAR_estimated_mol_m2": 19.552,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "06",
+          "a": 0.204253,
+          "b": 0.5652,
+          "fit_n": 907,
+          "fit_rmse_MJ_m2_day": 2.5328,
+          "fit_r2_MJ_m2_day": 0.88228
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.501,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.501,
+            "covered_hours": 24,
+            "source_record_count": 24
           }
         ]
       }
@@ -448,6 +713,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 0,
+      "amedas_global_solar_estimated_day_MJ_m2": 8.497,
+      "amedas_surface_PAR_estimated_day_mol_m2": 19.543,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0,
+        "station_mean_global_solar_estimated_MJ_m2": 8.497,
+        "station_min_global_solar_estimated_MJ_m2": 8.497,
+        "station_max_global_solar_estimated_MJ_m2": 8.497,
+        "station_diff_global_solar_estimated_MJ_m2": 0,
+        "surface_PAR_estimated_mol_m2": 19.543,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "06",
+          "a": 0.204253,
+          "b": 0.5652,
+          "fit_n": 907,
+          "fit_rmse_MJ_m2_day": 2.5328,
+          "fit_r2_MJ_m2_day": 0.88228
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.497,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.497,
+            "covered_hours": 24,
+            "source_record_count": 24
+          }
+        ]
       }
     },
     {
@@ -522,6 +840,59 @@
             "coverage_ratio": 1,
             "source_record_count": 144,
             "source_granularity": "10min"
+          }
+        ]
+      },
+      "amedas_sunshine_day_h": 0,
+      "amedas_global_solar_estimated_day_MJ_m2": 8.492,
+      "amedas_surface_PAR_estimated_day_mol_m2": 19.532,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0,
+        "station_mean_global_solar_estimated_MJ_m2": 8.492,
+        "station_min_global_solar_estimated_MJ_m2": 8.492,
+        "station_max_global_solar_estimated_MJ_m2": 8.492,
+        "station_diff_global_solar_estimated_MJ_m2": 0,
+        "surface_PAR_estimated_mol_m2": 19.532,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "06",
+          "a": 0.204253,
+          "b": 0.5652,
+          "fit_n": 907,
+          "fit_rmse_MJ_m2_day": 2.5328,
+          "fit_r2_MJ_m2_day": 0.88228
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.492,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.492,
+            "covered_hours": 24,
+            "source_record_count": 24
           }
         ]
       }
@@ -607,6 +978,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 0.75,
+      "amedas_global_solar_estimated_day_MJ_m2": 9.557,
+      "amedas_surface_PAR_estimated_day_mol_m2": 21.981,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.75,
+        "station_mean_global_solar_estimated_MJ_m2": 9.557,
+        "station_min_global_solar_estimated_MJ_m2": 9.55,
+        "station_max_global_solar_estimated_MJ_m2": 9.564,
+        "station_diff_global_solar_estimated_MJ_m2": 0.014,
+        "surface_PAR_estimated_mol_m2": 21.981,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "06",
+          "a": 0.204253,
+          "b": 0.5652,
+          "fit_n": 907,
+          "fit_rmse_MJ_m2_day": 2.5328,
+          "fit_r2_MJ_m2_day": 0.88228
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.5,
+            "total_global_solar_estimated_MJ_m2": 9.55,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 1,
+            "total_global_solar_estimated_MJ_m2": 9.564,
+            "covered_hours": 24,
+            "source_record_count": 24
+          }
+        ]
       }
     },
     {
@@ -682,6 +1106,59 @@
             "coverage_ratio": 1,
             "source_record_count": 144,
             "source_granularity": "10min"
+          }
+        ]
+      },
+      "amedas_sunshine_day_h": 0.75,
+      "amedas_global_solar_estimated_day_MJ_m2": 9.557,
+      "amedas_surface_PAR_estimated_day_mol_m2": 21.981,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.75,
+        "station_mean_global_solar_estimated_MJ_m2": 9.557,
+        "station_min_global_solar_estimated_MJ_m2": 9.55,
+        "station_max_global_solar_estimated_MJ_m2": 9.564,
+        "station_diff_global_solar_estimated_MJ_m2": 0.014,
+        "surface_PAR_estimated_mol_m2": 21.981,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "06",
+          "a": 0.204253,
+          "b": 0.5652,
+          "fit_n": 907,
+          "fit_rmse_MJ_m2_day": 2.5328,
+          "fit_r2_MJ_m2_day": 0.88228
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.5,
+            "total_global_solar_estimated_MJ_m2": 9.55,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 1,
+            "total_global_solar_estimated_MJ_m2": 9.564,
+            "covered_hours": 24,
+            "source_record_count": 24
           }
         ]
       }
@@ -767,6 +1244,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 2,
+      "amedas_global_solar_estimated_day_MJ_m2": 11.441,
+      "amedas_surface_PAR_estimated_day_mol_m2": 26.314,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 2,
+        "station_mean_global_solar_estimated_MJ_m2": 11.441,
+        "station_min_global_solar_estimated_MJ_m2": 11.279,
+        "station_max_global_solar_estimated_MJ_m2": 11.604,
+        "station_diff_global_solar_estimated_MJ_m2": 0.325,
+        "surface_PAR_estimated_mol_m2": 26.314,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "06",
+          "a": 0.204253,
+          "b": 0.5652,
+          "fit_n": 907,
+          "fit_rmse_MJ_m2_day": 2.5328,
+          "fit_r2_MJ_m2_day": 0.88228
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 1.8,
+            "total_global_solar_estimated_MJ_m2": 11.279,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 2.2,
+            "total_global_solar_estimated_MJ_m2": 11.604,
+            "covered_hours": 24,
+            "source_record_count": 24
+          }
+        ]
       }
     },
     {
@@ -844,6 +1374,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 2,
+      "amedas_global_solar_estimated_day_MJ_m2": 11.441,
+      "amedas_surface_PAR_estimated_day_mol_m2": 26.314,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 2,
+        "station_mean_global_solar_estimated_MJ_m2": 11.441,
+        "station_min_global_solar_estimated_MJ_m2": 11.279,
+        "station_max_global_solar_estimated_MJ_m2": 11.604,
+        "station_diff_global_solar_estimated_MJ_m2": 0.325,
+        "surface_PAR_estimated_mol_m2": 26.314,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "06",
+          "a": 0.204253,
+          "b": 0.5652,
+          "fit_n": 907,
+          "fit_rmse_MJ_m2_day": 2.5328,
+          "fit_r2_MJ_m2_day": 0.88228
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 1.8,
+            "total_global_solar_estimated_MJ_m2": 11.279,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 2.2,
+            "total_global_solar_estimated_MJ_m2": 11.604,
+            "covered_hours": 24,
+            "source_record_count": 24
+          }
+        ]
       }
     },
     {
@@ -919,6 +1502,59 @@
             "coverage_ratio": 1,
             "source_record_count": 144,
             "source_granularity": "10min"
+          }
+        ]
+      },
+      "amedas_sunshine_day_h": 1.25,
+      "amedas_global_solar_estimated_day_MJ_m2": 10.963,
+      "amedas_surface_PAR_estimated_day_mol_m2": 25.215,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 1.25,
+        "station_mean_global_solar_estimated_MJ_m2": 10.963,
+        "station_min_global_solar_estimated_MJ_m2": 10.313,
+        "station_max_global_solar_estimated_MJ_m2": 11.614,
+        "station_diff_global_solar_estimated_MJ_m2": 1.301,
+        "surface_PAR_estimated_mol_m2": 25.215,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.9,
+            "total_global_solar_estimated_MJ_m2": 10.313,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 1.6,
+            "total_global_solar_estimated_MJ_m2": 11.614,
+            "covered_hours": 24,
+            "source_record_count": 24
           }
         ]
       }
@@ -1004,6 +1640,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 1.25,
+      "amedas_global_solar_estimated_day_MJ_m2": 10.963,
+      "amedas_surface_PAR_estimated_day_mol_m2": 25.215,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 1.25,
+        "station_mean_global_solar_estimated_MJ_m2": 10.963,
+        "station_min_global_solar_estimated_MJ_m2": 10.313,
+        "station_max_global_solar_estimated_MJ_m2": 11.614,
+        "station_diff_global_solar_estimated_MJ_m2": 1.301,
+        "surface_PAR_estimated_mol_m2": 25.215,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.9,
+            "total_global_solar_estimated_MJ_m2": 10.313,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 1.6,
+            "total_global_solar_estimated_MJ_m2": 11.614,
+            "covered_hours": 24,
+            "source_record_count": 24
+          }
+        ]
       }
     },
     {
@@ -1085,6 +1774,59 @@
             "coverage_ratio": 1,
             "source_record_count": 144,
             "source_granularity": "10min"
+          }
+        ]
+      },
+      "amedas_sunshine_day_h": 0.05,
+      "amedas_global_solar_estimated_day_MJ_m2": 8.827,
+      "amedas_surface_PAR_estimated_day_mol_m2": 20.302,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.05,
+        "station_mean_global_solar_estimated_MJ_m2": 8.827,
+        "station_min_global_solar_estimated_MJ_m2": 8.714,
+        "station_max_global_solar_estimated_MJ_m2": 8.94,
+        "station_diff_global_solar_estimated_MJ_m2": 0.226,
+        "surface_PAR_estimated_mol_m2": 20.302,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.1,
+            "total_global_solar_estimated_MJ_m2": 8.94,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.714,
+            "covered_hours": 24,
+            "source_record_count": 24
           }
         ]
       }
@@ -1170,6 +1912,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 0.05,
+      "amedas_global_solar_estimated_day_MJ_m2": 8.827,
+      "amedas_surface_PAR_estimated_day_mol_m2": 20.302,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.05,
+        "station_mean_global_solar_estimated_MJ_m2": 8.827,
+        "station_min_global_solar_estimated_MJ_m2": 8.714,
+        "station_max_global_solar_estimated_MJ_m2": 8.94,
+        "station_diff_global_solar_estimated_MJ_m2": 0.226,
+        "surface_PAR_estimated_mol_m2": 20.302,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.1,
+            "total_global_solar_estimated_MJ_m2": 8.94,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.714,
+            "covered_hours": 24,
+            "source_record_count": 24
+          }
+        ]
       }
     },
     {
@@ -1251,6 +2046,59 @@
             "coverage_ratio": 1,
             "source_record_count": 144,
             "source_granularity": "10min"
+          }
+        ]
+      },
+      "amedas_sunshine_day_h": 0.25,
+      "amedas_global_solar_estimated_day_MJ_m2": 9.184,
+      "amedas_surface_PAR_estimated_day_mol_m2": 21.123,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.25,
+        "station_mean_global_solar_estimated_MJ_m2": 9.184,
+        "station_min_global_solar_estimated_MJ_m2": 9.104,
+        "station_max_global_solar_estimated_MJ_m2": 9.265,
+        "station_diff_global_solar_estimated_MJ_m2": 0.161,
+        "surface_PAR_estimated_mol_m2": 21.123,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.3,
+            "total_global_solar_estimated_MJ_m2": 9.265,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0.2,
+            "total_global_solar_estimated_MJ_m2": 9.104,
+            "covered_hours": 24,
+            "source_record_count": 24
           }
         ]
       }
@@ -1336,6 +2184,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 0.25,
+      "amedas_global_solar_estimated_day_MJ_m2": 9.184,
+      "amedas_surface_PAR_estimated_day_mol_m2": 21.123,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.25,
+        "station_mean_global_solar_estimated_MJ_m2": 9.184,
+        "station_min_global_solar_estimated_MJ_m2": 9.104,
+        "station_max_global_solar_estimated_MJ_m2": 9.265,
+        "station_diff_global_solar_estimated_MJ_m2": 0.161,
+        "surface_PAR_estimated_mol_m2": 21.123,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.3,
+            "total_global_solar_estimated_MJ_m2": 9.265,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0.2,
+            "total_global_solar_estimated_MJ_m2": 9.104,
+            "covered_hours": 24,
+            "source_record_count": 24
+          }
+        ]
       }
     },
     {
@@ -1417,6 +2318,59 @@
             "coverage_ratio": 1,
             "source_record_count": 144,
             "source_granularity": "10min"
+          }
+        ]
+      },
+      "amedas_sunshine_day_h": 0.25,
+      "amedas_global_solar_estimated_day_MJ_m2": 9.184,
+      "amedas_surface_PAR_estimated_day_mol_m2": 21.123,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.25,
+        "station_mean_global_solar_estimated_MJ_m2": 9.184,
+        "station_min_global_solar_estimated_MJ_m2": 9.104,
+        "station_max_global_solar_estimated_MJ_m2": 9.265,
+        "station_diff_global_solar_estimated_MJ_m2": 0.161,
+        "surface_PAR_estimated_mol_m2": 21.123,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.3,
+            "total_global_solar_estimated_MJ_m2": 9.265,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0.2,
+            "total_global_solar_estimated_MJ_m2": 9.104,
+            "covered_hours": 24,
+            "source_record_count": 24
           }
         ]
       }
@@ -1502,6 +2456,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 0.25,
+      "amedas_global_solar_estimated_day_MJ_m2": 9.184,
+      "amedas_surface_PAR_estimated_day_mol_m2": 21.123,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.25,
+        "station_mean_global_solar_estimated_MJ_m2": 9.184,
+        "station_min_global_solar_estimated_MJ_m2": 9.104,
+        "station_max_global_solar_estimated_MJ_m2": 9.265,
+        "station_diff_global_solar_estimated_MJ_m2": 0.161,
+        "surface_PAR_estimated_mol_m2": 21.123,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.3,
+            "total_global_solar_estimated_MJ_m2": 9.265,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0.2,
+            "total_global_solar_estimated_MJ_m2": 9.104,
+            "covered_hours": 24,
+            "source_record_count": 24
+          }
+        ]
       }
     },
     {
@@ -1583,6 +2590,59 @@
             "coverage_ratio": 1,
             "source_record_count": 144,
             "source_granularity": "10min"
+          }
+        ]
+      },
+      "amedas_sunshine_day_h": 0.25,
+      "amedas_global_solar_estimated_day_MJ_m2": 9.184,
+      "amedas_surface_PAR_estimated_day_mol_m2": 21.123,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.25,
+        "station_mean_global_solar_estimated_MJ_m2": 9.184,
+        "station_min_global_solar_estimated_MJ_m2": 9.104,
+        "station_max_global_solar_estimated_MJ_m2": 9.265,
+        "station_diff_global_solar_estimated_MJ_m2": 0.161,
+        "surface_PAR_estimated_mol_m2": 21.123,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.3,
+            "total_global_solar_estimated_MJ_m2": 9.265,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0.2,
+            "total_global_solar_estimated_MJ_m2": 9.104,
+            "covered_hours": 24,
+            "source_record_count": 24
           }
         ]
       }
@@ -1668,6 +2728,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 0.25,
+      "amedas_global_solar_estimated_day_MJ_m2": 9.184,
+      "amedas_surface_PAR_estimated_day_mol_m2": 21.123,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.25,
+        "station_mean_global_solar_estimated_MJ_m2": 9.184,
+        "station_min_global_solar_estimated_MJ_m2": 9.104,
+        "station_max_global_solar_estimated_MJ_m2": 9.265,
+        "station_diff_global_solar_estimated_MJ_m2": 0.161,
+        "surface_PAR_estimated_mol_m2": 21.123,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.3,
+            "total_global_solar_estimated_MJ_m2": 9.265,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0.2,
+            "total_global_solar_estimated_MJ_m2": 9.104,
+            "covered_hours": 24,
+            "source_record_count": 24
+          }
+        ]
       }
     },
     {
@@ -1749,6 +2862,59 @@
             "coverage_ratio": 1,
             "source_record_count": 144,
             "source_granularity": "10min"
+          }
+        ]
+      },
+      "amedas_sunshine_day_h": 0.25,
+      "amedas_global_solar_estimated_day_MJ_m2": 9.184,
+      "amedas_surface_PAR_estimated_day_mol_m2": 21.123,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.25,
+        "station_mean_global_solar_estimated_MJ_m2": 9.184,
+        "station_min_global_solar_estimated_MJ_m2": 9.104,
+        "station_max_global_solar_estimated_MJ_m2": 9.265,
+        "station_diff_global_solar_estimated_MJ_m2": 0.161,
+        "surface_PAR_estimated_mol_m2": 21.123,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.3,
+            "total_global_solar_estimated_MJ_m2": 9.265,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0.2,
+            "total_global_solar_estimated_MJ_m2": 9.104,
+            "covered_hours": 24,
+            "source_record_count": 24
           }
         ]
       }
@@ -1834,6 +3000,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 0.25,
+      "amedas_global_solar_estimated_day_MJ_m2": 9.184,
+      "amedas_surface_PAR_estimated_day_mol_m2": 21.123,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.25,
+        "station_mean_global_solar_estimated_MJ_m2": 9.184,
+        "station_min_global_solar_estimated_MJ_m2": 9.104,
+        "station_max_global_solar_estimated_MJ_m2": 9.265,
+        "station_diff_global_solar_estimated_MJ_m2": 0.161,
+        "surface_PAR_estimated_mol_m2": 21.123,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.3,
+            "total_global_solar_estimated_MJ_m2": 9.265,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0.2,
+            "total_global_solar_estimated_MJ_m2": 9.104,
+            "covered_hours": 24,
+            "source_record_count": 24
+          }
+        ]
       }
     },
     {
@@ -1915,6 +3134,59 @@
             "coverage_ratio": 1,
             "source_record_count": 144,
             "source_granularity": "10min"
+          }
+        ]
+      },
+      "amedas_sunshine_day_h": 0,
+      "amedas_global_solar_estimated_day_MJ_m2": 8.689,
+      "amedas_surface_PAR_estimated_day_mol_m2": 19.985,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0,
+        "station_mean_global_solar_estimated_MJ_m2": 8.689,
+        "station_min_global_solar_estimated_MJ_m2": 8.689,
+        "station_max_global_solar_estimated_MJ_m2": 8.689,
+        "station_diff_global_solar_estimated_MJ_m2": 0,
+        "surface_PAR_estimated_mol_m2": 19.985,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.689,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.689,
+            "covered_hours": 24,
+            "source_record_count": 24
           }
         ]
       }
@@ -2000,6 +3272,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 0,
+      "amedas_global_solar_estimated_day_MJ_m2": 8.689,
+      "amedas_surface_PAR_estimated_day_mol_m2": 19.985,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0,
+        "station_mean_global_solar_estimated_MJ_m2": 8.689,
+        "station_min_global_solar_estimated_MJ_m2": 8.689,
+        "station_max_global_solar_estimated_MJ_m2": 8.689,
+        "station_diff_global_solar_estimated_MJ_m2": 0,
+        "surface_PAR_estimated_mol_m2": 19.985,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.689,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.689,
+            "covered_hours": 24,
+            "source_record_count": 24
+          }
+        ]
       }
     },
     {
@@ -2081,6 +3406,59 @@
             "coverage_ratio": 1,
             "source_record_count": 144,
             "source_granularity": "10min"
+          }
+        ]
+      },
+      "amedas_sunshine_day_h": 0,
+      "amedas_global_solar_estimated_day_MJ_m2": 8.689,
+      "amedas_surface_PAR_estimated_day_mol_m2": 19.985,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0,
+        "station_mean_global_solar_estimated_MJ_m2": 8.689,
+        "station_min_global_solar_estimated_MJ_m2": 8.689,
+        "station_max_global_solar_estimated_MJ_m2": 8.689,
+        "station_diff_global_solar_estimated_MJ_m2": 0,
+        "surface_PAR_estimated_mol_m2": 19.985,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.689,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 8.689,
+            "covered_hours": 24,
+            "source_record_count": 24
           }
         ]
       }
@@ -2166,6 +3544,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 0.2,
+      "amedas_global_solar_estimated_day_MJ_m2": 8.77,
+      "amedas_surface_PAR_estimated_day_mol_m2": 20.171,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.2,
+        "station_mean_global_solar_estimated_MJ_m2": 8.77,
+        "station_min_global_solar_estimated_MJ_m2": 8.749,
+        "station_max_global_solar_estimated_MJ_m2": 8.791,
+        "station_diff_global_solar_estimated_MJ_m2": 0.042,
+        "surface_PAR_estimated_mol_m2": 20.171,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.3,
+            "total_global_solar_estimated_MJ_m2": 8.791,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0.1,
+            "total_global_solar_estimated_MJ_m2": 8.749,
+            "covered_hours": 24,
+            "source_record_count": 24
+          }
+        ]
       }
     },
     {
@@ -2249,6 +3680,59 @@
             "source_granularity": "10min"
           }
         ]
+      },
+      "amedas_sunshine_day_h": 0.2,
+      "amedas_global_solar_estimated_day_MJ_m2": 8.77,
+      "amedas_surface_PAR_estimated_day_mol_m2": 20.171,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.2,
+        "station_mean_global_solar_estimated_MJ_m2": 8.77,
+        "station_min_global_solar_estimated_MJ_m2": 8.749,
+        "station_max_global_solar_estimated_MJ_m2": 8.791,
+        "station_diff_global_solar_estimated_MJ_m2": 0.042,
+        "surface_PAR_estimated_mol_m2": 20.171,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.3,
+            "total_global_solar_estimated_MJ_m2": 8.791,
+            "covered_hours": 24,
+            "source_record_count": 24
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0.1,
+            "total_global_solar_estimated_MJ_m2": 8.749,
+            "covered_hours": 24,
+            "source_record_count": 24
+          }
+        ]
       }
     },
     {
@@ -2330,6 +3814,59 @@
             "coverage_ratio": 1,
             "source_record_count": 144,
             "source_granularity": "10min"
+          }
+        ]
+      },
+      "amedas_sunshine_day_h": 0.45,
+      "amedas_global_solar_estimated_day_MJ_m2": 0.953,
+      "amedas_surface_PAR_estimated_day_mol_m2": 2.192,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 0.45,
+        "station_mean_global_solar_estimated_MJ_m2": 0.953,
+        "station_min_global_solar_estimated_MJ_m2": 0.543,
+        "station_max_global_solar_estimated_MJ_m2": 1.363,
+        "station_diff_global_solar_estimated_MJ_m2": 0.82,
+        "surface_PAR_estimated_mol_m2": 2.192,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 0.9,
+            "total_global_solar_estimated_MJ_m2": 1.363,
+            "covered_hours": 8,
+            "source_record_count": 8
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 0,
+            "total_global_solar_estimated_MJ_m2": 0.543,
+            "covered_hours": 8,
+            "source_record_count": 8
           }
         ]
       }

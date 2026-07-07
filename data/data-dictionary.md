@@ -23,6 +23,11 @@
 | `bottom_PAR_ratio` | 川底近くPAR / 水面上PAR |
 | `amedas_precipitation_24h_07_jst_mm` | その日07:00 JSTを終端にした直近24時間AMeDAS雨量（府中・八王子平均）mm |
 | `amedas_precipitation_24h_07_jst` | 07:00 JST直近24時間雨量の計算メタデータ |
+| `amedas_sunshine_day_h` | その日のAMeDAS日照時間（府中・八王子平均）h |
+| `amedas_global_solar_estimated_day_MJ_m2` | 東京の長期データで推定した月別係数を府中・八王子の日照時間に適用した推定全天日射量 MJ/m2/day |
+| `amedas_surface_PAR_estimated_day_mol_m2` | 推定全天日射量から換算した地表付近PAR日積算 mol/m2/day |
+| `amedas_bottom_PAR_estimated_day_mol_m2` | 推定地表PAR日積算に川底光到達率を掛けた川底PAR日積算 proxy mol/m2/day |
+| `amedas_global_solar_estimated_day` | 推定全天日射量の計算メタデータ |
 | `depth_cm` | 水深 cm |
 | `measured_depth_cm` | 測定できた水深 cm |
 | `water_level` | 水位の観察カテゴリ |

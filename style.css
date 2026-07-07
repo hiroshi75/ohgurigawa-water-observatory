@@ -380,6 +380,18 @@ h3 {
   stroke: #c98b1a;
 }
 
+.series-solar {
+  stroke: #d07f12;
+}
+
+.series-surface-light {
+  stroke: #b87516;
+}
+
+.series-bottom-light {
+  stroke: #176c57;
+}
+
 .series-ratio {
   stroke: var(--violet);
 }

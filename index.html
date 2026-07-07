@@ -51,7 +51,7 @@
         </article>
         <article>
           <h3>川底に届く光</h3>
-          <p>PAR と川底光到達率から、応答が弱い理由が光不足なのか、光はあるのに川底側の応答が弱いのかを分けます。</p>
+          <p>AMeDAS日照時間から推定した全天日射量と、現地で測ったPAR・川底光到達率から、応答が弱い理由が光不足なのか、光はあるのに川底側の応答が弱いのかを分けます。</p>
         </article>
         <article>
           <h3>写真スコアとEC</h3>
@@ -102,12 +102,12 @@
       </div>
       <div class="chart-grid">
         <article class="chart-card">
-          <h3>川底PAR vs pHの日中上昇</h3>
-          <svg id="scatter-ph" class="chart chart-compact" role="img" aria-label="PAR_bottom と delta pH の散布図"></svg>
+          <h3>推定川底PAR日積算 vs pHの日中上昇</h3>
+          <svg id="scatter-ph" class="chart chart-compact" role="img" aria-label="推定川底PAR日積算 と delta pH の散布図"></svg>
         </article>
         <article class="chart-card">
-          <h3>川底PAR vs DO%の日中上昇</h3>
-          <svg id="scatter-do" class="chart chart-compact" role="img" aria-label="PAR_bottom と delta DO percent の散布図"></svg>
+          <h3>推定川底PAR日積算 vs DO%の日中上昇</h3>
+          <svg id="scatter-do" class="chart chart-compact" role="img" aria-label="推定川底PAR日積算 と delta DO percent の散布図"></svg>
         </article>
       </div>
     </section>
@@ -179,6 +179,7 @@
               <th>イベント</th>
               <th>pH日中上昇</th>
               <th>DO%日中上昇</th>
+              <th>推定日射</th>
               <th>川底PAR</th>
               <th>川底光到達率</th>
               <th>EC変化</th>

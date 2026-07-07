@@ -98,8 +98,8 @@ function renderLatestCards() {
     { label: "イベント型", value: latest ? eventLabel(latest.event_type) : "-", sub: latest ? latest.recovery_phase_label || "" : "" },
     { label: "pHの日中上昇", value: signedNumber(latest && latest.delta_pH, 2), sub: "朝から午後" },
     { label: "DO%の日中上昇", value: signedNumber(latest && latest.delta_DO_pct, 1), sub: "朝から午後" },
-    { label: "川底光到達率", value: numberOrDash(latest && latest.bottom_PAR_ratio_mean, 2), sub: "bottom / air" },
-    { label: "測定信頼度", value: latest ? latest.measurement_confidence || "-" : "-", sub: summary ? String(summary.public_record_count || records.length) + " records" : "" }
+    { label: "推定全天日射量", value: numberOrDash(latest && latest.amedas_global_solar_estimated_day_MJ_m2, 1), sub: "MJ/m²/day" },
+    { label: "川底光到達率", value: numberOrDash(latest && latest.bottom_PAR_ratio_mean, 2), sub: summary ? String(summary.public_record_count || records.length) + " records" : "bottom / air" }
   ];
   el.latestCards.innerHTML = cards.map(function(card) {
     return '<article class="latest-card"><span>' + escapeHtml(card.label) + '</span><strong>' + escapeHtml(card.value) + '</strong><small>' + escapeHtml(card.sub || "") + '</small></article>';
@@ -134,6 +134,29 @@ function renderResponseCharts() {
 
 function renderLightCharts() {
   el.lightCharts.innerHTML = [
+    chartPanel({
+      title: "推定全天日射量",
+      description: "府中・八王子の日照時間に、東京の長期データで推定した月別係数を適用した日射量です。現地の日射計実測ではありません。",
+      svg: timeSeriesSvg(dailyMetrics, {
+        series: [{ key: "amedas_global_solar_estimated_day_MJ_m2", label: "推定全天日射量", className: "series-solar" }],
+        yLabel: "MJ/m²/day",
+        yMin: 0,
+        includeRain: true
+      })
+    }),
+    chartPanel({
+      title: "推定PAR日積算",
+      description: "推定全天日射量をPARに換算した地表付近の日積算と、川底光到達率を掛けた川底日積算proxyです。",
+      svg: timeSeriesSvg(dailyMetrics, {
+        series: [
+          { key: "amedas_surface_PAR_estimated_day_mol_m2", label: "地表PAR推定", className: "series-surface-light" },
+          { key: "amedas_bottom_PAR_estimated_day_mol_m2", label: "川底PAR推定", className: "series-bottom-light" }
+        ],
+        yLabel: "mol/m²/day",
+        yMin: 0,
+        includeRain: true
+      })
+    }),
     chartPanel({
       title: "川底PAR",
       description: "川底付近に届いた光。藻類やバイオフィルムが利用できる光のproxyです。",
@@ -185,15 +208,15 @@ function renderPhotoCharts() {
 
 function renderScatterCharts() {
   el.scatterPh.innerHTML = scatterSvg(dailyMetrics, {
-    xKey: "PAR_bottom_mean",
+    xKey: "amedas_bottom_PAR_estimated_day_mol_m2",
     yKey: "delta_pH",
-    xLabel: "川底PAR",
+    xLabel: "推定川底PAR日積算",
     yLabel: "ΔpH"
   });
   el.scatterDo.innerHTML = scatterSvg(dailyMetrics, {
-    xKey: "PAR_bottom_mean",
+    xKey: "amedas_bottom_PAR_estimated_day_mol_m2",
     yKey: "delta_DO_pct",
-    xLabel: "川底PAR",
+    xLabel: "推定川底PAR日積算",
     yLabel: "ΔDO%"
   });
 }
@@ -265,13 +288,14 @@ function renderDailyTable() {
       + '<td><span class="event-badge ' + eventClass(day.event_type) + '">' + escapeHtml(eventLabel(day.event_type)) + '</span><br><span>' + escapeHtml(day.recovery_phase_label || "") + '</span></td>'
       + '<td>' + signedNumber(day.delta_pH, 2) + '</td>'
       + '<td>' + signedNumber(day.delta_DO_pct, 1) + '</td>'
+      + '<td>' + numberOrDash(day.amedas_global_solar_estimated_day_MJ_m2, 1) + '</td>'
       + '<td>' + numberOrDash(day.PAR_bottom_mean, 1) + '</td>'
       + '<td>' + numberOrDash(day.bottom_PAR_ratio_mean, 2) + '</td>'
       + '<td>' + signedNumber(day.delta_EC_uScm, 0) + '</td>'
       + '<td>' + scorePills(day) + '</td>'
       + '<td>' + escapeHtml(day.summary_note || "-") + '</td>'
       + '</tr>';
-  }).join("") || '<tr><td colspan="9">該当する日次データがありません</td></tr>';
+  }).join("") || '<tr><td colspan="10">該当する日次データがありません</td></tr>';
 }
 
 function renderRecordsTable() {
