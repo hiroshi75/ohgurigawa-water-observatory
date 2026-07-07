@@ -643,20 +643,34 @@
     },
     {
       "date": "2026-07-07",
-      "record_count": 1,
+      "record_count": 2,
       "morning_time": "07:20:00",
+      "afternoon_time": "13:20:00",
       "morning_observed_at": "2026-07-06T22:20:00.000Z",
+      "afternoon_observed_at": "2026-07-07T04:20:00.000Z",
       "pH_morning": 7.49,
+      "pH_afternoon": 7.8,
+      "delta_pH": 0.31,
       "DO_pct_morning": 86.4,
+      "DO_pct_afternoon": 97,
+      "delta_DO_pct": 10.6,
       "DO_mgL_morning": 7.9,
+      "DO_mgL_afternoon": 8.6,
+      "delta_DO_mgL": 0.7,
       "EC_morning_uScm": 238,
+      "EC_afternoon_uScm": 253,
+      "delta_EC_uScm": 15,
       "PAR_air_morning": 397.1,
+      "PAR_air_afternoon": 377.933,
       "PAR_subsurface_morning": 278.8,
+      "PAR_subsurface_afternoon": 261.8,
       "PAR_bottom_morning": 194.5,
-      "PAR_bottom_mean": 194.5,
+      "PAR_bottom_afternoon": 203.133,
+      "PAR_bottom_mean": 198.817,
       "bottom_PAR_ratio_morning": 0.4898,
-      "bottom_PAR_ratio_mean": 0.49,
-      "depth_cm_mean": 47,
+      "bottom_PAR_ratio_afternoon": 0.5375,
+      "bottom_PAR_ratio_mean": 0.514,
+      "depth_cm_mean": 45.5,
       "visual_algae_score": 1,
       "mud_cover_score": 0,
       "bare_stone_score": 0,
@@ -664,7 +678,7 @@
       "event_type": "none",
       "event_label": "通常",
       "measurement_confidence": "usable",
-      "data_status": "missing_afternoon",
+      "data_status": "complete",
       "amedas_precipitation_24h_07_jst_mm": 3,
       "water_level": "平常",
       "flow": "平常",
@@ -677,22 +691,9 @@
       "recovery_phase": "rain_0_1d",
       "recovery_phase_label": "雨後0-1日",
       "EC_recent_median_uScm": 263,
-      "EC_deviation_uScm": -25,
-      "flags": [
-        {
-          "code": "partial_data",
-          "label": "朝午後のどちらかが不足"
-        },
-        {
-          "code": "ec_shift",
-          "label": "EC急変"
-        },
-        {
-          "code": "weak_response_under_light",
-          "label": "光はあるが応答弱め"
-        }
-      ],
-      "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
+      "EC_deviation_uScm": -10,
+      "flags": [],
+      "summary_note": "pHとDO%がともに上昇しており、日中光応答が読みやすい日です。"
     }
   ]
 }
