@@ -919,19 +919,33 @@
     },
     {
       "date": "2026-07-11",
-      "record_count": 1,
+      "record_count": 3,
       "morning_time": "07:15:00",
+      "afternoon_time": "12:52:00",
       "morning_observed_at": "2026-07-10T22:15:00.000Z",
+      "afternoon_observed_at": "2026-07-11T03:52:00.000Z",
       "pH_morning": 7.85,
+      "pH_afternoon": 8.81,
+      "delta_pH": 0.96,
       "DO_pct_morning": 91.2,
+      "DO_pct_afternoon": 127.8,
+      "delta_DO_pct": 36.6,
       "DO_mgL_morning": 7.9,
+      "DO_mgL_afternoon": 10.2,
+      "delta_DO_mgL": 2.3,
       "EC_morning_uScm": 279,
+      "EC_afternoon_uScm": 270,
+      "delta_EC_uScm": -9,
       "PAR_air_morning": 815.2,
+      "PAR_air_afternoon": 2201.767,
       "PAR_subsurface_morning": 530.867,
+      "PAR_subsurface_afternoon": 1513.9,
       "PAR_bottom_morning": 434.233,
-      "PAR_bottom_mean": 434.233,
+      "PAR_bottom_afternoon": 1340.53,
+      "PAR_bottom_mean": 887.381,
       "bottom_PAR_ratio_morning": 0.5327,
-      "bottom_PAR_ratio_mean": 0.533,
+      "bottom_PAR_ratio_afternoon": 0.6088,
+      "bottom_PAR_ratio_mean": 0.571,
       "depth_cm_mean": 44,
       "visual_algae_score": 3,
       "mud_cover_score": 0,
@@ -940,7 +954,7 @@
       "event_type": "clear_low_flow",
       "event_label": "晴天・低流量・透明",
       "measurement_confidence": "good",
-      "data_status": "missing_afternoon",
+      "data_status": "complete",
       "amedas_precipitation_24h_07_jst_mm": 0,
       "amedas_sunshine_day_h": 8.7,
       "amedas_global_solar_estimated_day_MJ_m2": 23.56,
@@ -950,25 +964,16 @@
       "water_clarity": "透明",
       "bed_visibility": "よく見える",
       "odor": "なし",
-      "foam": "多い",
+      "foam": "少し",
       "turbidity_direction": "なし",
-      "amedas_bottom_PAR_estimated_day_mol_m2": 28.882,
+      "amedas_bottom_PAR_estimated_day_mol_m2": 30.941,
       "days_since_rain": 4,
       "recovery_phase": "recovery_2_4d",
       "recovery_phase_label": "回復2-4日",
       "EC_recent_median_uScm": 262,
-      "EC_deviation_uScm": 17,
-      "flags": [
-        {
-          "code": "partial_data",
-          "label": "朝午後のどちらかが不足"
-        },
-        {
-          "code": "weak_response_under_light",
-          "label": "光はあるが応答弱め"
-        }
-      ],
-      "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
+      "EC_deviation_uScm": 8,
+      "flags": [],
+      "summary_note": "pHとDO%がともに上昇しており、日中光応答が読みやすい日です。"
     }
   ]
 }
