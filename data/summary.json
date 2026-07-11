@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-11T16:15:48+09:00",
+  "generated_at": "2026-07-11T16:27:31+09:00",
   "project": "大栗川 Water Observatory",
   "github_repository": "hiroshi75/ohgurigawa-water-observatory",
-  "public_record_count": 40,
+  "public_record_count": 39,
   "date_start": "2026-06-23",
   "date_end": "2026-07-11",
   "latest_observed_at": "2026-07-11T03:52:00.000Z",
@@ -19,65 +19,65 @@
   },
   "metrics": {
     "pH": {
-      "count": 40,
+      "count": 39,
       "min": 7.49,
       "max": 8.81,
-      "mean": 8.026
+      "mean": 8.005
     },
     "DO_mgL": {
-      "count": 40,
+      "count": 39,
       "min": 7,
       "max": 10.2,
-      "mean": 8.107
+      "mean": 8.054
     },
     "DO_pct": {
-      "count": 40,
+      "count": 39,
       "min": 84.5,
       "max": 127.8,
-      "mean": 93.658
+      "mean": 92.782
     },
     "PAR_air_mean": {
-      "count": 40,
+      "count": 39,
       "min": 14.867,
       "max": 2243.467,
-      "mean": 619.456
+      "mean": 578.884
     },
     "PAR_bottom_mean": {
-      "count": 40,
+      "count": 39,
       "min": 0.6,
       "max": 1375.9,
-      "mean": 309.129
+      "mean": 282.683
     },
     "bottom_PAR_ratio": {
-      "count": 40,
+      "count": 39,
       "min": 0.0045,
       "max": 0.6133,
-      "mean": 0.457
+      "mean": 0.454
     },
     "amedas_precipitation_24h_07_jst_mm": {
-      "count": 40,
+      "count": 39,
       "min": 0,
       "max": 73.5,
-      "mean": 5
+      "mean": 5.128
     },
     "amedas_sunshine_day_h": {
-      "count": 40,
+      "count": 39,
       "min": 0,
       "max": 13.35,
-      "mean": 3.386
+      "mean": 3.276
     },
     "amedas_global_solar_estimated_day_MJ_m2": {
-      "count": 40,
+      "count": 39,
       "min": 8.348,
       "max": 30.176,
-      "mean": 14.298
+      "mean": 14.135
     },
     "amedas_surface_PAR_estimated_day_mol_m2": {
-      "count": 40,
+      "count": 39,
       "min": 19.2,
       "max": 69.405,
-      "mean": 32.884
+      "mean": 32.509
     }
   },
-  "export_hash": "45c9c61fa37843f003764a84573c67afeb6f61da66968749e78eabd22226ef22"
+  "export_hash": "5dc65c5b5c0c99facc9ae3d770351766add367f7569d19ca878157ed21f3fa98"
 }
