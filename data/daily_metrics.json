@@ -977,7 +977,7 @@
     },
     {
       "date": "2026-07-12",
-      "record_count": 2,
+      "record_count": 3,
       "event_type": "clear_low_flow",
       "event_label": "晴天・低流量・透明",
       "measurement_confidence": "good",
