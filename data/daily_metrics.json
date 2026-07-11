@@ -974,6 +974,37 @@
       "EC_deviation_uScm": 8,
       "flags": [],
       "summary_note": "pHとDO%がともに上昇しており、日中光応答が読みやすい日です。"
+    },
+    {
+      "date": "2026-07-12",
+      "record_count": 1,
+      "event_type": "clear_low_flow",
+      "event_label": "晴天・低流量・透明",
+      "measurement_confidence": "good",
+      "data_status": "partial",
+      "amedas_precipitation_24h_07_jst_mm": 0,
+      "amedas_sunshine_day_h": 0,
+      "amedas_global_solar_estimated_day_MJ_m2": 0,
+      "amedas_surface_PAR_estimated_day_mol_m2": 0,
+      "water_level": "低い",
+      "flow": "遅い",
+      "water_clarity": "透明",
+      "bed_visibility": "よく見える",
+      "odor": "なし",
+      "foam": "少し",
+      "turbidity_direction": "なし",
+      "days_since_rain": 5,
+      "recovery_phase": "recovery_5_7d",
+      "recovery_phase_label": "回復5-7日",
+      "EC_recent_median_uScm": 265,
+      "EC_deviation_uScm": null,
+      "flags": [
+        {
+          "code": "partial_data",
+          "label": "朝午後のどちらかが不足"
+        }
+      ],
+      "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
     }
   ]
 }
