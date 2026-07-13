@@ -1063,6 +1063,58 @@
         }
       ],
       "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
+    },
+    {
+      "date": "2026-07-14",
+      "record_count": 1,
+      "morning_time": "07:09:00",
+      "morning_observed_at": "2026-07-13T22:09:00.000Z",
+      "pH_morning": 7.63,
+      "DO_pct_morning": 95.3,
+      "DO_mgL_morning": 8.3,
+      "EC_morning_uScm": 282,
+      "PAR_air_morning": 865.567,
+      "PAR_subsurface_morning": 598.467,
+      "PAR_bottom_morning": 430.5,
+      "PAR_bottom_mean": 430.5,
+      "bottom_PAR_ratio_morning": 0.4974,
+      "bottom_PAR_ratio_mean": 0.497,
+      "depth_cm_mean": 42,
+      "visual_algae_score": 3,
+      "mud_cover_score": 0,
+      "bare_stone_score": 0,
+      "bed_visibility_score": 3,
+      "event_type": "clear_low_flow",
+      "event_label": "晴天・低流量・透明",
+      "measurement_confidence": "good",
+      "data_status": "missing_afternoon",
+      "amedas_precipitation_24h_07_jst_mm": 0.25,
+      "amedas_sunshine_day_h": 0.45,
+      "amedas_global_solar_estimated_day_MJ_m2": 0.893,
+      "amedas_surface_PAR_estimated_day_mol_m2": 2.054,
+      "water_level": "低い",
+      "flow": "遅い",
+      "water_clarity": "透明",
+      "bed_visibility": "よく見える",
+      "odor": "なし",
+      "foam": "少し",
+      "amedas_bottom_PAR_estimated_day_mol_m2": 1.021,
+      "days_since_rain": 7,
+      "recovery_phase": "recovery_5_7d",
+      "recovery_phase_label": "回復5-7日",
+      "EC_recent_median_uScm": 265.5,
+      "EC_deviation_uScm": 16.5,
+      "flags": [
+        {
+          "code": "partial_data",
+          "label": "朝午後のどちらかが不足"
+        },
+        {
+          "code": "weak_response_under_light",
+          "label": "光はあるが応答弱め"
+        }
+      ],
+      "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
     }
   ]
 }
