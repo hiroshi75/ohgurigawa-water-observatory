@@ -1182,19 +1182,33 @@
     },
     {
       "date": "2026-07-16",
-      "record_count": 1,
+      "record_count": 2,
       "morning_time": "07:20:00",
+      "afternoon_time": "13:14:00",
       "morning_observed_at": "2026-07-15T22:20:00.000Z",
+      "afternoon_observed_at": "2026-07-16T04:14:00.000Z",
       "pH_morning": 7.7,
+      "pH_afternoon": 8.81,
+      "delta_pH": 1.11,
       "DO_pct_morning": 100.1,
+      "DO_pct_afternoon": 138.1,
+      "delta_DO_pct": 38,
       "DO_mgL_morning": 8.4,
+      "DO_mgL_afternoon": 10.8,
+      "delta_DO_mgL": 2.4,
       "EC_morning_uScm": 294,
+      "EC_afternoon_uScm": 258,
+      "delta_EC_uScm": -36,
       "PAR_air_morning": 1223.567,
+      "PAR_air_afternoon": 1685.4,
       "PAR_subsurface_morning": 831.567,
+      "PAR_subsurface_afternoon": 1354.967,
       "PAR_bottom_morning": 631.5,
-      "PAR_bottom_mean": 631.5,
+      "PAR_bottom_afternoon": 949.825,
+      "PAR_bottom_mean": 790.663,
       "bottom_PAR_ratio_morning": 0.5161,
-      "bottom_PAR_ratio_mean": 0.516,
+      "bottom_PAR_ratio_afternoon": 0.5636,
+      "bottom_PAR_ratio_mean": 0.54,
       "depth_cm_mean": 42,
       "visual_algae_score": 3,
       "mud_cover_score": 0,
@@ -1203,11 +1217,11 @@
       "event_type": "clear_low_flow",
       "event_label": "晴天・低流量・透明",
       "measurement_confidence": "good",
-      "data_status": "missing_afternoon",
+      "data_status": "complete",
       "amedas_precipitation_24h_07_jst_mm": 0,
-      "amedas_sunshine_day_h": 2.35,
-      "amedas_global_solar_estimated_day_MJ_m2": 9.565,
-      "amedas_surface_PAR_estimated_day_mol_m2": 21.999,
+      "amedas_sunshine_day_h": 2.85,
+      "amedas_global_solar_estimated_day_MJ_m2": 11.721,
+      "amedas_surface_PAR_estimated_day_mol_m2": 26.958,
       "water_level": "低い",
       "flow": "遅い",
       "water_clarity": "透明",
@@ -1215,27 +1229,14 @@
       "odor": "なし",
       "foam": "少し",
       "turbidity_direction": "なし",
-      "amedas_bottom_PAR_estimated_day_mol_m2": 11.351,
+      "amedas_bottom_PAR_estimated_day_mol_m2": 14.557,
       "days_since_rain": 9,
       "recovery_phase": "stable",
       "recovery_phase_label": "安定期",
       "EC_recent_median_uScm": 266.5,
-      "EC_deviation_uScm": 27.5,
-      "flags": [
-        {
-          "code": "partial_data",
-          "label": "朝午後のどちらかが不足"
-        },
-        {
-          "code": "ec_shift",
-          "label": "EC急変"
-        },
-        {
-          "code": "weak_response_under_light",
-          "label": "光はあるが応答弱め"
-        }
-      ],
-      "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
+      "EC_deviation_uScm": -8.5,
+      "flags": [],
+      "summary_note": "pHとDO%がともに上昇しており、日中光応答が読みやすい日です。"
     }
   ]
 }
