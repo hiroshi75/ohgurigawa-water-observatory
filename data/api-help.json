@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "title": "大栗川 公開測定データ ヘルプ",
+  "generated_at": "2026-07-17T09:02:55+09:00",
+  "language": "ja",
+  "purpose": "大栗川の同じ浅い河川区間で継続的に測った水質・光環境・目視状態の公開データを、AIエージェントや人間が取得しやすい静的ファイルとして提供する。",
+  "access_note": "AIエージェントがAWS API Gatewayを取得できない場合は、このGitHub Pages上の静的JSON/JSONLを使う。",
+  "dataset_summary": {
+    "what": "pH、溶存酸素、電気伝導度、水温、PAR/UVA、流況、透明度、川底視認、藻類・泥・裸石感などの現地観測値。",
+    "observation_unit": "1回の現地観測。朝・午後・その他のsessionがあり、同じ日付のmorningとafternoonを比較すると日中変化を見られる。",
+    "location_label": "大栗川",
+    "timezone": "Asia/Tokyo",
+    "date_start": "2026-06-23",
+    "date_end": "2026-07-17",
+    "public_record_count": 56,
+    "intended_use": [
+      "pHやDOの日中変化を見る",
+      "川底に届く光と水質応答の関係を見る",
+      "雨後、濁り、泥、洗い流し、人為入力候補などのイベントを探索する",
+      "市民観測データとして、仮説作りや可視化に使う"
+    ],
+    "limitations": [
+      "研究機関の公式モニタリング値ではない。",
+      "付着藻類量、種組成、正式なGPP/ERを直接測ったデータではない。",
+      "写真や自由記述メモ、内部ID、operator、revision履歴は公開データでは返さない。",
+      "公開値は現地観測と一部の派生値であり、因果関係の断定には使わない。"
+    ]
+  },
+  "agent_quickstart": {
+    "one_line_instruction": "まず https://hiroshi75.github.io/ohgurigawa-water-observatory/api-help.json を読んでデータの意味とファイル構成を把握し、次に https://hiroshi75.github.io/ohgurigawa-water-observatory/data/summary.json と https://hiroshi75.github.io/ohgurigawa-water-observatory/data/observations.jsonl を取得して分析してください。",
+    "recommended_steps": [
+      "このapi-help.jsonでデータ説明、制約、フィールド定義を読む。",
+      "data/summary.jsonで期間、件数、主要指標の範囲を確認する。",
+      "data/observations.jsonlで全公開レコードを取得する。",
+      "日次指標や朝午後差を使う場合はdata/daily_metrics.jsonも取得する。",
+      "必要ならdateやsessionでレコードを絞り、同じdateのmorningとafternoonを対応させる。"
+    ]
+  },
+  "urls": {
+    "help": "https://hiroshi75.github.io/ohgurigawa-water-observatory/api-help.json",
+    "summary_json": "https://hiroshi75.github.io/ohgurigawa-water-observatory/data/summary.json",
+    "observations_jsonl": "https://hiroshi75.github.io/ohgurigawa-water-observatory/data/observations.jsonl",
+    "observations_json": "https://hiroshi75.github.io/ohgurigawa-water-observatory/data/observations.json",
+    "observations_csv": "https://hiroshi75.github.io/ohgurigawa-water-observatory/data/observations.csv",
+    "daily_metrics_json": "https://hiroshi75.github.io/ohgurigawa-water-observatory/data/daily_metrics.json",
+    "daily_metrics_csv": "https://hiroshi75.github.io/ohgurigawa-water-observatory/data/daily_metrics.csv",
+    "data_dictionary_md": "https://hiroshi75.github.io/ohgurigawa-water-observatory/data/data-dictionary.md",
+    "dashboard": "https://hiroshi75.github.io/ohgurigawa-water-observatory/",
+    "live_api_help": "https://x4x427zlbj.execute-api.ap-northeast-1.amazonaws.com/api/public/help"
+  },
+  "static_files": [
+    {
+      "path": "/api-help.json",
+      "format": "json",
+      "description": "このヘルプ。AIエージェントには最初にこのURLを読ませる。"
+    },
+    {
+      "path": "/data/summary.json",
+      "format": "json",
+      "description": "公開データの件数、期間、主要項目の要約統計。"
+    },
+    {
+      "path": "/data/observations.jsonl",
+      "format": "ndjson",
+      "description": "1行1観測の全公開レコード。AIエージェントやスクリプトで扱いやすい。"
+    },
+    {
+      "path": "/data/observations.json",
+      "format": "json",
+      "description": "全公開レコードをrecords配列に入れたJSON。"
+    },
+    {
+      "path": "/data/daily_metrics.json",
+      "format": "json",
+      "description": "同じ日付のmorning/afternoonをまとめた日次指標。delta_pHやdelta_DO_pctを含む。"
+    },
+    {
+      "path": "/data/data-dictionary.md",
+      "format": "markdown",
+      "description": "フィールド定義。"
+    }
+  ],
+  "public_record_policy": {
+    "included_when": [
+      "record_statusがvoided/cancelledではない",
+      "pHがある",
+      "DO_mgLまたはDO_pctがある",
+      "PAR_air/PAR_bottom/PAR_subsurfaceのいずれかがある"
+    ],
+    "excluded_fields": [
+      "operator",
+      "internal_record_id",
+      "client_record_id",
+      "free_text_notes",
+      "photo_ids",
+      "revision_history",
+      "write_api_fields"
+    ]
+  },
+  "field_dictionary": {
+    "public_id": "公開用ハッシュID。内部IDそのものではない。",
+    "observed_at": "観測日時。ISO 8601。",
+    "date": "JSTの日付。",
+    "time_jst": "JSTの時刻。",
+    "session": "morning/afternoon/otherなどの観測区分。",
+    "location_label": "公開地点名。",
+    "pH": "水のpH。",
+    "DO_mgL": "溶存酸素濃度 mg/L。",
+    "DO_pct": "溶存酸素飽和度 %。",
+    "DO_temp_C": "DO計が示した水温 ℃。",
+    "water_temp_C": "水温 ℃。",
+    "EC_uScm": "電気伝導度 uS/cm。",
+    "PAR_air": "水面上PARの反復測定配列。",
+    "PAR_air_mean": "水面上PAR平均。",
+    "PAR_subsurface": "水面直下PARの反復測定配列。",
+    "PAR_subsurface_mean": "水面直下PAR平均。",
+    "PAR_bottom": "川底付近PARの反復測定配列。",
+    "PAR_bottom_mean": "川底付近PAR平均。",
+    "bottom_PAR_ratio": "PAR_bottom_mean / PAR_air_mean。川底への光到達率proxy。",
+    "amedas_precipitation_24h_07_jst_mm": "その日07:00 JSTを終端にした直近24時間AMeDAS雨量推定 mm。",
+    "amedas_global_solar_estimated_day_MJ_m2": "AMeDAS日照時間から推定した全天日射量 MJ/m2/day。",
+    "amedas_surface_PAR_estimated_day_mol_m2": "推定地表PAR日積算 mol/m2/day。",
+    "water_level": "水位カテゴリ。",
+    "flow": "流れカテゴリ。",
+    "water_clarity": "透明度カテゴリ。",
+    "bed_visibility": "川底視認カテゴリ。",
+    "bed_visibility_score": "川底視認スコア。0=見えない、3=よく見える。",
+    "visual_algae_score": "藻類・膜スコア。0-3。",
+    "mud_cover_score": "泥被覆スコア。0-3。",
+    "bare_stone_score": "裸石感スコア。0-3。",
+    "event_type": "観測時のイベント型。",
+    "measurement_confidence": "測定信頼度。"
+  },
+  "analysis_hints": [
+    "朝午後差は同じdateのmorningとafternoonを対応させ、delta_pH = pH_afternoon - pH_morning、delta_DO_pct = DO_pct_afternoon - DO_pct_morningで計算する。",
+    "daily_metrics.jsonには朝午後差分が計算済みで入っている。",
+    "bottom_PAR_ratioやPAR_bottom_meanが低い日は、pH/DO応答が弱くても光不足や濁りの影響を疑う。",
+    "mud_cover_scoreが高い日、bed_visibility_scoreが低い日、雨量が多い日は、川底生物量そのものではなく濁り・遮光・泥被覆として慎重に読む。",
+    "EC_uScmの急変は溶存成分を伴う流入や希釈の候補として扱い、単独で原因を断定しない。"
+  ]
+}
