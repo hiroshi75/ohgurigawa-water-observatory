@@ -1293,19 +1293,33 @@
     },
     {
       "date": "2026-07-18",
-      "record_count": 1,
+      "record_count": 2,
       "morning_time": "07:10:00",
+      "afternoon_time": "13:01:00",
       "morning_observed_at": "2026-07-17T22:10:00.000Z",
+      "afternoon_observed_at": "2026-07-18T04:01:00.000Z",
       "pH_morning": 7.33,
+      "pH_afternoon": 8.06,
+      "delta_pH": 0.73,
       "DO_pct_morning": 83,
+      "DO_pct_afternoon": 113.2,
+      "delta_DO_pct": 30.2,
       "DO_mgL_morning": 7.1,
+      "DO_mgL_afternoon": 9.2,
+      "delta_DO_mgL": 2.1,
       "EC_morning_uScm": 219,
+      "EC_afternoon_uScm": 248,
+      "delta_EC_uScm": 29,
       "PAR_air_morning": 735.267,
+      "PAR_air_afternoon": 2317.567,
       "PAR_subsurface_morning": 512.4,
+      "PAR_subsurface_afternoon": 1668.567,
       "PAR_bottom_morning": 333.6,
-      "PAR_bottom_mean": 333.6,
+      "PAR_bottom_afternoon": 1282.989,
+      "PAR_bottom_mean": 808.294,
       "bottom_PAR_ratio_morning": 0.4537,
-      "bottom_PAR_ratio_mean": 0.454,
+      "bottom_PAR_ratio_afternoon": 0.5536,
+      "bottom_PAR_ratio_mean": 0.504,
       "depth_cm_mean": 44,
       "visual_algae_score": 1,
       "mud_cover_score": 0,
@@ -1314,43 +1328,31 @@
       "event_type": "rain_scour",
       "event_label": "雨後・洗い流し",
       "measurement_confidence": "good",
-      "data_status": "missing_afternoon",
+      "data_status": "complete",
       "amedas_precipitation_24h_07_jst_mm": 37.75,
-      "amedas_sunshine_day_h": 0.35,
-      "amedas_global_solar_estimated_day_MJ_m2": 5.293,
-      "amedas_surface_PAR_estimated_day_mol_m2": 12.174,
-      "water_level": "平常",
+      "amedas_sunshine_day_h": 0.6,
+      "amedas_global_solar_estimated_day_MJ_m2": 6.847,
+      "amedas_surface_PAR_estimated_day_mol_m2": 15.748,
+      "water_level": "低い",
       "flow": "遅い",
       "water_clarity": "透明",
       "bed_visibility": "よく見える",
       "odor": "なし",
       "foam": "なし",
       "turbidity_direction": "なし",
-      "amedas_bottom_PAR_estimated_day_mol_m2": 5.527,
+      "amedas_bottom_PAR_estimated_day_mol_m2": 7.937,
       "days_since_rain": 0,
       "recovery_phase": "rain_0_1d",
       "recovery_phase_label": "雨後0-1日",
       "EC_recent_median_uScm": 266.5,
-      "EC_deviation_uScm": -47.5,
+      "EC_deviation_uScm": -18.5,
       "flags": [
-        {
-          "code": "partial_data",
-          "label": "朝午後のどちらかが不足"
-        },
         {
           "code": "rain_scour",
           "label": "洗い流し型候補"
-        },
-        {
-          "code": "ec_shift",
-          "label": "EC急変"
-        },
-        {
-          "code": "weak_response_under_light",
-          "label": "光はあるが応答弱め"
         }
       ],
-      "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
+      "summary_note": "裸石感が強く、洗い流し後の回復過程の可能性があります。"
     }
   ]
 }
