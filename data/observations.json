@@ -8057,18 +8057,18 @@
           }
         ]
       },
-      "amedas_sunshine_day_h": 4.25,
-      "amedas_global_solar_estimated_day_MJ_m2": 12.153,
-      "amedas_surface_PAR_estimated_day_mol_m2": 27.952,
+      "amedas_sunshine_day_h": 5,
+      "amedas_global_solar_estimated_day_MJ_m2": 14.904,
+      "amedas_surface_PAR_estimated_day_mol_m2": 34.279,
       "amedas_global_solar_estimated_day": {
         "source": "jma_bosai_amedas_point",
         "status": "ok",
-        "station_mean_sunshine_h": 4.25,
-        "station_mean_global_solar_estimated_MJ_m2": 12.153,
-        "station_min_global_solar_estimated_MJ_m2": 11.228,
-        "station_max_global_solar_estimated_MJ_m2": 13.078,
-        "station_diff_global_solar_estimated_MJ_m2": 1.85,
-        "surface_PAR_estimated_mol_m2": 27.952,
+        "station_mean_sunshine_h": 5,
+        "station_mean_global_solar_estimated_MJ_m2": 14.904,
+        "station_min_global_solar_estimated_MJ_m2": 13.859,
+        "station_max_global_solar_estimated_MJ_m2": 15.949,
+        "station_diff_global_solar_estimated_MJ_m2": 2.09,
+        "surface_PAR_estimated_mol_m2": 34.279,
         "solar_model": {
           "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
           "source": "solar-calibration/output/daily_parameters_month.json",
@@ -8095,18 +8095,18 @@
           {
             "station_id": "44116",
             "station_name": "府中",
-            "total_sun1h_h": 4.3,
-            "total_global_solar_estimated_MJ_m2": 13.078,
-            "covered_hours": 13,
-            "source_record_count": 13
+            "total_sun1h_h": 5.1,
+            "total_global_solar_estimated_MJ_m2": 15.949,
+            "covered_hours": 14,
+            "source_record_count": 14
           },
           {
             "station_id": "44112",
             "station_name": "八王子",
-            "total_sun1h_h": 4.2,
-            "total_global_solar_estimated_MJ_m2": 11.228,
-            "covered_hours": 13,
-            "source_record_count": 13
+            "total_sun1h_h": 4.9,
+            "total_global_solar_estimated_MJ_m2": 13.859,
+            "covered_hours": 14,
+            "source_record_count": 14
           }
         ]
       }
