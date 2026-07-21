@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "title": "大栗川 公開測定データ ヘルプ",
-  "generated_at": "2026-07-21T13:03:00+09:00",
+  "generated_at": "2026-07-21T13:47:00+09:00",
   "language": "ja",
   "purpose": "大栗川の同じ浅い河川区間で継続的に測った水質・光環境・目視状態の公開データを、AIエージェントや人間が取得しやすい静的ファイルとして提供する。",
   "access_note": "AIエージェントがAWS API Gatewayを取得できない場合は、このGitHub Pages上の静的JSON/JSONLを使う。",
@@ -12,7 +12,7 @@
     "timezone": "Asia/Tokyo",
     "date_start": "2026-06-23",
     "date_end": "2026-07-21",
-    "public_record_count": 61,
+    "public_record_count": 62,
     "intended_use": [
       "pHやDOの日中変化を見る",
       "川底に届く光と水質応答の関係を見る",
