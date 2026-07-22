@@ -8513,16 +8513,16 @@
             "station_name": "府中",
             "total_sun1h_h": 12.7,
             "total_global_solar_estimated_MJ_m2": 28.256,
-            "covered_hours": 23,
-            "source_record_count": 23
+            "covered_hours": 24,
+            "source_record_count": 24
           },
           {
             "station_id": "44112",
             "station_name": "八王子",
             "total_sun1h_h": 12.4,
             "total_global_solar_estimated_MJ_m2": 28.652,
-            "covered_hours": 23,
-            "source_record_count": 23
+            "covered_hours": 24,
+            "source_record_count": 24
           }
         ]
       }
@@ -8655,16 +8655,16 @@
             "station_name": "府中",
             "total_sun1h_h": 12.7,
             "total_global_solar_estimated_MJ_m2": 28.256,
-            "covered_hours": 23,
-            "source_record_count": 23
+            "covered_hours": 24,
+            "source_record_count": 24
           },
           {
             "station_id": "44112",
             "station_name": "八王子",
             "total_sun1h_h": 12.4,
             "total_global_solar_estimated_MJ_m2": 28.652,
-            "covered_hours": 23,
-            "source_record_count": 23
+            "covered_hours": 24,
+            "source_record_count": 24
           }
         ]
       }
