@@ -8668,6 +8668,143 @@
           }
         ]
       }
+    },
+    {
+      "schema_version": "1.0",
+      "public_id": "c982e8643cf5fa4d",
+      "observed_at": "2026-07-22T22:11:00.000Z",
+      "date": "2026-07-23",
+      "time_jst": "07:11:00",
+      "timezone": "Asia/Tokyo",
+      "session": "morning",
+      "location_label": "大栗川",
+      "pH": 7.44,
+      "DO_mgL": 7,
+      "DO_pct": 85.4,
+      "DO_temp_C": 24.8,
+      "water_temp_C": 26.3,
+      "EC_uScm": 280,
+      "PAR_air": [
+        919.1,
+        938.7,
+        907.2
+      ],
+      "PAR_air_mean": 921.667,
+      "PAR_bottom": [
+        463.1,
+        503,
+        471.2,
+        489.4
+      ],
+      "PAR_bottom_mean": 481.675,
+      "PAR_subsurface": [
+        663.5,
+        625.2,
+        673.9
+      ],
+      "PAR_subsurface_mean": 654.2,
+      "bottom_PAR_ratio": 0.5226,
+      "depth_cm": 38,
+      "water_level": "低い",
+      "flow": "遅い",
+      "water_clarity": "透明",
+      "bed_visibility": "よく見える",
+      "bed_visibility_score": 3,
+      "visual_algae": "厚い膜・糸状藻・ぬめり感",
+      "visual_algae_score": 3,
+      "mud_cover": "泥被覆なし",
+      "mud_cover_score": 0,
+      "bare_stone": "裸石感なし。膜や沈着物がある",
+      "bare_stone_score": 0,
+      "odor": "なし",
+      "foam": "多い",
+      "turbidity_direction": "なし",
+      "event_type": "clear_low_flow",
+      "measurement_confidence": "good",
+      "amedas_precipitation_24h_07_jst_mm": 0,
+      "amedas_precipitation_24h_07_jst": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "window_hours": 24,
+        "window_start_at": "2026-07-22T07:00:00+09:00",
+        "window_end_at": "2026-07-23T07:00:00+09:00",
+        "station_mean_mm": 0,
+        "station_min_mm": 0,
+        "station_max_mm": 0,
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "precipitation_24h_mm": 0,
+            "covered_minutes": 1440,
+            "coverage_ratio": 1,
+            "source_record_count": 144,
+            "source_granularity": "10min"
+          }
+        ]
+      },
+      "amedas_sunshine_day_h": 1.75,
+      "amedas_global_solar_estimated_day_MJ_m2": 1.59,
+      "amedas_surface_PAR_estimated_day_mol_m2": 3.657,
+      "amedas_global_solar_estimated_day": {
+        "source": "jma_bosai_amedas_point",
+        "status": "ok",
+        "station_mean_sunshine_h": 1.75,
+        "station_mean_global_solar_estimated_MJ_m2": 1.59,
+        "station_min_global_solar_estimated_MJ_m2": 1.572,
+        "station_max_global_solar_estimated_MJ_m2": 1.607,
+        "station_diff_global_solar_estimated_MJ_m2": 0.035,
+        "surface_PAR_estimated_mol_m2": 3.657,
+        "solar_model": {
+          "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
+          "source": "solar-calibration/output/daily_parameters_month.json",
+          "equation": "Rs = Ra * (a + b * n / N)",
+          "station_used_for_fit": "JMA Tokyo 47662",
+          "source_sunshine_stations": [
+            "Fuchu 44116",
+            "Hachioji 44112"
+          ],
+          "applied_to": "AMeDAS sunshine duration mean of Fuchu and Hachioji near Oogurigawa",
+          "note": "Estimated global solar radiation, not measured radiation at the river site.",
+          "clearness_index_clip": {
+            "min": 0,
+            "max": 0.9
+          },
+          "month": "07",
+          "a": 0.210342,
+          "b": 0.528418,
+          "fit_n": 984,
+          "fit_rmse_MJ_m2_day": 2.2605,
+          "fit_r2_MJ_m2_day": 0.89416
+        },
+        "stations": [
+          {
+            "station_id": "44116",
+            "station_name": "府中",
+            "total_sun1h_h": 1.8,
+            "total_global_solar_estimated_MJ_m2": 1.607,
+            "covered_hours": 8,
+            "source_record_count": 8
+          },
+          {
+            "station_id": "44112",
+            "station_name": "八王子",
+            "total_sun1h_h": 1.7,
+            "total_global_solar_estimated_MJ_m2": 1.572,
+            "covered_hours": 8,
+            "source_record_count": 8
+          }
+        ]
+      }
     }
   ]
 }
