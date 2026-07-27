@@ -1820,6 +1820,63 @@
         }
       ],
       "summary_note": "裸石感が強く、洗い流し後の回復過程の可能性があります。"
+    },
+    {
+      "date": "2026-07-28",
+      "record_count": 1,
+      "morning_time": "07:23:00",
+      "morning_observed_at": "2026-07-27T22:23:00.000Z",
+      "pH_morning": 7.38,
+      "DO_pct_morning": 77.2,
+      "DO_mgL_morning": 6.7,
+      "EC_morning_uScm": 267,
+      "PAR_air_morning": 394.167,
+      "PAR_subsurface_morning": 272.467,
+      "PAR_bottom_morning": 187.2,
+      "PAR_bottom_mean": 187.2,
+      "bottom_PAR_ratio_morning": 0.4749,
+      "bottom_PAR_ratio_mean": 0.475,
+      "depth_cm_mean": 40,
+      "visual_algae_score": 2,
+      "mud_cover_score": 0,
+      "bare_stone_score": 0,
+      "bed_visibility_score": 2,
+      "event_type": "rain_turbid",
+      "event_label": "雨後・濁り/遮光",
+      "measurement_confidence": "usable",
+      "data_status": "missing_afternoon",
+      "amedas_precipitation_24h_07_jst_mm": 0.5,
+      "amedas_sunshine_day_h": 0,
+      "amedas_global_solar_estimated_day_MJ_m2": 0.457,
+      "amedas_surface_PAR_estimated_day_mol_m2": 1.051,
+      "water_level": "低い",
+      "flow": "平常",
+      "water_clarity": "やや濁り",
+      "bed_visibility": "だいたい見える",
+      "odor": "なし",
+      "foam": "少し",
+      "turbidity_direction": "上流から全体",
+      "amedas_bottom_PAR_estimated_day_mol_m2": 0.499,
+      "days_since_rain": 1,
+      "recovery_phase": "rain_0_1d",
+      "recovery_phase_label": "雨後0-1日",
+      "EC_recent_median_uScm": 270,
+      "EC_deviation_uScm": -3,
+      "flags": [
+        {
+          "code": "partial_data",
+          "label": "朝午後のどちらかが不足"
+        },
+        {
+          "code": "rain_turbid",
+          "label": "濁り・遮光型候補"
+        },
+        {
+          "code": "weak_response_under_light",
+          "label": "光はあるが応答弱め"
+        }
+      ],
+      "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
     }
   ]
 }
