@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-30T16:55:29+09:00",
+  "generated_at": "2026-07-30T16:59:08+09:00",
   "project": "大栗川 Water Observatory",
   "github_repository": "hiroshi75/ohgurigawa-water-observatory",
-  "public_record_count": 80,
+  "public_record_count": 81,
   "date_start": "2026-06-23",
   "date_end": "2026-07-30",
-  "latest_observed_at": "2026-07-30T03:57:00.000Z",
+  "latest_observed_at": "2026-07-30T07:26:00.000Z",
   "field_policy": {
     "included_when": "pH and DO and at least one PAR value are present",
     "excluded": [
@@ -19,65 +19,65 @@
   },
   "metrics": {
     "pH": {
-      "count": 80,
+      "count": 81,
       "min": 7.15,
       "max": 8.94,
-      "mean": 7.935
+      "mean": 7.939
     },
     "DO_mgL": {
-      "count": 80,
+      "count": 81,
       "min": 6.2,
       "max": 11,
-      "mean": 8.086
+      "mean": 8.089
     },
     "DO_pct": {
-      "count": 80,
+      "count": 81,
       "min": 71.3,
       "max": 141.8,
-      "mean": 95.887
+      "mean": 96.004
     },
     "PAR_air_mean": {
-      "count": 80,
+      "count": 81,
       "min": 1.5,
       "max": 2441.967,
-      "mean": 741.277
+      "mean": 744.293
     },
     "PAR_bottom_mean": {
-      "count": 80,
+      "count": 81,
       "min": 0.6,
       "max": 1375.9,
-      "mean": 383.373
+      "mean": 384.087
     },
     "bottom_PAR_ratio": {
-      "count": 80,
+      "count": 81,
       "min": 0.0045,
       "max": 0.6239,
       "mean": 0.488
     },
     "amedas_precipitation_24h_07_jst_mm": {
-      "count": 80,
+      "count": 81,
       "min": 0,
       "max": 73.5,
-      "mean": 4.834
+      "mean": 4.775
     },
     "amedas_sunshine_day_h": {
-      "count": 80,
+      "count": 81,
       "min": 0,
       "max": 13.35,
-      "mean": 4.029
+      "mean": 4.048
     },
     "amedas_global_solar_estimated_day_MJ_m2": {
-      "count": 80,
+      "count": 81,
       "min": 5.213,
       "max": 30.176,
-      "mean": 15.134
+      "mean": 15.181
     },
     "amedas_surface_PAR_estimated_day_mol_m2": {
-      "count": 80,
+      "count": 81,
       "min": 11.99,
       "max": 69.405,
-      "mean": 34.809
+      "mean": 34.916
     }
   },
-  "export_hash": "37168082226978e41c06610c331c7f6528189910bf4b4ebcad9a43cb8b25d2e6"
+  "export_hash": "d9e367a11d72bbff7070a356ec335e9aa3e18d7eded3bfc6552880e3abc36d1c"
 }
