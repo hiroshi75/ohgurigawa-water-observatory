@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-01T18:03:05+09:00",
+  "generated_at": "2026-08-01T18:58:02+09:00",
   "project": "大栗川 Water Observatory",
   "github_repository": "hiroshi75/ohgurigawa-water-observatory",
-  "public_record_count": 87,
+  "public_record_count": 86,
   "date_start": "2026-06-23",
   "date_end": "2026-08-01",
   "latest_observed_at": "2026-07-31T22:07:00.000Z",
@@ -19,65 +19,65 @@
   },
   "metrics": {
     "pH": {
-      "count": 87,
+      "count": 86,
       "min": 7.15,
       "max": 8.94,
-      "mean": 7.923
+      "mean": 7.93
     },
     "DO_mgL": {
-      "count": 87,
+      "count": 86,
       "min": 6,
       "max": 11,
-      "mean": 8.054
+      "mean": 8.064
     },
     "DO_pct": {
-      "count": 87,
+      "count": 86,
       "min": 71.1,
       "max": 141.8,
-      "mean": 95.78
+      "mean": 95.899
     },
     "PAR_air_mean": {
-      "count": 87,
+      "count": 86,
       "min": 0.8,
       "max": 2441.967,
-      "mean": 735.217
+      "mean": 734.538
     },
     "PAR_bottom_mean": {
-      "count": 87,
+      "count": 86,
       "min": 0.225,
       "max": 1375.9,
-      "mean": 380.183
+      "mean": 379.357
     },
     "bottom_PAR_ratio": {
-      "count": 87,
+      "count": 86,
       "min": 0.0045,
       "max": 0.6239,
-      "mean": 0.488
+      "mean": 0.487
     },
     "amedas_precipitation_24h_07_jst_mm": {
-      "count": 87,
+      "count": 86,
       "min": 0,
       "max": 73.5,
-      "mean": 4.445
+      "mean": 4.497
     },
     "amedas_sunshine_day_h": {
-      "count": 87,
+      "count": 86,
       "min": 0,
       "max": 13.35,
-      "mean": 4.241
+      "mean": 4.188
     },
     "amedas_global_solar_estimated_day_MJ_m2": {
-      "count": 87,
+      "count": 86,
       "min": 5.213,
       "max": 30.176,
-      "mean": 15.502
+      "mean": 15.408
     },
     "amedas_surface_PAR_estimated_day_mol_m2": {
-      "count": 87,
+      "count": 86,
       "min": 11.99,
       "max": 69.405,
-      "mean": 35.656
+      "mean": 35.438
     }
   },
-  "export_hash": "91607f83cb9cc525cfa6bfa34fe4e5f651d94f68f9b83445cf9ec21b83fcc929"
+  "export_hash": "c8c93b2803cfb49d336bf31f4c14fc571b7a096aca00fa4cbb3f9c32ebf941cb"
 }
