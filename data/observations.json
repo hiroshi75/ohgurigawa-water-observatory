@@ -11494,18 +11494,18 @@
           }
         ]
       },
-      "amedas_sunshine_day_h": 5.75,
-      "amedas_global_solar_estimated_day_MJ_m2": 14.558,
-      "amedas_surface_PAR_estimated_day_mol_m2": 33.483,
+      "amedas_sunshine_day_h": 6.55,
+      "amedas_global_solar_estimated_day_MJ_m2": 17.377,
+      "amedas_surface_PAR_estimated_day_mol_m2": 39.967,
       "amedas_global_solar_estimated_day": {
         "source": "jma_bosai_amedas_point",
         "status": "ok",
-        "station_mean_sunshine_h": 5.75,
-        "station_mean_global_solar_estimated_MJ_m2": 14.558,
-        "station_min_global_solar_estimated_MJ_m2": 14.439,
-        "station_max_global_solar_estimated_MJ_m2": 14.676,
-        "station_diff_global_solar_estimated_MJ_m2": 0.237,
-        "surface_PAR_estimated_mol_m2": 33.483,
+        "station_mean_sunshine_h": 6.55,
+        "station_mean_global_solar_estimated_MJ_m2": 17.377,
+        "station_min_global_solar_estimated_MJ_m2": 17.025,
+        "station_max_global_solar_estimated_MJ_m2": 17.729,
+        "station_diff_global_solar_estimated_MJ_m2": 0.704,
+        "surface_PAR_estimated_mol_m2": 39.967,
         "solar_model": {
           "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
           "source": "solar-calibration/output/daily_parameters_month.json",
@@ -11532,18 +11532,18 @@
           {
             "station_id": "44116",
             "station_name": "府中",
-            "total_sun1h_h": 5.6,
-            "total_global_solar_estimated_MJ_m2": 14.439,
-            "covered_hours": 13,
-            "source_record_count": 13
+            "total_sun1h_h": 6.3,
+            "total_global_solar_estimated_MJ_m2": 17.025,
+            "covered_hours": 14,
+            "source_record_count": 14
           },
           {
             "station_id": "44112",
             "station_name": "八王子",
-            "total_sun1h_h": 5.9,
-            "total_global_solar_estimated_MJ_m2": 14.676,
-            "covered_hours": 13,
-            "source_record_count": 13
+            "total_sun1h_h": 6.8,
+            "total_global_solar_estimated_MJ_m2": 17.729,
+            "covered_hours": 14,
+            "source_record_count": 14
           }
         ]
       }
@@ -11631,18 +11631,18 @@
           }
         ]
       },
-      "amedas_sunshine_day_h": 5.75,
-      "amedas_global_solar_estimated_day_MJ_m2": 14.558,
-      "amedas_surface_PAR_estimated_day_mol_m2": 33.483,
+      "amedas_sunshine_day_h": 6.55,
+      "amedas_global_solar_estimated_day_MJ_m2": 17.377,
+      "amedas_surface_PAR_estimated_day_mol_m2": 39.967,
       "amedas_global_solar_estimated_day": {
         "source": "jma_bosai_amedas_point",
         "status": "ok",
-        "station_mean_sunshine_h": 5.75,
-        "station_mean_global_solar_estimated_MJ_m2": 14.558,
-        "station_min_global_solar_estimated_MJ_m2": 14.439,
-        "station_max_global_solar_estimated_MJ_m2": 14.676,
-        "station_diff_global_solar_estimated_MJ_m2": 0.237,
-        "surface_PAR_estimated_mol_m2": 33.483,
+        "station_mean_sunshine_h": 6.55,
+        "station_mean_global_solar_estimated_MJ_m2": 17.377,
+        "station_min_global_solar_estimated_MJ_m2": 17.025,
+        "station_max_global_solar_estimated_MJ_m2": 17.729,
+        "station_diff_global_solar_estimated_MJ_m2": 0.704,
+        "surface_PAR_estimated_mol_m2": 39.967,
         "solar_model": {
           "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
           "source": "solar-calibration/output/daily_parameters_month.json",
@@ -11669,18 +11669,18 @@
           {
             "station_id": "44116",
             "station_name": "府中",
-            "total_sun1h_h": 5.6,
-            "total_global_solar_estimated_MJ_m2": 14.439,
-            "covered_hours": 13,
-            "source_record_count": 13
+            "total_sun1h_h": 6.3,
+            "total_global_solar_estimated_MJ_m2": 17.025,
+            "covered_hours": 14,
+            "source_record_count": 14
           },
           {
             "station_id": "44112",
             "station_name": "八王子",
-            "total_sun1h_h": 5.9,
-            "total_global_solar_estimated_MJ_m2": 14.676,
-            "covered_hours": 13,
-            "source_record_count": 13
+            "total_sun1h_h": 6.8,
+            "total_global_solar_estimated_MJ_m2": 17.729,
+            "covered_hours": 14,
+            "source_record_count": 14
           }
         ]
       }
@@ -11768,18 +11768,18 @@
           }
         ]
       },
-      "amedas_sunshine_day_h": 5.75,
-      "amedas_global_solar_estimated_day_MJ_m2": 14.558,
-      "amedas_surface_PAR_estimated_day_mol_m2": 33.483,
+      "amedas_sunshine_day_h": 6.55,
+      "amedas_global_solar_estimated_day_MJ_m2": 17.377,
+      "amedas_surface_PAR_estimated_day_mol_m2": 39.967,
       "amedas_global_solar_estimated_day": {
         "source": "jma_bosai_amedas_point",
         "status": "ok",
-        "station_mean_sunshine_h": 5.75,
-        "station_mean_global_solar_estimated_MJ_m2": 14.558,
-        "station_min_global_solar_estimated_MJ_m2": 14.439,
-        "station_max_global_solar_estimated_MJ_m2": 14.676,
-        "station_diff_global_solar_estimated_MJ_m2": 0.237,
-        "surface_PAR_estimated_mol_m2": 33.483,
+        "station_mean_sunshine_h": 6.55,
+        "station_mean_global_solar_estimated_MJ_m2": 17.377,
+        "station_min_global_solar_estimated_MJ_m2": 17.025,
+        "station_max_global_solar_estimated_MJ_m2": 17.729,
+        "station_diff_global_solar_estimated_MJ_m2": 0.704,
+        "surface_PAR_estimated_mol_m2": 39.967,
         "solar_model": {
           "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
           "source": "solar-calibration/output/daily_parameters_month.json",
@@ -11806,18 +11806,18 @@
           {
             "station_id": "44116",
             "station_name": "府中",
-            "total_sun1h_h": 5.6,
-            "total_global_solar_estimated_MJ_m2": 14.439,
-            "covered_hours": 13,
-            "source_record_count": 13
+            "total_sun1h_h": 6.3,
+            "total_global_solar_estimated_MJ_m2": 17.025,
+            "covered_hours": 14,
+            "source_record_count": 14
           },
           {
             "station_id": "44112",
             "station_name": "八王子",
-            "total_sun1h_h": 5.9,
-            "total_global_solar_estimated_MJ_m2": 14.676,
-            "covered_hours": 13,
-            "source_record_count": 13
+            "total_sun1h_h": 6.8,
+            "total_global_solar_estimated_MJ_m2": 17.729,
+            "covered_hours": 14,
+            "source_record_count": 14
           }
         ]
       }
