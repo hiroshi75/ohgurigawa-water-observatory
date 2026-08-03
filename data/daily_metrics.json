@@ -2126,28 +2126,42 @@
     },
     {
       "date": "2026-08-03",
-      "record_count": 1,
+      "record_count": 2,
       "morning_time": "07:16:00",
+      "afternoon_time": "13:14:00",
       "morning_observed_at": "2026-08-02T22:16:00.000Z",
+      "afternoon_observed_at": "2026-08-03T04:14:00.000Z",
       "pH_morning": 7.21,
+      "pH_afternoon": 7.44,
+      "delta_pH": 0.23,
       "DO_pct_morning": 74,
+      "DO_pct_afternoon": 87.3,
+      "delta_DO_pct": 13.3,
       "DO_mgL_morning": 6.3,
+      "DO_mgL_afternoon": 7.4,
+      "delta_DO_mgL": 1.1,
       "EC_morning_uScm": 227,
+      "EC_afternoon_uScm": 253,
+      "delta_EC_uScm": 26,
       "PAR_air_morning": 161.333,
+      "PAR_air_afternoon": 285.867,
       "PAR_subsurface_morning": 114.5,
+      "PAR_subsurface_afternoon": 194.667,
       "PAR_bottom_morning": 70.333,
-      "PAR_bottom_mean": 70.333,
+      "PAR_bottom_afternoon": 143.075,
+      "PAR_bottom_mean": 106.704,
       "bottom_PAR_ratio_morning": 0.4359,
-      "bottom_PAR_ratio_mean": 0.436,
-      "depth_cm_mean": 37,
+      "bottom_PAR_ratio_afternoon": 0.5005,
+      "bottom_PAR_ratio_mean": 0.468,
+      "depth_cm_mean": 37.5,
       "visual_algae_score": 2,
       "mud_cover_score": 0,
       "bare_stone_score": 0,
       "bed_visibility_score": 2,
-      "event_type": "rain_turbid",
-      "event_label": "雨後・濁り/遮光",
+      "event_type": "none",
+      "event_label": "通常",
       "measurement_confidence": "good",
-      "data_status": "missing_afternoon",
+      "data_status": "complete",
       "amedas_precipitation_24h_07_jst_mm": 3.25,
       "amedas_sunshine_day_h": 0,
       "amedas_global_solar_estimated_day_MJ_m2": 6.179,
@@ -2157,33 +2171,21 @@
       "water_clarity": "やや濁り",
       "bed_visibility": "だいたい見える",
       "odor": "なし",
-      "foam": "なし",
+      "foam": "少し",
       "turbidity_direction": "上流から全体",
-      "amedas_bottom_PAR_estimated_day_mol_m2": 6.196,
+      "amedas_bottom_PAR_estimated_day_mol_m2": 6.651,
       "days_since_rain": 0,
       "recovery_phase": "rain_0_1d",
       "recovery_phase_label": "雨後0-1日",
       "EC_recent_median_uScm": 274,
-      "EC_deviation_uScm": -47,
+      "EC_deviation_uScm": -21,
       "flags": [
-        {
-          "code": "partial_data",
-          "label": "朝午後のどちらかが不足"
-        },
-        {
-          "code": "rain_turbid",
-          "label": "濁り・遮光型候補"
-        },
         {
           "code": "ec_shift",
           "label": "EC急変"
-        },
-        {
-          "code": "weak_response_under_light",
-          "label": "光はあるが応答弱め"
         }
       ],
-      "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
+      "summary_note": "ECが大きく変化しており、溶存成分を伴うイベント候補です。"
     }
   ]
 }
