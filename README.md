@@ -11,7 +11,7 @@
 - 公開対象: pH、DO、PAR の最低限の測定値が揃った記録
 - AMeDAS日照時間から推定した全天日射量と、推定PAR日積算も公開
 - 除外対象: 登録システムの内部ID、operator、自由記述メモ、写真ID、削除済み記録、過去revision
-- 最新生成: 2026-08-05T08:03:08+09:00
+- 最新生成: 2026-08-05T08:10:41+09:00
 - 公開レコード数: 92
 - 期間: 2026-06-23 から 2026-08-05
 
@@ -25,9 +25,13 @@
 - `data/summary.json`: 件数・期間・主要項目の集計
 - `data/data-dictionary.md`: フィールド定義
 
-## ダッシュボード
+## 公開ページ
 
-GitHub Pages を有効にすると、このリポジトリのルートから簡易ダッシュボードを表示できます。
+- トップ: https://hiroshi75.github.io/ohgurigawa-water-observatory/
+- 日々の最新情報: https://hiroshi75.github.io/ohgurigawa-water-observatory/daily.html
+- 月報コーナー: https://hiroshi75.github.io/ohgurigawa-water-observatory/monthly/
+
+トップページは観測の概要と最新状態、日々の最新情報ページは1時間ごとに自動更新されるダッシュボード、月報コーナーは1か月分をまとめた確定版の読み物です。月報の本文は `lambda/public-publisher/index.js` の `monthlyReports()` が保持しており、日次データの更新では書き換わりません。
 
 ## ライセンス
 

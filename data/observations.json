@@ -12410,6 +12410,7 @@
       "PAR_subsurface_mean": 590.767,
       "bottom_PAR_ratio": 0.5885,
       "depth_cm": 37,
+      "bank_to_water_surface_cm": 31,
       "water_level": "低い",
       "flow": "遅い",
       "water_clarity": "透明",

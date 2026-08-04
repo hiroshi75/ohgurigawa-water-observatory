@@ -30,6 +30,7 @@
 | `amedas_global_solar_estimated_day` | 推定全天日射量の計算メタデータ |
 | `depth_cm` | 水深 cm |
 | `measured_depth_cm` | 測定できた水深 cm |
+| `bank_to_water_surface_cm` | 岸の基準位置から水面までの距離 cm。小さいほど水面が高い。`depth_cm` と組み合わせると水位変化と川底の砂利厚さの変化を切り分けられる。2026年8月の項目追加以前の記録では未測定のため空 |
 | `water_level` | 水位の観察カテゴリ |
 | `flow` | 流速の観察カテゴリ |
 | `water_clarity` | 透明度カテゴリ |
@@ -49,5 +50,6 @@
 
 ## Derived Files
 
-- `data/daily_metrics.json` / `data/daily_metrics.csv`: morning と afternoon を日付で結合し、`delta_pH`、`delta_DO_pct`、`delta_EC_uScm`、川底PAR平均、雨後フェーズ、簡易イベントコメントを計算した日次データです。
+- `data/daily_metrics.json` / `data/daily_metrics.csv`: morning と afternoon を日付で結合し、`delta_pH`、`delta_DO_pct`、`delta_EC_uScm`、`delta_water_temp_C`、川底PAR平均、雨後フェーズ、簡易イベントコメントを計算した日次データです。
+- `water_temp_morning_C` / `water_temp_afternoon_C` / `delta_water_temp_C`: 朝・午後の水温と、その日中変化 ℃。溶存酸素飽和度の解釈に用います。
 - `data/observations.csv`: `observations.jsonl` と同じ公開対象レコードをCSVにしたものです。
