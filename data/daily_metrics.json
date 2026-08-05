@@ -2403,6 +2403,61 @@
       "EC_deviation_uScm": 6,
       "flags": [],
       "summary_note": "pHとDO%がともに上昇しており、日中光応答が読みやすい日です。"
+    },
+    {
+      "date": "2026-08-06",
+      "record_count": 1,
+      "morning_time": "07:36:00",
+      "morning_observed_at": "2026-08-05T22:36:00.000Z",
+      "pH_morning": 7.45,
+      "DO_pct_morning": 86.3,
+      "DO_mgL_morning": 7.4,
+      "water_temp_morning_C": 24.1,
+      "EC_morning_uScm": 289,
+      "PAR_air_morning": 505.767,
+      "PAR_subsurface_morning": 355.967,
+      "PAR_bottom_morning": 269.8,
+      "PAR_bottom_mean": 269.8,
+      "bottom_PAR_ratio_morning": 0.5334,
+      "bottom_PAR_ratio_mean": 0.533,
+      "depth_cm_mean": 36,
+      "bank_to_water_surface_cm_mean": 29,
+      "visual_algae_score": 2,
+      "mud_cover_score": 0,
+      "bare_stone_score": 0,
+      "bed_visibility_score": 3,
+      "event_type": "none",
+      "event_label": "通常",
+      "measurement_confidence": "usable",
+      "data_status": "missing_afternoon",
+      "amedas_precipitation_24h_07_jst_mm": 2.5,
+      "amedas_sunshine_day_h": 0.1,
+      "amedas_global_solar_estimated_day_MJ_m2": 0.497,
+      "amedas_surface_PAR_estimated_day_mol_m2": 1.143,
+      "water_level": "低い",
+      "flow": "遅い",
+      "water_clarity": "透明",
+      "bed_visibility": "よく見える",
+      "odor": "なし",
+      "foam": "少し",
+      "turbidity_direction": "なし",
+      "amedas_bottom_PAR_estimated_day_mol_m2": 0.609,
+      "days_since_rain": 0,
+      "recovery_phase": "rain_0_1d",
+      "recovery_phase_label": "雨後0-1日",
+      "EC_recent_median_uScm": 287,
+      "EC_deviation_uScm": 2,
+      "flags": [
+        {
+          "code": "partial_data",
+          "label": "朝午後のどちらかが不足"
+        },
+        {
+          "code": "weak_response_under_light",
+          "label": "光はあるが応答弱め"
+        }
+      ],
+      "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
     }
   ]
 }
