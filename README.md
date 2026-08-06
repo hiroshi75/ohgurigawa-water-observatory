@@ -11,7 +11,7 @@
 - 公開対象: pH、DO、PAR の最低限の測定値が揃った記録
 - AMeDAS日照時間から推定した全天日射量と、推定PAR日積算も公開
 - 除外対象: 登録システムの内部ID、operator、自由記述メモ、写真ID、削除済み記録、過去revision
-- 最新生成: 2026-08-07T08:03:08+09:00
+- 最新生成: 2026-08-07T08:59:33+09:00
 - 公開レコード数: 96
 - 期間: 2026-06-23 から 2026-08-06
 
@@ -22,6 +22,11 @@
 - `data/observations.csv`: 測定回ごとのCSV
 - `data/daily_metrics.json`: 朝午後差分などの日次指標JSON
 - `data/daily_metrics.csv`: 朝午後差分などの日次指標CSV
+- `data/derived/interval_budget.csv`: 区間別の酸素収支（dC/dt・再曝気・NEP・誤差）
+- `data/derived/co2_budget_daily.csv`: 日次の炭素収支（pCO2・DIC・放出量・炭素法NEP）
+- `data/derived/co2_source_sink_daily.csv`: その日が炭素の発生源か吸収源かの判定
+- `data/derived/night_R_by_date.csv`: 日没後の減衰から求めた呼吸速度
+- `data/derived/k_profile.csv`: 再曝気係数の残差プロファイル（推定の不確かさ）
 - `data/summary.json`: 件数・期間・主要項目の集計
 - `data/data-dictionary.md`: フィールド定義
 

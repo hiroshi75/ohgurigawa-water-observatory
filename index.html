@@ -95,12 +95,22 @@
         <h2>データはすべて公開しています</h2>
         <p>掲載しているグラフや月報の数値は、下記のファイルから誰でも再現できます。</p>
       </div>
+      <h3 class="download-group-title">観測値</h3>
       <div class="download-links">
         <a href="data/daily_metrics.csv">daily_metrics.csv</a>
         <a href="data/daily_metrics.json">daily_metrics.json</a>
         <a href="data/observations.csv">observations.csv</a>
         <a href="data/observations.jsonl">observations.jsonl</a>
         <a href="data/data-dictionary.md">データ定義</a>
+      </div>
+      <h3 class="download-group-title">計算した代謝量</h3>
+      <p class="download-group-note">観測値から酸素収支・炭素収支を解いた結果です。列の定義と前提はデータ定義に記載しています。</p>
+      <div class="download-links">
+        <a href="data/derived/interval_budget.csv">interval_budget.csv</a>
+        <a href="data/derived/co2_budget_daily.csv">co2_budget_daily.csv</a>
+        <a href="data/derived/co2_source_sink_daily.csv">co2_source_sink_daily.csv</a>
+        <a href="data/derived/night_R_by_date.csv">night_R_by_date.csv</a>
+        <a href="data/derived/k_profile.csv">k_profile.csv</a>
       </div>
     </section>
   </main>

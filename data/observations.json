@@ -12178,18 +12178,18 @@
           }
         ]
       },
-      "amedas_sunshine_day_h": 6.3,
-      "amedas_global_solar_estimated_day_MJ_m2": 17.686,
-      "amedas_surface_PAR_estimated_day_mol_m2": 40.678,
+      "amedas_sunshine_day_h": 5.3,
+      "amedas_global_solar_estimated_day_MJ_m2": 14.014,
+      "amedas_surface_PAR_estimated_day_mol_m2": 32.232,
       "amedas_global_solar_estimated_day": {
         "source": "jma_bosai_amedas_point",
         "status": "ok",
-        "station_mean_sunshine_h": 6.3,
-        "station_mean_global_solar_estimated_MJ_m2": 17.686,
-        "station_min_global_solar_estimated_MJ_m2": 15.155,
-        "station_max_global_solar_estimated_MJ_m2": 20.216,
-        "station_diff_global_solar_estimated_MJ_m2": 5.061,
-        "surface_PAR_estimated_mol_m2": 40.678,
+        "station_mean_sunshine_h": 5.3,
+        "station_mean_global_solar_estimated_MJ_m2": 14.014,
+        "station_min_global_solar_estimated_MJ_m2": 11.294,
+        "station_max_global_solar_estimated_MJ_m2": 16.734,
+        "station_diff_global_solar_estimated_MJ_m2": 5.44,
+        "surface_PAR_estimated_mol_m2": 32.232,
         "solar_model": {
           "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
           "source": "solar-calibration/output/daily_parameters_month.json",
@@ -12216,18 +12216,18 @@
           {
             "station_id": "44116",
             "station_name": "府中",
-            "total_sun1h_h": 9,
-            "total_global_solar_estimated_MJ_m2": 20.216,
-            "covered_hours": 24,
-            "source_record_count": 24
+            "total_sun1h_h": 8.1,
+            "total_global_solar_estimated_MJ_m2": 16.734,
+            "covered_hours": 22,
+            "source_record_count": 22
           },
           {
             "station_id": "44112",
             "station_name": "八王子",
-            "total_sun1h_h": 3.6,
-            "total_global_solar_estimated_MJ_m2": 15.155,
-            "covered_hours": 24,
-            "source_record_count": 24
+            "total_sun1h_h": 2.5,
+            "total_global_solar_estimated_MJ_m2": 11.294,
+            "covered_hours": 22,
+            "source_record_count": 22
           }
         ]
       }
@@ -12320,18 +12320,18 @@
           }
         ]
       },
-      "amedas_sunshine_day_h": 6.3,
-      "amedas_global_solar_estimated_day_MJ_m2": 17.686,
-      "amedas_surface_PAR_estimated_day_mol_m2": 40.678,
+      "amedas_sunshine_day_h": 5.3,
+      "amedas_global_solar_estimated_day_MJ_m2": 14.014,
+      "amedas_surface_PAR_estimated_day_mol_m2": 32.232,
       "amedas_global_solar_estimated_day": {
         "source": "jma_bosai_amedas_point",
         "status": "ok",
-        "station_mean_sunshine_h": 6.3,
-        "station_mean_global_solar_estimated_MJ_m2": 17.686,
-        "station_min_global_solar_estimated_MJ_m2": 15.155,
-        "station_max_global_solar_estimated_MJ_m2": 20.216,
-        "station_diff_global_solar_estimated_MJ_m2": 5.061,
-        "surface_PAR_estimated_mol_m2": 40.678,
+        "station_mean_sunshine_h": 5.3,
+        "station_mean_global_solar_estimated_MJ_m2": 14.014,
+        "station_min_global_solar_estimated_MJ_m2": 11.294,
+        "station_max_global_solar_estimated_MJ_m2": 16.734,
+        "station_diff_global_solar_estimated_MJ_m2": 5.44,
+        "surface_PAR_estimated_mol_m2": 32.232,
         "solar_model": {
           "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
           "source": "solar-calibration/output/daily_parameters_month.json",
@@ -12358,18 +12358,18 @@
           {
             "station_id": "44116",
             "station_name": "府中",
-            "total_sun1h_h": 9,
-            "total_global_solar_estimated_MJ_m2": 20.216,
-            "covered_hours": 24,
-            "source_record_count": 24
+            "total_sun1h_h": 8.1,
+            "total_global_solar_estimated_MJ_m2": 16.734,
+            "covered_hours": 22,
+            "source_record_count": 22
           },
           {
             "station_id": "44112",
             "station_name": "八王子",
-            "total_sun1h_h": 3.6,
-            "total_global_solar_estimated_MJ_m2": 15.155,
-            "covered_hours": 24,
-            "source_record_count": 24
+            "total_sun1h_h": 2.5,
+            "total_global_solar_estimated_MJ_m2": 11.294,
+            "covered_hours": 22,
+            "source_record_count": 22
           }
         ]
       }
@@ -12442,18 +12442,18 @@
             "station_id": "44116",
             "station_name": "府中",
             "precipitation_24h_mm": 0,
-            "covered_minutes": 1440,
-            "coverage_ratio": 1,
-            "source_record_count": 144,
+            "covered_minutes": 1370,
+            "coverage_ratio": 0.951,
+            "source_record_count": 137,
             "source_granularity": "10min"
           },
           {
             "station_id": "44112",
             "station_name": "八王子",
             "precipitation_24h_mm": 0,
-            "covered_minutes": 1440,
-            "coverage_ratio": 1,
-            "source_record_count": 144,
+            "covered_minutes": 1370,
+            "coverage_ratio": 0.951,
+            "source_record_count": 137,
             "source_granularity": "10min"
           }
         ]
@@ -12585,18 +12585,18 @@
             "station_id": "44116",
             "station_name": "府中",
             "precipitation_24h_mm": 0,
-            "covered_minutes": 1440,
-            "coverage_ratio": 1,
-            "source_record_count": 144,
+            "covered_minutes": 1370,
+            "coverage_ratio": 0.951,
+            "source_record_count": 137,
             "source_granularity": "10min"
           },
           {
             "station_id": "44112",
             "station_name": "八王子",
             "precipitation_24h_mm": 0,
-            "covered_minutes": 1440,
-            "coverage_ratio": 1,
-            "source_record_count": 144,
+            "covered_minutes": 1370,
+            "coverage_ratio": 0.951,
+            "source_record_count": 137,
             "source_granularity": "10min"
           }
         ]

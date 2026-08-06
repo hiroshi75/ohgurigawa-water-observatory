@@ -53,3 +53,100 @@
 - `data/daily_metrics.json` / `data/daily_metrics.csv`: morning と afternoon を日付で結合し、`delta_pH`、`delta_DO_pct`、`delta_EC_uScm`、`delta_water_temp_C`、川底PAR平均、雨後フェーズ、簡易イベントコメントを計算した日次データです。
 - `water_temp_morning_C` / `water_temp_afternoon_C` / `delta_water_temp_C`: 朝・午後の水温と、その日中変化 ℃。溶存酸素飽和度の解釈に用います。
 - `data/observations.csv`: `observations.jsonl` と同じ公開対象レコードをCSVにしたものです。
+
+## Metabolism Derived Files (data/derived/)
+
+観測値から計算した代謝量です。計算は `metabolism-processor` が日次で行っています。
+再曝気係数 `k` は午後の測定ペアについて dC/dt を酸素飽和差に回帰した傾きとして推定しており、
+NEP はその `k` で再曝気ぶんを差し引いた残差です。
+
+### `data/derived/interval_budget.csv`
+
+連続する2測定の間ごとの酸素収支。`NEP = dCdt − reaeration`。
+
+| field | description |
+| --- | --- |
+| `date` | JST日付 |
+| `t0` / `t1` | 区間の開始・終了時刻 JST |
+| `dt_h` | 区間長 h |
+| `DO0` / `DO1` | 区間両端の溶存酸素 mg/L |
+| `dCdt` | 溶存酸素の変化速度 mg/L/h |
+| `deficit_mean` | 区間平均の酸素飽和差（飽和濃度 − 実測）mg/L |
+| `temp_mean` | 区間平均水温 ℃ |
+| `elev0` / `elev1` | 区間両端の太陽高度 度 |
+| `shade_onset_h` | 対岸樹林で日影に入る時刻（JST小数時、太陽高度26.6度） |
+| `sunset_h` | 日没時刻 JST小数時 |
+| `fully_dark` | 区間全体が太陽高度 −0.833度未満か |
+| `reaeration` | 再曝気による酸素供給速度 `k × deficit_mean` mg/L/h |
+| `NEP` | 正味生態系生産 mg O2/L/h。正なら生産超過、負なら分解超過 |
+| `rate_sigma` | DO計の分解能0.1 mg/Lに由来する速度の1σ mg/L/h |
+
+### `data/derived/co2_budget_daily.csv`
+
+朝と午後のpH・水温・アルカリ度から炭酸平衡を解いた日次の炭素収支。
+アルカリ度は滴定値が全期間には無いため、炭素法NEPと酸素法NEPの回帰傾きが
+1.0になる値（`alk_meq_used`）を採用しています。`_lo` / `_hi` はその不確かさ範囲です。
+
+| field | description |
+| --- | --- |
+| `alk_meq_used` | 計算に用いた全アルカリ度 meq/L |
+| `dt_h` | 朝から午後までの経過時間 h |
+| `depth_m` | 平均水深 m |
+| `pCO2_am` / `pCO2_pm` | 朝・午後の二酸化炭素分圧 μatm |
+| `pCO2_am_lo` / `_hi` | アルカリ度の不確かさに対応する朝のpCO2範囲 μatm |
+| `pCO2_pm_lo` / `_hi` | 同じく午後のpCO2範囲 μatm |
+| `DIC_am` / `DIC_pm` | 朝・午後の溶存無機炭素 mgC/L |
+| `dDIC` | 溶存無機炭素の変化速度 mgC/L/h |
+| `F_evasion` | 大気へのCO2放出速度 mgC/L/h |
+| `NEP_C` | 炭素法による正味生態系生産 mgC/L/h |
+| `NEP_O2` | 酸素法による正味生態系生産 mg O2/L/h |
+| `NEP_O2_C` | 酸素法NEPを炭素当量に換算した値 mgC/L/h |
+| `NEP_C_areal` | 単位面積あたりの炭素法NEP mgC/m2/h |
+| `F_evas_areal` | 単位面積あたりのCO2放出速度 mgC/m2/h |
+
+### `data/derived/co2_source_sink_daily.csv`
+
+その日が大気に対する炭素の発生源か吸収源かの判定。
+
+| field | description |
+| --- | --- |
+| `daylen` | 日長 h |
+| `F_night_mgC_m2_h` | 夜間のCO2放出速度 mgC/m2/h |
+| `F_day_mgC_m2_h` | 日中のCO2放出速度 mgC/m2/h。負なら吸収 |
+| `day_is_sink` | 日中に吸収側だったか |
+| `E24_mgC_m2_day` | 24時間の正味CO2放出量 mgC/m2/day |
+| `NEP24_mgC_m2_day` | 24時間の正味生態系生産 mgC/m2/day |
+
+### `data/derived/night_R_by_date.csv`
+
+日没後の溶存酸素減衰から求めた呼吸速度。現場のDO計は0.1 mg/L刻みですが、
+飽和度と水温から高分解能の値を復元して使っています。
+`R_k0135` と `R_k055` は `k` の取り方を変えた場合の値で、両者の開きが
+`k` の不確かさが呼吸速度推定に与える影響の大きさを示します。
+
+| field | description |
+| --- | --- |
+| `span` | 使用した測定時刻の範囲 |
+| `n_pts` | 使用した測定点数 |
+| `dCdt` | 夜間の溶存酸素変化速度 mg/L/h |
+| `deficit_mean` | 平均酸素飽和差 mg/L |
+| `temp` | 平均水温 ℃ |
+| `R_k0135` | k=0.135/h としたときの呼吸速度 mg O2/L/h |
+| `R_k055` | k=0.55/h としたときの呼吸速度 mg O2/L/h |
+| `dpH` / `dpH_per_h` | 夜間のpH変化と時間あたり変化 |
+| `afternoon_DOpct` | その日の午後の最大酸素飽和度 % |
+
+### `data/derived/k_profile.csv`
+
+再曝気係数 `k` を固定して呼吸速度 `R` を当てはめたときの残差プロファイルです。
+このファイルは推定の不確かさそのものを示すために公開しています。残差は
+`k` の中間で最小になり両端で大きくなるU字ですが、谷が浅いため `k` と `R` は
+強く縮退しており、`k` を一意に決めることはできません。
+`R` の値を引用する際は、必ずどの `k` を仮定した値かを併記してください。
+
+| field | description |
+| --- | --- |
+| `k` | 固定した再曝気係数 /h |
+| `R` | その `k` のもとで最適な呼吸速度 mg O2/L/h |
+| `ssq` | 残差平方和 |
+| `rms` | 残差の二乗平均平方根 mg/L |
