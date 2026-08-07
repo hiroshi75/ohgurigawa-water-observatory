@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>昼の酸素の増加のうち、光合成はどれだけか | 大栗川 Water Observatory</title>
+  <meta name="description" content="日没後の減衰から再曝気係数を推定すると最適値は k = 0.5 /h ですが、残差の谷が浅く、一意には決まりません。" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-mark" href="../index.html">大栗川 Water Observatory</a>
+      <nav class="site-nav" aria-label="サイトナビゲーション">
+        <a href="../index.html">今日の川</a>
+        <span class="is-current" aria-current="page">問いと結果</span>
+        <a href="../methods/index.html">方法</a>
+        <a href="../daily.html">日々の記録</a>
+        <a href="../monthly/index.html">月報</a>
+        <a href="https://github.com/hiroshi75/ohgurigawa-water-observatory">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main class="app article">
+    <nav class="breadcrumb"><a href="index.html">問いと結果</a> / Q2</nav>
+    <header class="article-head">
+      <span class="status-badge is-open">未解決</span>
+      <h1>昼の酸素の増加のうち、光合成はどれだけか</h1>
+      <p class="lead">日没後の減衰から再曝気係数を推定すると最適値は k = 0.5 /h ですが、残差の谷が浅く、一意には決まりません。</p>
+    </header>
+
+    <section class="article-section">
+      <h2>現時点の答え</h2>
+      <p>浅い瀬では、水中の酸素は光合成だけでなく大気からも入ってきます。この2つを分けないと、光合成の量を出せません。</p><p>日没後は光合成が止まるため、そこでの酸素の減り方から大気との交換速度 k と呼吸速度 R を同時に推定できます。残差が最小になるのは k = 0.5 /h、R = 1.48 mg O₂/L/h（残差 0.0575）でした。</p><p><strong>しかしこの推定は一意ではありません。</strong>残差の谷が浅く、最小値から10%以内に収まる範囲だけで k = 0.2〜0.9、そのとき R は 0.93〜2.23 と 2.4倍の幅を持ちます。呼吸速度を一つの値として引用することはできません。</p>
+    </section>
+
+    <section class="article-section">
+      <h2>根拠</h2>
+      <div class="evidence-block"><h3>残差プロファイルの形</h3><p>k を 0.05 から 2 まで動かして、それぞれで最適な R を当てはめたときの残差です。谷は範囲の中ほどにあり、両端で 0.0681（k = 0.05）と 0.102（k = 2）まで上がります。U字ではありますが、底が平たいことが問題です。</p><p class="source-files">元データ: <a href="../data/derived/k_profile.csv"><code>k_profile.csv</code></a></p></div><div class="evidence-block"><h3>夜間測定そのもの</h3><p>日没後に4回、酸素の減衰を追跡しました。現場の溶存酸素計は 0.1 mg/L 刻みですが、飽和度と水温から高分解能の値を復元して使っています。</p><p class="source-files">元データ: <a href="../data/derived/night_R_by_date.csv"><code>night_R_by_date.csv</code></a></p></div>
+    </section>
+
+    <section class="article-section">
+      <h2>何が反証になるか</h2>
+      <p class="section-note">この結論が誤りだった場合、どんな観測結果が出るはずかを先に書いておきます。</p>
+      <ul class="reason-list"><li>流速を直接測れば、経験式から k を独立に拘束できます。その値がいまの推定範囲から外れれば、現在の分離は誤りです。</li><li>溶存ガス（アルゴンなど）をトレーサーに使えば、生物の影響を受けない形で交換速度を測れます。</li><li>夜間の測定点を増やして減衰曲線の形が変われば、谷の位置も動きます。</li></ul>
+    </section>
+
+    <section class="article-section">
+      <h2>まだ言えないこと</h2>
+      <ul class="limit-list"><li>k と R は数学的に強く縮退しています。いまのデータだけでは、どちらか一方を独立に決めることはできません。</li><li>呼吸速度 R を引用する場合は、必ずどの k を仮定した値かを併記してください。</li><li>この縮退は測定の失敗ではなく、この観測設計の構造的な限界です。解消には流速測定かトレーサーが要ります。</li></ul>
+      <div class="note-box is-request"><strong>協力を探しています。</strong>3万円程度で毎日使える流速計、あるいは簡便なトレーサー法の助言を探しています。</div>
+    </section>
+
+    <section class="article-section">
+      <h2>関連するページ</h2>
+      <ul class="link-list"><li><a href="../methods/m2-reaeration-k.html">方法：再曝気係数の推定とその限界</a></li><li><a href="../methods/m1-oxygen-budget.html">方法：酸素収支から生産量を出す</a></li></ul>
+    </section>
+
+    <nav class="article-nav">
+      <p class="eyebrow">ほかの問い</p>
+      <ul class="link-list"><li><a href="q1-carbon-source.html">この川は、炭素の発生源か吸収源か</a> <span class="status-badge is-inline is-provisional">暫定結論</span></li><li><a href="q3-afternoon-turbidity.html">雨が降っていないのに、午後だけ濁るのはなぜか</a> <span class="status-badge is-inline is-testing">検証中</span></li><li><a href="q4-biofilm-recovery.html">出水で剥がれた付着藻は、何日で戻るか</a> <span class="status-badge is-inline is-provisional">暫定結論</span></li></ul>
+    </nav>
+  </main>
+</body>
+</html>

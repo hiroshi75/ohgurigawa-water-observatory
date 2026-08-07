@@ -12,8 +12,10 @@
     <div class="site-header-inner">
       <a class="site-mark" href="index.html">大栗川 Water Observatory</a>
       <nav class="site-nav" aria-label="サイトナビゲーション">
-        <span class="is-current" aria-current="page">ホーム</span>
-        <a href="daily.html">日々の最新情報</a>
+        <span class="is-current" aria-current="page">今日の川</span>
+        <a href="questions/index.html">問いと結果</a>
+        <a href="methods/index.html">方法</a>
+        <a href="daily.html">日々の記録</a>
         <a href="monthly/index.html">月報</a>
         <a href="https://github.com/hiroshi75/ohgurigawa-water-observatory">GitHub</a>
       </nav>
@@ -23,12 +25,12 @@
   <main class="app">
     <section class="hero home-hero">
       <div class="hero-copy">
-        <p class="eyebrow">Open river observation</p>
-        <h1>川は、毎日息をしている</h1>
-        <p class="lead">東京都多摩市を流れる大栗川の同じ浅い区間で、朝と午後に水質・光・川底の写真を記録しています。昼に川がどれだけ酸素をつくり、夜にどれだけ使うのか。その日々の変化を、誰でも見られる形で公開しています。</p>
+        <p class="eyebrow">Open river metabolism · Tama, Tokyo</p>
+        <h1>この川は、今日 酸素と炭素を<br />どちらに動かしたか</h1>
+        <p class="lead">東京都多摩市を流れる大栗川の同じ浅い区間で、朝・昼・夕（日没後を含む）に水質と光を記録しています。測った値を並べるだけでなく、そこから正味生態系生産・再曝気・二酸化炭素の放出量を誤差つきで計算し、その日の川が生産側だったか分解側だったかを毎日判定しています。</p>
         <div class="hero-actions">
-          <a class="button-primary" href="daily.html">日々の最新情報を見る</a>
-          <a class="button-secondary" href="monthly/index.html">月報を読む</a>
+          <a class="button-primary" href="questions/index.html">問いと結果を読む</a>
+          <a class="button-secondary" href="daily.html">日々の記録を見る</a>
         </div>
       </div>
       <figure class="hero-media">
@@ -36,21 +38,43 @@
       </figure>
     </section>
 
+    <section class="section metabolism-section" id="today" aria-label="今日の川">
+      <div class="section-head">
+        <p class="eyebrow">Today</p>
+        <h2>いまの川の状態</h2>
+        <p>観測値そのものではなく、そこから計算した量です。数字をクリックすると、その値をどう求めたかと、何が言えて何が言えないかを読めます。</p>
+      </div>
+      <div class="metabolism-grid"><a class="metabolism-card" href="questions/q1-carbon-source.html"><span class="metabolism-label">直近の日中 正味生態系生産</span><strong class="metabolism-value pos">+0.50<span class="metabolism-unit">mg O₂/L/h</span></strong><small class="metabolism-sub">2026-08-06 · 誤差 ±0.03（再曝気を差し引いた値）</small><svg class="metabolism-spark" viewBox="0 0 260 54" preserveAspectRatio="none" role="img" aria-hidden="true"><line x1="4" y1="43.2" x2="256" y2="43.2" stroke="#c8d5d0" stroke-dasharray="3 3" /><path d="M 4.0,50.0 L 12.1,47.4 L 20.3,49.2 L 28.4,44.7 L 36.5,44.6 L 44.6,44.2 L 52.8,46.0 L 60.9,42.8 L 69.0,40.5 L 77.2,36.2 L 85.3,31.1 L 93.4,28.2 L 101.5,4.0 L 109.7,24.4 L 117.8,23.0 L 125.9,25.2 L 134.1,33.4 L 142.2,36.6 L 150.3,26.9 L 158.5,25.5 L 166.6,22.9 L 174.7,23.5 L 182.8,35.2 L 191.0,34.2 L 199.1,32.9 L 207.2,29.3 L 215.4,30.0 L 223.5,31.4 L 231.6,44.3 L 239.7,38.0 L 247.9,33.0 L 256.0,28.3" fill="none" stroke="#176c57" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" /><circle cx="256.0" cy="28.3" r="3" fill="#176c57" /></svg></a><a class="metabolism-card" href="questions/q1-carbon-source.html"><span class="metabolism-label">二酸化炭素の放出量</span><strong class="metabolism-value amber">616<span class="metabolism-unit">mgC/m²/日</span></strong><small class="metabolism-sub">34日の平均。大気への正味放出</small><svg class="metabolism-spark" viewBox="0 0 260 54" preserveAspectRatio="none" role="img" aria-hidden="true"><line x1="4" y1="50.0" x2="256" y2="50.0" stroke="#c8d5d0" stroke-dasharray="3 3" /><path d="M 4.0,47.2 L 11.6,43.8 L 19.3,48.9 L 26.9,35.9 L 34.5,37.5 L 42.2,37.2 L 49.8,30.3 L 57.5,29.4 L 65.1,36.7 L 72.7,33.4 L 80.4,26.1 L 88.0,35.5 L 95.6,39.1 L 103.3,45.5 L 110.9,47.4 L 118.5,41.6 L 126.2,42.9 L 133.8,40.3 L 141.5,44.5 L 149.1,25.0 L 156.7,28.0 L 164.4,33.4 L 172.0,37.3 L 179.6,34.0 L 187.3,31.2 L 194.9,10.9 L 202.5,22.8 L 210.2,26.6 L 217.8,30.7 L 225.5,35.4 L 233.1,4.0 L 240.7,40.5 L 248.4,32.7 L 256.0,37.2" fill="none" stroke="#b87516" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" /><circle cx="256.0" cy="37.2" r="3" fill="#b87516" /></svg></a><a class="metabolism-card" href="questions/q1-carbon-source.html"><span class="metabolism-label">日中に吸収側だった日</span><strong class="metabolism-value ">17<span class="metabolism-unit">/ 34日</span></strong><small class="metabolism-sub">全体の 50%。夜間を含めると放出が上回る</small><div class="metabolism-bars" aria-hidden="true"><i class="is-sink"></i><i class="is-sink"></i><i class="is-sink"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="is-sink"></i><i class="is-sink"></i><i class="is-sink"></i><i class="is-sink"></i><i class="is-sink"></i><i class="is-sink"></i><i class="is-sink"></i><i class=""></i><i class="is-sink"></i><i class="is-sink"></i><i class="is-sink"></i><i class="is-sink"></i><i class="is-sink"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="is-sink"></i><i class=""></i><i class=""></i><i class=""></i><i class="is-sink"></i></div></a><a class="metabolism-card" href="methods/m1-oxygen-budget.html"><span class="metabolism-label">酸素法と炭素法の一致度</span><strong class="metabolism-value violet">r = 0.86</strong><small class="metabolism-sub">独立した2つの方法で求めた生産量の相関（n = 34）</small></a></div>
+      <p class="metabolism-note">数値は毎日の計算で更新されます。計算結果は <a href="#downloads">ページ下部</a> からダウンロードでき、各列の定義は <a href="data/data-dictionary.md">データ定義</a> に記載しています。</p>
+    </section>
+
     <section class="latest-grid" id="latest-cards" aria-label="最新状態カード"></section>
     <p class="auto-comment" id="latest-comment"></p>
 
-    <section class="section entry-section" aria-label="2つの入口">
-      <div class="entry-grid">
+    <section class="section entry-section" aria-label="サイトの入口">
+      <div class="entry-grid entry-grid-4">
+        <a class="entry-card" href="questions/index.html">
+          <span class="eyebrow">Questions</span>
+          <h2>問いと結果</h2>
+          <p>いま調べている問いごとに、現時点の答え・根拠・何が反証になるか・まだ言えないことをまとめています。</p>
+          <span class="entry-cta">4つの問いへ</span>
+        </a>
+        <a class="entry-card" href="methods/index.html">
+          <span class="eyebrow">Methods</span>
+          <h2>方法</h2>
+          <p>どの式で、どんな仮定を置いて計算しているか。不確かさの大きさも含めて公開しています。</p>
+          <span class="entry-cta">計算方法へ</span>
+        </a>
         <a class="entry-card" href="daily.html">
           <span class="eyebrow">Daily</span>
-          <h2>日々の最新情報</h2>
-          <p>その日の pH・溶存酸素・光・川底写真スコアを、グラフと表で毎時間更新しています。1日の中の時間変化や、雨のあとに何が起きたかもここで追えます。</p>
+          <h2>日々の記録</h2>
+          <p>その日の pH・溶存酸素・光・川底写真スコアを、グラフと表で毎時間更新しています。</p>
           <span class="entry-cta">最新のグラフへ</span>
         </a>
         <a class="entry-card" href="monthly/index.html">
           <span class="eyebrow">Monthly</span>
-          <h2>月報コーナー</h2>
-          <p>1か月分をまとめて読み解いた報告です。数字の羅列ではなく、その月に川で何が起きたのか、何が言えて何が言えないのかを文章で整理しています。</p>
+          <h2>月報</h2>
+          <p>1か月分をまとめて読み解いた報告です。その月に川で何が起きたのかを文章で整理しています。</p>
           <span class="entry-cta">月報一覧へ</span>
         </a>
       </div>

@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0",
+  "latest_nep": {
+    "date": "2026-08-06",
+    "NEP": 0.503,
+    "sigma": 0.026
+  },
+  "nep_series": [
+    {
+      "date": "2026-06-22",
+      "NEP": -0.23,
+      "sigma": 0.018
+    },
+    {
+      "date": "2026-06-29",
+      "NEP": -0.141,
+      "sigma": 0.019
+    },
+    {
+      "date": "2026-06-30",
+      "NEP": -0.202,
+      "sigma": 0.024
+    },
+    {
+      "date": "2026-07-01",
+      "NEP": -0.05,
+      "sigma": 0.024
+    },
+    {
+      "date": "2026-07-03",
+      "NEP": -0.048,
+      "sigma": 0.024
+    },
+    {
+      "date": "2026-07-04",
+      "NEP": -0.035,
+      "sigma": 0.098
+    },
+    {
+      "date": "2026-07-06",
+      "NEP": -0.095,
+      "sigma": 0.025
+    },
+    {
+      "date": "2026-07-07",
+      "NEP": 0.015,
+      "sigma": 0.024
+    },
+    {
+      "date": "2026-07-08",
+      "NEP": 0.09,
+      "sigma": 0.023
+    },
+    {
+      "date": "2026-07-09",
+      "NEP": 0.238,
+      "sigma": 0.024
+    },
+    {
+      "date": "2026-07-10",
+      "NEP": 0.409,
+      "sigma": 0.024
+    },
+    {
+      "date": "2026-07-11",
+      "NEP": 0.507,
+      "sigma": 0.025
+    },
+    {
+      "date": "2026-07-12",
+      "NEP": 1.327,
+      "sigma": 0.566
+    },
+    {
+      "date": "2026-07-14",
+      "NEP": 0.636,
+      "sigma": 0.024
+    },
+    {
+      "date": "2026-07-15",
+      "NEP": 0.683,
+      "sigma": 0.023
+    },
+    {
+      "date": "2026-07-16",
+      "NEP": 0.608,
+      "sigma": 0.024
+    },
+    {
+      "date": "2026-07-18",
+      "NEP": 0.333,
+      "sigma": 0.024
+    },
+    {
+      "date": "2026-07-21",
+      "NEP": 0.222,
+      "sigma": 0.025
+    },
+    {
+      "date": "2026-07-22",
+      "NEP": 0.552,
+      "sigma": 0.023
+    },
+    {
+      "date": "2026-07-23",
+      "NEP": 0.6,
+      "sigma": 0.024
+    },
+    {
+      "date": "2026-07-24",
+      "NEP": 0.688,
+      "sigma": 0.024
+    },
+    {
+      "date": "2026-07-25",
+      "NEP": 0.668,
+      "sigma": 0.023
+    },
+    {
+      "date": "2026-07-27",
+      "NEP": 0.27,
+      "sigma": 0.024
+    },
+    {
+      "date": "2026-07-28",
+      "NEP": 0.306,
+      "sigma": 0.025
+    },
+    {
+      "date": "2026-07-29",
+      "NEP": 0.348,
+      "sigma": 0.025
+    },
+    {
+      "date": "2026-07-30",
+      "NEP": 0.469,
+      "sigma": 0.025
+    },
+    {
+      "date": "2026-07-31",
+      "NEP": 0.448,
+      "sigma": 0.024
+    },
+    {
+      "date": "2026-08-01",
+      "NEP": 0.398,
+      "sigma": 0.019
+    },
+    {
+      "date": "2026-08-03",
+      "NEP": -0.037,
+      "sigma": 0.024
+    },
+    {
+      "date": "2026-08-04",
+      "NEP": 0.176,
+      "sigma": 0.024
+    },
+    {
+      "date": "2026-08-05",
+      "NEP": 0.346,
+      "sigma": 0.023
+    },
+    {
+      "date": "2026-08-06",
+      "NEP": 0.503,
+      "sigma": 0.026
+    }
+  ],
+  "nep_day_count": 32,
+  "evasion_mean_mgC_m2_day": 616,
+  "evasion_series": [
+    {
+      "date": "2026-06-22",
+      "E24": 110,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-06-23",
+      "E24": 245,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-06-24",
+      "E24": 42,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-06-26",
+      "E24": 560,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-06-29",
+      "E24": 498,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-06-30",
+      "E24": 507,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-07-01",
+      "E24": 785,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-07-03",
+      "E24": 819,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-07-04",
+      "E24": 530,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-07-06",
+      "E24": 659,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-07-07",
+      "E24": 951,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-07-08",
+      "E24": 578,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-07-09",
+      "E24": 435,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-07-10",
+      "E24": 180,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-07-11",
+      "E24": 103,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-07-12",
+      "E24": 334,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-07-14",
+      "E24": 281,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-07-15",
+      "E24": 385,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-07-16",
+      "E24": 218,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-07-18",
+      "E24": 993,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-07-21",
+      "E24": 876,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-07-22",
+      "E24": 660,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-07-23",
+      "E24": 506,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-07-24",
+      "E24": 635,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-07-25",
+      "E24": 748,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-07-27",
+      "E24": 1554,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-07-28",
+      "E24": 1083,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-07-29",
+      "E24": 930,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-07-30",
+      "E24": 766,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-07-31",
+      "E24": 581,
+      "day_is_sink": true
+    },
+    {
+      "date": "2026-08-03",
+      "E24": 1829,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-08-04",
+      "E24": 379,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-08-05",
+      "E24": 688,
+      "day_is_sink": false
+    },
+    {
+      "date": "2026-08-06",
+      "E24": 507,
+      "day_is_sink": true
+    }
+  ],
+  "sink_day_count": 17,
+  "budget_day_count": 34,
+  "method_correlation_r": 0.86,
+  "method_pair_count": 34,
+  "k_profile": {
+    "k_best": 0.5,
+    "R_best": 1.48,
+    "rms_best": 0.0575,
+    "k_lo": 0.2,
+    "k_hi": 0.9,
+    "R_lo": 0.93,
+    "R_hi": 2.23,
+    "k_end_lo": 0.05,
+    "rms_end_lo": 0.0681,
+    "k_end_hi": 2,
+    "rms_end_hi": 0.102
+  },
+  "night_observation_count": 4
+}

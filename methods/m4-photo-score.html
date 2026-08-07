@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>川底写真のスコア化と位置ずれの補正 | 大栗川 Water Observatory</title>
+  <meta name="description" content="石を採取せずに付着藻の変化を追うため、毎日同じ場所を撮影してスコア化しています。" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-mark" href="../index.html">大栗川 Water Observatory</a>
+      <nav class="site-nav" aria-label="サイトナビゲーション">
+        <a href="../index.html">今日の川</a>
+        <a href="../questions/index.html">問いと結果</a>
+        <span class="is-current" aria-current="page">方法</span>
+        <a href="../daily.html">日々の記録</a>
+        <a href="../monthly/index.html">月報</a>
+        <a href="https://github.com/hiroshi75/ohgurigawa-water-observatory">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main class="app article">
+    <nav class="breadcrumb"><a href="index.html">方法</a> / M4</nav>
+    <header class="article-head">
+      <h1>川底写真のスコア化と位置ずれの補正</h1>
+      <p class="lead">石を採取せずに付着藻の変化を追うため、毎日同じ場所を撮影してスコア化しています。</p>
+    </header>
+
+    
+
+    <section class="article-section">
+      <h2>手順</h2>
+      <ol class="step-list"><li><strong>同じ構図で撮る</strong><span>毎日、同じ立ち位置から同じ範囲の川底を撮影します。</span></li><li><strong>位置ずれを補正する</strong><span>日ごとに構図が微妙にずれるため、対岸の固定物を基準に変換をかけて位置を揃えます。</span></li><li><strong>範囲を決めてスコア化する</strong><span>揃えた画像の同じ範囲について、藻類・泥・裸石・川底の見え方をそれぞれ 0〜3 で判定します。</span></li><li><strong>妥当性を確認する</strong><span>位置合わせをした場合としない場合でスコアを比較し、補正が結果を変えていないかを確認しています。</span></li></ol>
+    </section>
+
+    <section class="article-section">
+      <h2>置いている仮定</h2>
+      <ul class="reason-list"><li>同じ範囲を見続けていれば、その範囲の変化が区間全体の傾向を代表すること。</li><li>水面の反射や濁りの影響を、目視判定である程度除けること。</li></ul>
+    </section>
+
+    <section class="article-section">
+      <h2>限界と注意</h2>
+      <ul class="limit-list"><li>これは付着藻の現存量の測定ではありません。石を採取してクロロフィルを定量する方法の代替にはなりません。</li><li>目視によるスコアであり、観察者の判断が入ります。</li><li>濁りの強い日は川底が見えず、スコアを付けられません。</li></ul>
+    </section>
+
+    <section class="article-section">
+      <h2>この方法が生成するデータ</h2>
+      <p class="source-files">元データ: <a href="../data/observations.csv"><code>observations.csv</code></a></p>
+    </section>
+
+    <nav class="article-nav">
+      <p class="eyebrow">ほかの方法</p>
+      <ul class="link-list"><li><a href="m1-oxygen-budget.html">酸素収支から正味生態系生産を出す</a></li><li><a href="m2-reaeration-k.html">再曝気係数の推定と、その限界</a></li><li><a href="m3-alkalinity-pco2.html">アルカリ度と pH から二酸化炭素分圧を出す</a></li></ul>
+    </nav>
+  </main>
+</body>
+</html>

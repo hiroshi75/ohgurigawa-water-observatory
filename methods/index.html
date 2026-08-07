@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>方法 | 大栗川 Water Observatory</title>
+  <meta name="description" content="大栗川の観測で用いている計算方法、仮定、不確かさの説明です。" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-mark" href="../index.html">大栗川 Water Observatory</a>
+      <nav class="site-nav" aria-label="サイトナビゲーション">
+        <a href="../index.html">今日の川</a>
+        <a href="../questions/index.html">問いと結果</a>
+        <span class="is-current" aria-current="page">方法</span>
+        <a href="../daily.html">日々の記録</a>
+        <a href="../monthly/index.html">月報</a>
+        <a href="https://github.com/hiroshi75/ohgurigawa-water-observatory">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main class="app">
+    <section class="hero page-hero">
+      <p class="eyebrow">Methods</p>
+      <h1>方法</h1>
+      <p class="lead">公開している数値が、どの式で、どんな仮定のもとに計算されたものかを説明します。値だけを出して不確かさを書かないページは、研究に使えません。ここでは前提と限界を先に書きます。</p>
+      <div class="note-box">計算はすべて公開データから再現できます。各ページの末尾に、その方法が生成するファイルへのリンクがあります。</div>
+    </section>
+    <section class="section">
+      <div class="question-list">
+        <a class="question-card" href="m1-oxygen-budget.html"><div class="question-card-head"><span class="question-number">M1</span></div><h2>酸素収支から正味生態系生産を出す</h2><p>水中の溶存酸素は、光合成で増え、呼吸で減り、大気とのやりとりでも動きます。この3つを分けることが出発点です。</p><span class="entry-cta">読む</span></a><a class="question-card" href="m2-reaeration-k.html"><div class="question-card-head"><span class="question-number">M2</span></div><h2>再曝気係数の推定と、その限界</h2><p>この係数を決めないと生産量が出ません。しかし現在のデータでは一意に決まらない、というのが正直な状況です。</p><span class="entry-cta">読む</span></a><a class="question-card" href="m3-alkalinity-pco2.html"><div class="question-card-head"><span class="question-number">M3</span></div><h2>アルカリ度と pH から二酸化炭素分圧を出す</h2><p>水中の二酸化炭素は直接測っていません。pH とアルカリ度から炭酸平衡を解いて求めています。</p><span class="entry-cta">読む</span></a><a class="question-card" href="m4-photo-score.html"><div class="question-card-head"><span class="question-number">M4</span></div><h2>川底写真のスコア化と位置ずれの補正</h2><p>石を採取せずに付着藻の変化を追うため、毎日同じ場所を撮影してスコア化しています。</p><span class="entry-cta">読む</span></a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

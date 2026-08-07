@@ -620,6 +620,350 @@ input {
   gap: 8px;
 }
 
+.metabolism-section {
+  padding-top: 8px;
+}
+
+.metabolism-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.metabolism-card {
+  display: block;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.metabolism-card:hover {
+  border-color: var(--green);
+  transform: translateY(-2px);
+}
+
+.metabolism-label {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.metabolism-value {
+  display: block;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+.metabolism-value.pos { color: var(--green); }
+.metabolism-value.neg { color: var(--red); }
+.metabolism-value.amber { color: var(--amber); }
+.metabolism-value.violet { color: var(--violet); }
+
+.metabolism-unit {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+.metabolism-sub {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+.metabolism-spark {
+  width: 100%;
+  height: 54px;
+  display: block;
+  margin-top: 10px;
+}
+
+.metabolism-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 54px;
+  margin-top: 10px;
+}
+
+.metabolism-bars i {
+  flex: 1;
+  height: 26%;
+  background: #c9d6d1;
+  border-radius: 2px 2px 0 0;
+}
+
+.metabolism-bars i.is-sink {
+  height: 70%;
+  background: var(--green);
+}
+
+.metabolism-note {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 16px;
+}
+
+.entry-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.page-hero {
+  display: block;
+  padding-bottom: 8px;
+}
+
+.page-hero h1 {
+  margin-top: 0.2em;
+}
+
+.question-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.question-card {
+  display: block;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.question-card:hover {
+  border-color: var(--green);
+  transform: translateY(-2px);
+}
+
+.question-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.question-number {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--green);
+}
+
+.question-card h2 {
+  font-size: 18px;
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+
+.question-card p {
+  font-size: 14px;
+  color: #40534e;
+  margin: 0 0 12px;
+}
+
+.status-badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 99px;
+  background: var(--soft);
+  color: #2b5148;
+  font-weight: 600;
+}
+
+.status-badge.is-open {
+  background: #f6efe2;
+  color: #7d4f0d;
+}
+
+.status-badge.is-testing {
+  background: #eaf0f7;
+  color: #2f5a80;
+}
+
+.status-badge.is-provisional {
+  background: #eaf4f0;
+  color: #1f5a49;
+}
+
+.status-badge.is-inline {
+  margin-left: 6px;
+  font-size: 10px;
+  padding: 2px 8px;
+}
+
+.article {
+  max-width: 780px;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: var(--muted);
+  padding: 20px 0 0;
+}
+
+.breadcrumb a {
+  color: var(--green);
+}
+
+.article-head {
+  padding: 12px 0 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-head h1 {
+  font-size: 30px;
+  line-height: 1.4;
+  margin: 12px 0 12px;
+}
+
+.article-section {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-section h2 {
+  font-size: 20px;
+  margin: 0 0 14px;
+}
+
+.article-section h3 {
+  font-size: 15px;
+  margin: 0 0 6px;
+  color: #22312d;
+}
+
+.article-section p {
+  margin: 0 0 14px;
+  color: #33443f;
+}
+
+.section-note {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.evidence-block {
+  background: #fbfdfc;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+}
+
+.evidence-block p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.source-files {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0;
+}
+
+.source-files code {
+  background: var(--soft);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.formula {
+  background: #f7faf9;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px 18px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 15px;
+  color: #1f3d35;
+  margin-bottom: 12px;
+}
+
+.step-list {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.step-list li {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 16px;
+}
+
+.step-list li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--green);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.step-list li strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.step-list li span {
+  font-size: 14px;
+  color: #40534e;
+}
+
+.reason-list,
+.limit-list,
+.link-list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.reason-list li,
+.limit-list li,
+.link-list li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #40534e;
+}
+
+.limit-list li::marker {
+  color: var(--amber);
+}
+
+.note-box.is-request {
+  background: #f6efe2;
+  border-left-color: var(--amber);
+  color: #6d4a12;
+}
+
+.article-nav {
+  padding: 24px 0 40px;
+}
+
 .download-group-title {
   font-size: 15px;
   margin: 22px 0 4px;
@@ -1023,6 +1367,23 @@ td span {
 
 .report .downloads .download-links {
   margin-top: 12px;
+}
+
+@media (max-width: 980px) {
+  .metabolism-grid,
+  .entry-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .question-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .metabolism-grid,
+  .entry-grid-4 {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 900px) {

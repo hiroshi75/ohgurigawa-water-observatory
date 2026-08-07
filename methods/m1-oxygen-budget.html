@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>酸素収支から正味生態系生産を出す | 大栗川 Water Observatory</title>
+  <meta name="description" content="水中の溶存酸素は、光合成で増え、呼吸で減り、大気とのやりとりでも動きます。この3つを分けることが出発点です。" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-mark" href="../index.html">大栗川 Water Observatory</a>
+      <nav class="site-nav" aria-label="サイトナビゲーション">
+        <a href="../index.html">今日の川</a>
+        <a href="../questions/index.html">問いと結果</a>
+        <span class="is-current" aria-current="page">方法</span>
+        <a href="../daily.html">日々の記録</a>
+        <a href="../monthly/index.html">月報</a>
+        <a href="https://github.com/hiroshi75/ohgurigawa-water-observatory">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main class="app article">
+    <nav class="breadcrumb"><a href="index.html">方法</a> / M1</nav>
+    <header class="article-head">
+      <h1>酸素収支から正味生態系生産を出す</h1>
+      <p class="lead">水中の溶存酸素は、光合成で増え、呼吸で減り、大気とのやりとりでも動きます。この3つを分けることが出発点です。</p>
+    </header>
+
+    <section class="article-section">
+      <h2>基本の式</h2>
+      <div class="formula">NEP = dC/dt − k · (C_sat − C)</div>
+      <p class="section-note">C は溶存酸素濃度、C_sat はその水温での飽和濃度、k は再曝気係数。左辺の NEP が正なら生産が分解を上回っています。</p>
+    </section>
+
+    <section class="article-section">
+      <h2>手順</h2>
+      <ol class="step-list"><li><strong>区間を切る</strong><span>連続する2回の測定を1区間とし、その間の溶存酸素の変化速度 dC/dt を求めます。8時間を超える区間は使いません。</span></li><li><strong>飽和差を出す</strong><span>測定した溶存酸素の濃度と飽和度から、その場の飽和濃度を逆算し、飽和差 C_sat − C を求めます。</span></li><li><strong>再曝気を差し引く</strong><span>飽和差に再曝気係数 k を掛けたものが、大気から入ってくるぶんです。これを引いた残りを生物の働きとみなします。</span></li><li><strong>誤差を付ける</strong><span>現場の溶存酸素計は 0.1 mg/L 刻みです。差を取るので √2 倍し、区間長で割った値を速度の 1σ としています。</span></li></ol>
+    </section>
+
+    <section class="article-section">
+      <h2>置いている仮定</h2>
+      <ul class="reason-list"><li>区間内で水温と流況が大きく変わらないこと。</li><li>上流から流れてくる水の酸素濃度が、観測地点のものと大きく違わないこと。</li><li>堆積物からの酸素消費を、水中の呼吸とまとめて扱っていること。</li></ul>
+    </section>
+
+    <section class="article-section">
+      <h2>限界と注意</h2>
+      <ul class="limit-list"><li>この値は正味量です。総生産量と呼吸量に分けるには、夜間の測定が別途必要です。</li><li>k の不確かさがそのまま NEP に伝播します（<a href="m2-reaeration-k.html">M2</a>）。</li></ul>
+    </section>
+
+    <section class="article-section">
+      <h2>この方法が生成するデータ</h2>
+      <p class="source-files">元データ: <a href="../data/derived/interval_budget.csv"><code>interval_budget.csv</code></a></p>
+    </section>
+
+    <nav class="article-nav">
+      <p class="eyebrow">ほかの方法</p>
+      <ul class="link-list"><li><a href="m2-reaeration-k.html">再曝気係数の推定と、その限界</a></li><li><a href="m3-alkalinity-pco2.html">アルカリ度と pH から二酸化炭素分圧を出す</a></li><li><a href="m4-photo-score.html">川底写真のスコア化と位置ずれの補正</a></li></ul>
+    </nav>
+  </main>
+</body>
+</html>

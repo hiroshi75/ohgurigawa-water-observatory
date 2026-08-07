@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>この川は、炭素の発生源か吸収源か | 大栗川 Water Observatory</title>
+  <meta name="description" content="日平均で 616 mgC/m²/日 を大気へ放出しています。ただし日中だけを見ると、34日のうち17日は吸収側に転じます。" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-mark" href="../index.html">大栗川 Water Observatory</a>
+      <nav class="site-nav" aria-label="サイトナビゲーション">
+        <a href="../index.html">今日の川</a>
+        <span class="is-current" aria-current="page">問いと結果</span>
+        <a href="../methods/index.html">方法</a>
+        <a href="../daily.html">日々の記録</a>
+        <a href="../monthly/index.html">月報</a>
+        <a href="https://github.com/hiroshi75/ohgurigawa-water-observatory">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main class="app article">
+    <nav class="breadcrumb"><a href="index.html">問いと結果</a> / Q1</nav>
+    <header class="article-head">
+      <span class="status-badge is-provisional">暫定結論</span>
+      <h1>この川は、炭素の発生源か吸収源か</h1>
+      <p class="lead">日平均で 616 mgC/m²/日 を大気へ放出しています。ただし日中だけを見ると、34日のうち17日は吸収側に転じます。</p>
+    </header>
+
+    <section class="article-section">
+      <h2>現時点の答え</h2>
+      <p>24時間で均すと、この区間は大気に対して炭素の<strong>発生源</strong>です。34日の平均で 616 mgC/m²/日 を放出しています。</p><p>ただし昼と夜で符号が変わります。日中だけを取り出すと 17/34 日（50%）は吸収側で、光合成が呼吸を上回っています。夜間の呼吸がそれを打ち消し、通算では放出が勝ちます。</p><p>これは有機物を上流から受け取って分解している、従属栄養的な河川区間の典型的な振る舞いです。</p>
+    </section>
+
+    <section class="article-section">
+      <h2>根拠</h2>
+      <div class="evidence-block"><h3>根拠にしているデータ</h3><p>朝と午後の pH・水温から炭酸平衡を解いて二酸化炭素分圧を求め、その差と大気とのガス交換速度から放出量を計算しています（34日分）。</p><p class="source-files">元データ: <a href="../data/derived/co2_budget_daily.csv"><code>co2_budget_daily.csv</code></a> · <a href="../data/derived/co2_source_sink_daily.csv"><code>co2_source_sink_daily.csv</code></a></p></div><div class="evidence-block"><h3>独立した2つの方法が一致していること</h3><p>炭素側（pH とアルカリ度）と酸素側（溶存酸素の変化）は、まったく別の測定から生産量を出しています。この2つの相関は r = 0.86（n = 34）でした。測定や仮定に大きな誤りがあれば、ここまで揃いません。</p><p class="source-files">元データ: <a href="../data/derived/co2_budget_daily.csv"><code>co2_budget_daily.csv</code></a></p></div>
+    </section>
+
+    <section class="article-section">
+      <h2>何が反証になるか</h2>
+      <p class="section-note">この結論が誤りだった場合、どんな観測結果が出るはずかを先に書いておきます。</p>
+      <ul class="reason-list"><li>アルカリ度を直接滴定した値が、いま採用している推定値から大きく外れた場合。二酸化炭素分圧の計算がそのまま影響を受けます。</li><li>上流からの湧水や排水の流入が見つかった場合。水中で作られた二酸化炭素ではなく、運ばれてきたものを見ていることになります。</li><li>酸素法と炭素法の相関が、観測を増やしても改善せず崩れた場合。</li></ul>
+    </section>
+
+    <section class="article-section">
+      <h2>まだ言えないこと</h2>
+      <ul class="limit-list"><li>アルカリ度は全期間で滴定できていません。酸素法との整合が取れる値を採用していますが、これは推定です。</li><li>ガス交換速度は再曝気係数から換算しています。その係数自体に大きな不確かさがあります（<a href="q2-reaeration.html">Q2</a>）。</li><li>1地点・1区間の値です。流域全体の炭素収支を代表するものではありません。</li></ul>
+      
+    </section>
+
+    <section class="article-section">
+      <h2>関連するページ</h2>
+      <ul class="link-list"><li><a href="../methods/m3-alkalinity-pco2.html">方法：炭酸平衡から二酸化炭素分圧を出す</a></li><li><a href="../methods/m1-oxygen-budget.html">方法：酸素収支から生産量を出す</a></li></ul>
+    </section>
+
+    <nav class="article-nav">
+      <p class="eyebrow">ほかの問い</p>
+      <ul class="link-list"><li><a href="q2-reaeration.html">昼の酸素の増加のうち、光合成はどれだけか</a> <span class="status-badge is-inline is-open">未解決</span></li><li><a href="q3-afternoon-turbidity.html">雨が降っていないのに、午後だけ濁るのはなぜか</a> <span class="status-badge is-inline is-testing">検証中</span></li><li><a href="q4-biofilm-recovery.html">出水で剥がれた付着藻は、何日で戻るか</a> <span class="status-badge is-inline is-provisional">暫定結論</span></li></ul>
+    </nav>
+  </main>
+</body>
+</html>

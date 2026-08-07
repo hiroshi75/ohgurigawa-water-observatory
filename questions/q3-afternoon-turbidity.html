@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>雨が降っていないのに、午後だけ濁るのはなぜか | 大栗川 Water Observatory</title>
+  <meta name="description" content="朝は澄んでいるのに午後に濁る日が、降雨のない日にも繰り返し現れます。上流由来か、その場の巻き上げかを切り分けています。" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-mark" href="../index.html">大栗川 Water Observatory</a>
+      <nav class="site-nav" aria-label="サイトナビゲーション">
+        <a href="../index.html">今日の川</a>
+        <span class="is-current" aria-current="page">問いと結果</span>
+        <a href="../methods/index.html">方法</a>
+        <a href="../daily.html">日々の記録</a>
+        <a href="../monthly/index.html">月報</a>
+        <a href="https://github.com/hiroshi75/ohgurigawa-water-observatory">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main class="app article">
+    <nav class="breadcrumb"><a href="index.html">問いと結果</a> / Q3</nav>
+    <header class="article-head">
+      <span class="status-badge is-testing">検証中</span>
+      <h1>雨が降っていないのに、午後だけ濁るのはなぜか</h1>
+      <p class="lead">朝は澄んでいるのに午後に濁る日が、降雨のない日にも繰り返し現れます。上流由来か、その場の巻き上げかを切り分けています。</p>
+    </header>
+
+    <section class="article-section">
+      <h2>現時点の答え</h2>
+      <p>朝の観測では川底の石まで見えているのに、同じ日の午後に濁っている、という日が複数回ありました。降雨記録を確認しても、その前後に雨はありません。</p><p>考えられる原因は2つあります。ひとつは上流側で何かが起きて濁りが流れてくる場合。もうひとつは、その場で川底の細粒が巻き上げられる場合です。</p><p>電気伝導度を手がかりに切り分けを進めています。上流から別の水が来ているなら、濁りと同時に電気伝導度も動くはずです。その場の巻き上げなら、水質は変わらず濁りだけが増えます。</p>
+    </section>
+
+    <section class="article-section">
+      <h2>根拠</h2>
+      <div class="evidence-block"><h3>同じ日の朝と午後の比較</h3><p>透明度・川底視認スコア・電気伝導度・水位を、同一日の朝と午後で並べて比較しています。降雨は気象庁アメダス（府中・八王子）の記録を用いています。</p><p class="source-files">元データ: <a href="../data/observations.csv"><code>observations.csv</code></a></p></div>
+    </section>
+
+    <section class="article-section">
+      <h2>何が反証になるか</h2>
+      <p class="section-note">この結論が誤りだった場合、どんな観測結果が出るはずかを先に書いておきます。</p>
+      <ul class="reason-list"><li>濁った午後に電気伝導度が明確に動いていれば、上流由来である可能性が高まります。</li><li>上流側に観測地点を増やして、そちらが先に濁っていれば上流由来と確定できます。</li><li>水位や流量の変化と対応していれば、巻き上げの可能性が高まります。</li></ul>
+    </section>
+
+    <section class="article-section">
+      <h2>まだ言えないこと</h2>
+      <ul class="limit-list"><li>観測は1地点のみです。上流と比較していないため、現時点では原因を確定できません。</li><li>濁度は目視のカテゴリ判定で、連続した数値ではありません。</li><li>午後の測定は朝より回数が少なく、見落としている日がある可能性があります。</li></ul>
+      
+    </section>
+
+    <section class="article-section">
+      <h2>関連するページ</h2>
+      <ul class="link-list"><li><a href="../daily.html">日々の記録で濁りとECを見る</a></li></ul>
+    </section>
+
+    <nav class="article-nav">
+      <p class="eyebrow">ほかの問い</p>
+      <ul class="link-list"><li><a href="q1-carbon-source.html">この川は、炭素の発生源か吸収源か</a> <span class="status-badge is-inline is-provisional">暫定結論</span></li><li><a href="q2-reaeration.html">昼の酸素の増加のうち、光合成はどれだけか</a> <span class="status-badge is-inline is-open">未解決</span></li><li><a href="q4-biofilm-recovery.html">出水で剥がれた付着藻は、何日で戻るか</a> <span class="status-badge is-inline is-provisional">暫定結論</span></li></ul>
+    </nav>
+  </main>
+</body>
+</html>
