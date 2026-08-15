@@ -791,11 +791,6 @@ input {
   color: #7d4f0d;
 }
 
-.status-badge.is-testing {
-  background: #eaf0f7;
-  color: #2f5a80;
-}
-
 .status-badge.is-provisional {
   background: #eaf4f0;
   color: #1f5a49;
@@ -952,12 +947,6 @@ input {
 
 .limit-list li::marker {
   color: var(--amber);
-}
-
-.note-box.is-request {
-  background: #f6efe2;
-  border-left-color: var(--amber);
-  color: #6d4a12;
 }
 
 .article-nav {

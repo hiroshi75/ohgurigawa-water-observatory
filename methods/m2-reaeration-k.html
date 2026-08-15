@@ -36,17 +36,17 @@
 
     <section class="article-section">
       <h2>手順</h2>
-      <ol class="step-list"><li><strong>午後のペアから傾きを取る</strong><span>午後の測定ペアについて dC/dt を飽和差に回帰し、その傾きを k の第一推定とします。</span></li><li><strong>日没後の減衰を追う</strong><span>太陽高度が −0.833度を下回った後の測定だけを使い、減衰曲線を数値積分で再現します。</span></li><li><strong>k を固定して R を当てはめる</strong><span>k を細かく振り、それぞれで最も残差の小さい R を求めます。これが残差プロファイルです。</span></li><li><strong>谷の広さを見る</strong><span>残差が最小値から10%以内に収まる k の範囲を、実質的な不確かさとして扱います。</span></li></ol>
+      <ol class="step-list"><li><strong>午後のペアから傾きを取る</strong><span>午後の測定ペアについて dC/dt を飽和差に回帰し、その傾きを k の第一推定とします。</span></li><li><strong>日没後の減衰を追う</strong><span>太陽高度が −0.833度を下回った後の測定だけを使い、減衰曲線を数値積分で再現します。夜間の観測はまだ回数が少なく、下記の残差プロファイルは測定点が最も多く取れた1晩から求めたものです。</span></li><li><strong>k を固定して R を当てはめる</strong><span>k を細かく振り、それぞれで最も残差の小さい R を求めます。これが残差プロファイルです。</span></li><li><strong>谷の広さを見る</strong><span>残差が最小値から10%以内に収まる k の範囲を、実質的な不確かさとして扱います。</span></li></ol>
     </section>
 
     <section class="article-section">
       <h2>置いている仮定</h2>
-      <ul class="reason-list"><li>日没後は光合成が完全に止まっていること。</li><li>夜間の呼吸速度が、その時間帯を通じて一定であること。</li><li>溶存酸素計の飽和度表示から、飽和濃度を復元できること。</li></ul>
+      <ul class="reason-list"><li>日没後は光合成が完全に止まっていること。</li><li>夜間の呼吸速度が、その時間帯を通じて一定であること。</li><li>溶存酸素計の飽和度表示から、飽和濃度を復元できること。</li><li>1晩から求めた k を、他の日にも当てはめてよいこと。実際には流量が変われば k も変わるはずで、ここは検証できていません。</li></ul>
     </section>
 
     <section class="article-section">
       <h2>限界と注意</h2>
-      <ul class="limit-list"><li>残差の谷が浅く、k = 0.75〜1.25 の範囲で残差はほとんど変わりません。そのとき R は 1.72〜2.67 と 1.6倍の幅を持ちます。</li><li>最小値は k = 1 のときの 0.0373 で、両端では 0.1407（k = 0.05）と 0.0671（k = 2）です。U字ではありますが、底が平たいことが本質的な問題です。</li><li><strong>この縮退を解消するには、流速の直接測定かガストレーサーが必要です。</strong>いまのデータをどれだけ増やしても解けません。</li><li>呼吸速度を引用する際は、どの k を仮定した値かを必ず併記してください。</li></ul>
+      <ul class="limit-list"><li>残差の谷が浅く、k = 0.75〜1.25 の範囲で残差はほとんど変わりません。そのとき R は 1.72〜2.67 と 1.6倍の幅を持ちます。</li><li>最小値は k = 1 のときの 0.0373 で、両端では 0.1407（k = 0.05）と 0.0671（k = 2）です。U字ではありますが、底が平たいことが本質的な問題です。</li><li><strong>この縮退を解消するには、流速の直接測定かガストレーサーが必要です。</strong>同じ形の夜間データをどれだけ増やしても解けません。</li><li>夜間の観測はまだ5晩しかなく、残差プロファイルはそのうち測定点が最も多い1晩から求めています。他の晩や他の流量条件でも同じ形になるかは確認できていません。</li><li>呼吸速度を引用する際は、どの k を仮定した値かを必ず併記してください。</li></ul>
     </section>
 
     <section class="article-section">
@@ -56,7 +56,7 @@
 
     <nav class="article-nav">
       <p class="eyebrow">ほかの方法</p>
-      <ul class="link-list"><li><a href="m1-oxygen-budget.html">酸素収支から正味生態系生産を出す</a></li><li><a href="m3-alkalinity-pco2.html">アルカリ度と pH から二酸化炭素分圧を出す</a></li><li><a href="m4-photo-score.html">川底写真のスコア化と位置ずれの補正</a></li></ul>
+      <ul class="link-list"><li><a href="m1-oxygen-budget.html">酸素収支から正味生態系生産を出す</a></li><li><a href="m3-alkalinity-pco2.html">pH からの二酸化炭素分圧の推定（アルカリ度が未測定のため暫定）</a></li><li><a href="m4-photo-score.html">川底写真のスコア化と位置ずれの補正</a></li></ul>
     </nav>
   </main>
 </body>

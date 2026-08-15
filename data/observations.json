@@ -14909,33 +14909,33 @@
       "turbidity_direction": "上流から全体",
       "event_type": "rain_scour",
       "measurement_confidence": "good",
-      "amedas_precipitation_24h_07_jst_mm": 28,
+      "amedas_precipitation_24h_07_jst_mm": 13,
       "amedas_precipitation_24h_07_jst": {
         "source": "jma_bosai_amedas_point",
         "status": "ok",
         "window_hours": 24,
         "window_start_at": "2026-08-12T07:00:00+09:00",
         "window_end_at": "2026-08-13T07:00:00+09:00",
-        "station_mean_mm": 28,
-        "station_min_mm": 11.5,
-        "station_max_mm": 44.5,
+        "station_mean_mm": 13,
+        "station_min_mm": 8,
+        "station_max_mm": 18,
         "stations": [
           {
             "station_id": "44116",
             "station_name": "府中",
-            "precipitation_24h_mm": 11.5,
-            "covered_minutes": 1440,
-            "coverage_ratio": 1,
-            "source_record_count": 144,
+            "precipitation_24h_mm": 8,
+            "covered_minutes": 1270,
+            "coverage_ratio": 0.882,
+            "source_record_count": 127,
             "source_granularity": "10min"
           },
           {
             "station_id": "44112",
             "station_name": "八王子",
-            "precipitation_24h_mm": 44.5,
-            "covered_minutes": 1440,
-            "coverage_ratio": 1,
-            "source_record_count": 144,
+            "precipitation_24h_mm": 18,
+            "covered_minutes": 1270,
+            "coverage_ratio": 0.882,
+            "source_record_count": 127,
             "source_granularity": "10min"
           }
         ]
