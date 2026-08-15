@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "latest_nep": {
-    "date": "2026-08-13",
-    "NEP": -3.201,
-    "sigma": 4.243
+    "date": "2026-08-15",
+    "NEP": -0.035,
+    "sigma": 0.041
   },
   "nep_series": [
     {
@@ -190,9 +190,14 @@
       "date": "2026-08-13",
       "NEP": -3.201,
       "sigma": 4.243
+    },
+    {
+      "date": "2026-08-15",
+      "NEP": -0.035,
+      "sigma": 0.041
     }
   ],
-  "nep_day_count": 37,
+  "nep_day_count": 38,
   "evasion_mean_mgC_m2_day": 639,
   "evasion_series": [
     {
@@ -399,7 +404,7 @@
     "R_lo": 1.72,
     "R_hi": 2.67,
     "k_end_lo": 0.05,
-    "rms_end_lo": 0.1407,
+    "rms_end_lo": 0.1406,
     "k_end_hi": 2,
     "rms_end_hi": 0.0671
   },
