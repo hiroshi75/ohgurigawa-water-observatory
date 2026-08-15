@@ -2844,6 +2844,37 @@
         }
       ],
       "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
+    },
+    {
+      "date": "2026-08-15",
+      "record_count": 1,
+      "event_type": "none",
+      "event_label": "通常",
+      "measurement_confidence": "good",
+      "data_status": "partial",
+      "amedas_precipitation_24h_07_jst_mm": 24.75,
+      "amedas_sunshine_day_h": 0.85,
+      "amedas_global_solar_estimated_day_MJ_m2": 3.313,
+      "amedas_surface_PAR_estimated_day_mol_m2": 7.62,
+      "water_level": "高い",
+      "flow": "速い",
+      "water_clarity": "濁り",
+      "bed_visibility": "見えない",
+      "odor": "なし",
+      "foam": "なし",
+      "turbidity_direction": "上流から全体",
+      "days_since_rain": 0,
+      "recovery_phase": "rain_0_1d",
+      "recovery_phase_label": "雨後0-1日",
+      "EC_recent_median_uScm": 269,
+      "EC_deviation_uScm": null,
+      "flags": [
+        {
+          "code": "partial_data",
+          "label": "朝午後のどちらかが不足"
+        }
+      ],
+      "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
     }
   ]
 }
