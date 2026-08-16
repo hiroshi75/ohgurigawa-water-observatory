@@ -29,6 +29,16 @@
 | `amedas_bottom_PAR_estimated_day_mol_m2` | 推定地表PAR日積算に川底光到達率を掛けた川底PAR日積算 proxy mol/m2/day |
 | `amedas_global_solar_estimated_day` | 推定全天日射量の計算メタデータ |
 | `depth_cm` | 水深 cm |
+| `depth_A_cm` | 水深A cm。x=0・岸から5cm。従来の `depth_cm` と同じ測定点 |
+| `depth_B_cm` | 水深B cm。x=0・岸から25cm |
+| `depth_C_cm` | 水深C cm。40cm下流・岸から5cm |
+| `depth_D_cm` | 水深D cm。40cm下流・岸から25cm |
+| `depth_A_status` 〜 `depth_D_status` | 各点の測定状態。測定済み、流れが強い、安全上中止、定規未到達、未測定など |
+| `depth_B_minus_A_cm` | 点間水深差 B−A cm |
+| `depth_C_minus_A_cm` | 点間水深差 C−A cm |
+| `depth_D_minus_B_cm` | 点間水深差 D−B cm |
+| `depth_patch_mean_cm` | 入力されたA〜Dの平均水深 cm |
+| `depth_patch_range_cm` | 入力されたA〜Dの最大−最小水深 cm |
 | `measured_depth_cm` | 測定できた水深 cm |
 | `bank_to_water_surface_cm` | 岸の基準位置から水面までの距離 cm。小さいほど水面が高い。`depth_cm` と組み合わせると水位変化と川底の砂利厚さの変化を切り分けられる。2026年8月の項目追加以前の記録では未測定のため空 |
 | `water_level` | 水位の観察カテゴリ |

@@ -34,7 +34,10 @@ const INTRADAY_METRICS = [
   { key: "PAR_subsurface_mean", label: "水面直下PAR" },
   { key: "PAR_bottom_mean", label: "川底PAR" },
   { key: "bottom_PAR_ratio", label: "川底光到達率" },
-  { key: "depth_cm", label: "水深 cm" },
+  { key: "depth_A_cm", label: "水深A cm" },
+  { key: "depth_B_cm", label: "水深B cm" },
+  { key: "depth_C_cm", label: "水深C cm" },
+  { key: "depth_D_cm", label: "水深D cm" },
   { key: "measured_depth_cm", label: "測定水深 cm" }
 ];
 
