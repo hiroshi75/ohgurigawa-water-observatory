@@ -3111,6 +3111,67 @@
         }
       ],
       "summary_note": "pHとDO%がともに上昇しており、日中光応答が読みやすい日です。"
+    },
+    {
+      "date": "2026-08-18",
+      "record_count": 1,
+      "morning_time": "07:04:00",
+      "morning_observed_at": "2026-08-17T22:04:00.000Z",
+      "pH_morning": 7.43,
+      "DO_pct_morning": 83,
+      "DO_mgL_morning": 7.3,
+      "water_temp_morning_C": 22.5,
+      "EC_morning_uScm": 282,
+      "PAR_air_morning": 794.8,
+      "PAR_subsurface_morning": 571.667,
+      "PAR_bottom_morning": 486.789,
+      "PAR_bottom_mean": 486.789,
+      "bottom_PAR_ratio_morning": 0.6125,
+      "bottom_PAR_ratio_mean": 0.613,
+      "depth_cm_mean": 44,
+      "depth_A_cm_mean": 44,
+      "depth_B_cm_mean": 49,
+      "depth_C_cm_mean": 47,
+      "depth_D_cm_mean": 49,
+      "depth_B_minus_A_cm_mean": 5,
+      "depth_C_minus_A_cm_mean": 3,
+      "depth_D_minus_B_cm_mean": 0,
+      "depth_patch_mean_cm_mean": 47.25,
+      "depth_patch_range_cm_mean": 5,
+      "bank_to_water_surface_cm_mean": 24,
+      "bed_visibility_score": 3,
+      "event_type": "unknown",
+      "event_label": "判定不能",
+      "measurement_confidence": "good",
+      "data_status": "missing_afternoon",
+      "amedas_precipitation_24h_07_jst_mm": 0,
+      "amedas_sunshine_day_h": 2.1,
+      "amedas_global_solar_estimated_day_MJ_m2": 2.763,
+      "amedas_surface_PAR_estimated_day_mol_m2": 6.355,
+      "water_level": "平常",
+      "flow": "遅い",
+      "water_clarity": "透明",
+      "bed_visibility": "よく見える",
+      "odor": "なし",
+      "foam": "少し",
+      "turbidity_direction": "なし",
+      "amedas_bottom_PAR_estimated_day_mol_m2": 3.896,
+      "days_since_rain": 1,
+      "recovery_phase": "rain_0_1d",
+      "recovery_phase_label": "雨後0-1日",
+      "EC_recent_median_uScm": 265,
+      "EC_deviation_uScm": 17,
+      "flags": [
+        {
+          "code": "partial_data",
+          "label": "朝午後のどちらかが不足"
+        },
+        {
+          "code": "weak_response_under_light",
+          "label": "光はあるが応答弱め"
+        }
+      ],
+      "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
     }
   ]
 }
