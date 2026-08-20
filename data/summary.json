@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-20T11:03:21+09:00",
+  "generated_at": "2026-08-20T12:03:17+09:00",
   "project": "大栗川 Water Observatory",
   "github_repository": "hiroshi75/ohgurigawa-water-observatory",
   "public_record_count": 123,
@@ -64,20 +64,20 @@
       "count": 123,
       "min": 0,
       "max": 13.35,
-      "mean": 4.559
+      "mean": 4.566
     },
     "amedas_global_solar_estimated_day_MJ_m2": {
       "count": 123,
       "min": 5.213,
       "max": 30.176,
-      "mean": 15.801
+      "mean": 15.823
     },
     "amedas_surface_PAR_estimated_day_mol_m2": {
       "count": 123,
       "min": 11.99,
       "max": 69.405,
-      "mean": 36.342
+      "mean": 36.394
     }
   },
-  "export_hash": "5a7a74828c208d1d0bdbfe92b232bc7f3c7f656cbc25e745222b549e3a91585b"
+  "export_hash": "a6ee7182ef8eb4da0c858aa7856433d08abb05d9063cd807ba993c2751920b60"
 }
