@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "latest_nep": {
-    "date": "2026-08-20",
-    "NEP": 11.819,
-    "sigma": 8.485
+    "date": "2026-08-21",
+    "NEP": 0.493,
+    "sigma": 0.025
   },
   "nep_series": [
     {
@@ -220,10 +220,15 @@
       "date": "2026-08-20",
       "NEP": 11.819,
       "sigma": 8.485
+    },
+    {
+      "date": "2026-08-21",
+      "NEP": 0.493,
+      "sigma": 0.025
     }
   ],
-  "nep_day_count": 43,
-  "evasion_mean_mgC_m2_day": 670,
+  "nep_day_count": 44,
+  "evasion_mean_mgC_m2_day": 677,
   "evasion_series": [
     {
       "date": "2026-06-22",
@@ -439,12 +444,17 @@
       "date": "2026-08-20",
       "E24": 958,
       "day_is_sink": true
+    },
+    {
+      "date": "2026-08-21",
+      "E24": 974,
+      "day_is_sink": false
     }
   ],
   "sink_day_count": 20,
-  "budget_day_count": 43,
+  "budget_day_count": 44,
   "method_correlation_r": 0.87,
-  "method_pair_count": 43,
+  "method_pair_count": 44,
   "k_profile": {
     "k_best": 1,
     "R_best": 2.2,
