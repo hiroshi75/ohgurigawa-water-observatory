@@ -17268,17 +17268,17 @@
         ]
       },
       "amedas_sunshine_day_h": 3.65,
-      "amedas_global_solar_estimated_day_MJ_m2": 14.576,
-      "amedas_surface_PAR_estimated_day_mol_m2": 33.525,
+      "amedas_global_solar_estimated_day_MJ_m2": 14.587,
+      "amedas_surface_PAR_estimated_day_mol_m2": 33.55,
       "amedas_global_solar_estimated_day": {
         "source": "jma_bosai_amedas_point",
         "status": "ok",
         "station_mean_sunshine_h": 3.65,
-        "station_mean_global_solar_estimated_MJ_m2": 14.576,
-        "station_min_global_solar_estimated_MJ_m2": 13.487,
-        "station_max_global_solar_estimated_MJ_m2": 15.666,
-        "station_diff_global_solar_estimated_MJ_m2": 2.179,
-        "surface_PAR_estimated_mol_m2": 33.525,
+        "station_mean_global_solar_estimated_MJ_m2": 14.587,
+        "station_min_global_solar_estimated_MJ_m2": 13.497,
+        "station_max_global_solar_estimated_MJ_m2": 15.677,
+        "station_diff_global_solar_estimated_MJ_m2": 2.18,
+        "surface_PAR_estimated_mol_m2": 33.55,
         "solar_model": {
           "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
           "source": "solar-calibration/output/daily_parameters_month.json",
@@ -17306,17 +17306,17 @@
             "station_id": "44116",
             "station_name": "府中",
             "total_sun1h_h": 4.4,
-            "total_global_solar_estimated_MJ_m2": 15.666,
-            "covered_hours": 19,
-            "source_record_count": 19
+            "total_global_solar_estimated_MJ_m2": 15.677,
+            "covered_hours": 20,
+            "source_record_count": 20
           },
           {
             "station_id": "44112",
             "station_name": "八王子",
             "total_sun1h_h": 2.9,
-            "total_global_solar_estimated_MJ_m2": 13.487,
-            "covered_hours": 19,
-            "source_record_count": 19
+            "total_global_solar_estimated_MJ_m2": 13.497,
+            "covered_hours": 20,
+            "source_record_count": 20
           }
         ]
       }
@@ -17416,17 +17416,17 @@
         ]
       },
       "amedas_sunshine_day_h": 3.65,
-      "amedas_global_solar_estimated_day_MJ_m2": 14.576,
-      "amedas_surface_PAR_estimated_day_mol_m2": 33.525,
+      "amedas_global_solar_estimated_day_MJ_m2": 14.587,
+      "amedas_surface_PAR_estimated_day_mol_m2": 33.55,
       "amedas_global_solar_estimated_day": {
         "source": "jma_bosai_amedas_point",
         "status": "ok",
         "station_mean_sunshine_h": 3.65,
-        "station_mean_global_solar_estimated_MJ_m2": 14.576,
-        "station_min_global_solar_estimated_MJ_m2": 13.487,
-        "station_max_global_solar_estimated_MJ_m2": 15.666,
-        "station_diff_global_solar_estimated_MJ_m2": 2.179,
-        "surface_PAR_estimated_mol_m2": 33.525,
+        "station_mean_global_solar_estimated_MJ_m2": 14.587,
+        "station_min_global_solar_estimated_MJ_m2": 13.497,
+        "station_max_global_solar_estimated_MJ_m2": 15.677,
+        "station_diff_global_solar_estimated_MJ_m2": 2.18,
+        "surface_PAR_estimated_mol_m2": 33.55,
         "solar_model": {
           "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
           "source": "solar-calibration/output/daily_parameters_month.json",
@@ -17454,17 +17454,17 @@
             "station_id": "44116",
             "station_name": "府中",
             "total_sun1h_h": 4.4,
-            "total_global_solar_estimated_MJ_m2": 15.666,
-            "covered_hours": 19,
-            "source_record_count": 19
+            "total_global_solar_estimated_MJ_m2": 15.677,
+            "covered_hours": 20,
+            "source_record_count": 20
           },
           {
             "station_id": "44112",
             "station_name": "八王子",
             "total_sun1h_h": 2.9,
-            "total_global_solar_estimated_MJ_m2": 13.487,
-            "covered_hours": 19,
-            "source_record_count": 19
+            "total_global_solar_estimated_MJ_m2": 13.497,
+            "covered_hours": 20,
+            "source_record_count": 20
           }
         ]
       }
