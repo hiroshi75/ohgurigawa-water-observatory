@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>昼の酸素の増加のうち、光合成はどれだけか | 大栗川 Water Observatory</title>
-  <meta name="description" content="日没後の減衰から再曝気係数を推定すると最適値は k = 1 /h ですが、残差の谷が浅く、一意には決まりません。" />
+  <meta name="description" content="日没後の減衰から再曝気係数を推定すると最適値は k = 1.05 /h ですが、残差の谷が浅く、一意には決まりません。" />
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
@@ -26,17 +26,17 @@
     <header class="article-head">
       <span class="status-badge is-open">未解決</span>
       <h1>昼の酸素の増加のうち、光合成はどれだけか</h1>
-      <p class="lead">日没後の減衰から再曝気係数を推定すると最適値は k = 1 /h ですが、残差の谷が浅く、一意には決まりません。</p>
+      <p class="lead">日没後の減衰から再曝気係数を推定すると最適値は k = 1.05 /h ですが、残差の谷が浅く、一意には決まりません。</p>
     </header>
 
     <section class="article-section">
       <h2>現時点の答え</h2>
-      <p>浅い瀬では、水中の酸素は光合成だけでなく大気からも入ってきます。この2つを分けないと、光合成の量を出せません。</p><p>日没後は光合成が止まるため、そこでの酸素の減り方から大気との交換速度 k と呼吸速度 R を同時に推定できます。残差が最小になるのは k = 1 /h、R = 2.2 mg O₂/L/h（残差 0.0373）でした。</p><p><strong>しかしこの推定は一意ではありません。</strong>残差の谷が浅く、最小値から10%以内に収まる範囲だけで k = 0.75〜1.25、そのとき R は 1.72〜2.67 と 1.6倍の幅を持ちます。呼吸速度を一つの値として引用することはできません。</p>
+      <p>浅い瀬では、水中の酸素は光合成だけでなく大気からも入ってきます。この2つを分けないと、光合成の量を出せません。</p><p>日没後は光合成が止まるため、そこでの酸素の減り方から大気との交換速度 k と呼吸速度 R を同時に推定できます。残差が最小になるのは k = 1.05 /h、R = 2.66 mg O₂/L/h（残差 0.0549）でした。</p><p><strong>しかしこの推定は一意ではありません。</strong>残差の谷が浅く、最小値から10%以内に収まる範囲だけで k = 0.8〜1.3、そのとき R は 2.12〜3.2 と 1.5倍の幅を持ちます。呼吸速度を一つの値として引用することはできません。</p>
     </section>
 
     <section class="article-section">
       <h2>根拠</h2>
-      <div class="evidence-block"><h3>残差プロファイルの形</h3><p>k を 0.05 から 2 まで動かして、それぞれで最適な R を当てはめたときの残差です。谷は範囲の中ほどにあり、両端で 0.1406（k = 0.05）と 0.0672（k = 2）まで上がります。U字ではありますが、底が平たいことが問題です。</p><p class="source-files">元データ: <a href="../data/derived/k_profile.csv"><code>k_profile.csv</code></a></p></div><div class="evidence-block"><h3>夜間測定そのもの</h3><p>日没後に5回、酸素の減衰を追跡しました。現場の溶存酸素計は 0.1 mg/L 刻みですが、飽和度と水温から高分解能の値を復元して使っています。</p><p class="source-files">元データ: <a href="../data/derived/night_R_by_date.csv"><code>night_R_by_date.csv</code></a></p></div>
+      <div class="evidence-block"><h3>残差プロファイルの形</h3><p>k を 0.05 から 2 まで動かして、それぞれで最適な R を当てはめたときの残差です。谷は範囲の中ほどにあり、両端で 0.1159（k = 0.05）と 0.0951（k = 2）まで上がります。U字ではありますが、底が平たいことが問題です。</p><p class="source-files">元データ: <a href="../data/derived/k_profile.csv"><code>k_profile.csv</code></a></p></div><div class="evidence-block"><h3>夜間測定そのもの</h3><p>日没後に6回、酸素の減衰を追跡しました。現場の溶存酸素計は 0.1 mg/L 刻みですが、飽和度と水温から高分解能の値を復元して使っています。</p><p class="source-files">元データ: <a href="../data/derived/night_R_by_date.csv"><code>night_R_by_date.csv</code></a></p></div>
     </section>
 
     <section class="article-section">
