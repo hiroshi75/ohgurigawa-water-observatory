@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "title": "大栗川 公開測定データ ヘルプ",
-  "generated_at": "2026-08-26T08:03:25+09:00",
+  "generated_at": "2026-08-26T09:03:22+09:00",
   "language": "ja",
   "purpose": "大栗川の同じ浅い河川区間で継続的に測った水質・光環境・目視状態の公開データを、AIエージェントや人間が取得しやすい静的ファイルとして提供する。",
   "access_note": "AIエージェントがAWS API Gatewayを取得できない場合は、このGitHub Pages上の静的JSON/JSONLを使う。",
@@ -105,6 +105,9 @@
     "session": "morning/afternoon/otherなどの観測区分。",
     "location_label": "公開地点名。",
     "pH": "水のpH。",
+    "DO_air_mgL": "DO計を空中に置いたときの表示値 mg/L。",
+    "DO_air_pct": "DO計を空中に置いたときの飽和度表示 %。",
+    "DO_air_temp_C": "空中測定時にDO計が示した温度 ℃。",
     "DO_mgL": "溶存酸素濃度 mg/L。",
     "DO_pct": "溶存酸素飽和度 %。",
     "DO_temp_C": "DO計が示した水温 ℃。",

@@ -9,6 +9,9 @@
 | `session` | morning / afternoon / other |
 | `location_label` | 公開用地点名 |
 | `pH` | pH |
+| `DO_air_mgL` | DO計を空中に置いたときの表示値 mg/L |
+| `DO_air_pct` | DO計を空中に置いたときの飽和度表示 % |
+| `DO_air_temp_C` | 空中測定時にDO計が示した温度 ℃ |
 | `DO_mgL` | 溶存酸素 mg/L |
 | `DO_pct` | 溶存酸素 飽和度 % |
 | `DO_temp_C` | DO計の水温 ℃ |
