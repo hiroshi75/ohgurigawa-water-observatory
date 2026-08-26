@@ -18614,18 +18614,18 @@
           }
         ]
       },
-      "amedas_sunshine_day_h": 7,
-      "amedas_global_solar_estimated_day_MJ_m2": 18.382,
-      "amedas_surface_PAR_estimated_day_mol_m2": 42.279,
+      "amedas_sunshine_day_h": 8,
+      "amedas_global_solar_estimated_day_MJ_m2": 20.291,
+      "amedas_surface_PAR_estimated_day_mol_m2": 46.669,
       "amedas_global_solar_estimated_day": {
         "source": "jma_bosai_amedas_point",
         "status": "ok",
-        "station_mean_sunshine_h": 7,
-        "station_mean_global_solar_estimated_MJ_m2": 18.382,
-        "station_min_global_solar_estimated_MJ_m2": 18.355,
-        "station_max_global_solar_estimated_MJ_m2": 18.408,
+        "station_mean_sunshine_h": 8,
+        "station_mean_global_solar_estimated_MJ_m2": 20.291,
+        "station_min_global_solar_estimated_MJ_m2": 20.264,
+        "station_max_global_solar_estimated_MJ_m2": 20.317,
         "station_diff_global_solar_estimated_MJ_m2": 0.053,
-        "surface_PAR_estimated_mol_m2": 42.279,
+        "surface_PAR_estimated_mol_m2": 46.669,
         "solar_model": {
           "model_id": "tokyo_daily_angstrom_prescott_monthly_1991_2025_v1",
           "source": "solar-calibration/output/daily_parameters_month.json",
@@ -18652,18 +18652,18 @@
           {
             "station_id": "44116",
             "station_name": "府中",
-            "total_sun1h_h": 7.2,
-            "total_global_solar_estimated_MJ_m2": 18.355,
-            "covered_hours": 16,
-            "source_record_count": 16
+            "total_sun1h_h": 8.2,
+            "total_global_solar_estimated_MJ_m2": 20.264,
+            "covered_hours": 17,
+            "source_record_count": 17
           },
           {
             "station_id": "44112",
             "station_name": "八王子",
-            "total_sun1h_h": 6.8,
-            "total_global_solar_estimated_MJ_m2": 18.408,
-            "covered_hours": 16,
-            "source_record_count": 16
+            "total_sun1h_h": 7.8,
+            "total_global_solar_estimated_MJ_m2": 20.317,
+            "covered_hours": 17,
+            "source_record_count": 17
           }
         ]
       }
