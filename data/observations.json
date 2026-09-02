@@ -20526,6 +20526,9 @@
       "depth_patch_range_cm": 7,
       "depth_patch_measured_point_count": 4,
       "bank_to_water_surface_cm": 30,
+      "algae_mat_thickness_cm": [
+        1
+      ],
       "water_level": "低い",
       "flow": "遅い",
       "water_clarity": "透明",
