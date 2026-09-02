@@ -44,6 +44,7 @@
 | `depth_patch_range_cm` | 入力されたA〜Dの最大−最小水深 cm |
 | `measured_depth_cm` | 測定できた水深 cm |
 | `bank_to_water_surface_cm` | 岸の基準位置から水面までの距離 cm。小さいほど水面が高い。`depth_cm` と組み合わせると水位変化と川底の砂利厚さの変化を切り分けられる。2026年8月の項目追加以前の記録では未測定のため空 |
+| `algae_mat_thickness_cm` | 藻類マットの厚さ cm。複数点の測定値を数値配列で保持 |
 | `water_level` | 水位の観察カテゴリ |
 | `flow` | 流速の観察カテゴリ |
 | `water_clarity` | 透明度カテゴリ |
