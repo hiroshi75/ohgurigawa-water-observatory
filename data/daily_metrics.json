@@ -4324,7 +4324,7 @@
     },
     {
       "date": "2026-09-05",
-      "record_count": 1,
+      "record_count": 2,
       "event_type": "rain_turbid",
       "event_label": "雨後・濁り/遮光",
       "measurement_confidence": "good",
@@ -4335,7 +4335,8 @@
       "amedas_surface_PAR_estimated_day_mol_m2": 17.091,
       "water_level": "やや高い",
       "flow": "速い",
-      "bed_visibility": "少し見える",
+      "water_clarity": "透明",
+      "bed_visibility": "よく見える",
       "odor": "なし",
       "foam": "少し",
       "turbidity_direction": "なし",
