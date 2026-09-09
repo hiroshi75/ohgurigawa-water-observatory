@@ -4447,15 +4447,34 @@
     },
     {
       "date": "2026-09-09",
-      "record_count": 1,
+      "record_count": 2,
+      "afternoon_time": "13:30:00",
+      "afternoon_observed_at": "2026-09-09T04:30:00.000Z",
+      "pH_afternoon": 7.98,
+      "DO_pct_afternoon": 98,
+      "DO_mgL_afternoon": 8.1,
+      "water_temp_afternoon_C": 25.2,
+      "EC_afternoon_uScm": 263,
+      "PAR_air_afternoon": 579.2,
+      "PAR_subsurface_afternoon": 399.733,
+      "PAR_bottom_afternoon": 187.1,
+      "PAR_bottom_mean": 187.1,
+      "bottom_PAR_ratio_afternoon": 0.323,
+      "bottom_PAR_ratio_mean": 0.323,
+      "depth_cm_mean": 66,
+      "depth_A_cm_mean": 66,
+      "depth_patch_mean_cm_mean": 66,
+      "depth_patch_range_cm_mean": 0,
+      "bank_to_water_surface_cm_mean": 4,
+      "bed_visibility_score": 0,
       "event_type": "rain_turbid",
       "event_label": "雨後・濁り/遮光",
-      "measurement_confidence": "good",
-      "data_status": "partial",
+      "measurement_confidence": "usable",
+      "data_status": "missing_morning",
       "amedas_precipitation_24h_07_jst_mm": 54.25,
-      "amedas_sunshine_day_h": 0.25,
-      "amedas_global_solar_estimated_day_MJ_m2": 5.082,
-      "amedas_surface_PAR_estimated_day_mol_m2": 11.689,
+      "amedas_sunshine_day_h": 0.3,
+      "amedas_global_solar_estimated_day_MJ_m2": 5.947,
+      "amedas_surface_PAR_estimated_day_mol_m2": 13.678,
       "water_level": "高い",
       "flow": "速い",
       "water_clarity": "濁り",
@@ -4463,11 +4482,12 @@
       "odor": "なし",
       "foam": "なし",
       "turbidity_direction": "上流から全体",
+      "amedas_bottom_PAR_estimated_day_mol_m2": 4.418,
       "days_since_rain": 0,
       "recovery_phase": "rain_0_1d",
       "recovery_phase_label": "雨後0-1日",
       "EC_recent_median_uScm": 278.5,
-      "EC_deviation_uScm": null,
+      "EC_deviation_uScm": -15.5,
       "flags": [
         {
           "code": "partial_data",
@@ -4476,6 +4496,14 @@
         {
           "code": "rain_turbid",
           "label": "濁り・遮光型候補"
+        },
+        {
+          "code": "mud_or_visibility",
+          "label": "泥・視認性低下"
+        },
+        {
+          "code": "weak_response_under_light",
+          "label": "光はあるが応答弱め"
         }
       ],
       "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
