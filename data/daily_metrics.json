@@ -4507,6 +4507,73 @@
         }
       ],
       "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
+    },
+    {
+      "date": "2026-09-10",
+      "record_count": 1,
+      "morning_time": "07:43:00",
+      "morning_observed_at": "2026-09-09T22:43:00.000Z",
+      "pH_morning": 7.82,
+      "DO_pct_morning": 96.7,
+      "DO_mgL_morning": 8.7,
+      "water_temp_morning_C": 21.5,
+      "EC_morning_uScm": 239,
+      "PAR_air_morning": 329.367,
+      "PAR_subsurface_morning": 271.8,
+      "PAR_bottom_morning": 123.3,
+      "PAR_bottom_mean": 123.3,
+      "bottom_PAR_ratio_morning": 0.3744,
+      "bottom_PAR_ratio_mean": 0.374,
+      "depth_cm_mean": 72,
+      "depth_A_cm_mean": 72,
+      "depth_patch_mean_cm_mean": 72,
+      "depth_patch_range_cm_mean": 0,
+      "bank_to_water_surface_cm_mean": 0,
+      "bed_visibility_score": 1,
+      "event_type": "rain_turbid",
+      "event_label": "雨後・濁り/遮光",
+      "measurement_confidence": "usable",
+      "data_status": "missing_afternoon",
+      "amedas_precipitation_24h_07_jst_mm": 23,
+      "amedas_sunshine_day_h": 0,
+      "amedas_global_solar_estimated_day_MJ_m2": 0.681,
+      "amedas_surface_PAR_estimated_day_mol_m2": 1.566,
+      "water_level": "高い",
+      "flow": "速い",
+      "water_clarity": "やや濁り",
+      "bed_visibility": "少し見える",
+      "odor": "なし",
+      "foam": "なし",
+      "turbidity_direction": "上流から全体",
+      "amedas_bottom_PAR_estimated_day_mol_m2": 0.586,
+      "days_since_rain": 0,
+      "recovery_phase": "rain_0_1d",
+      "recovery_phase_label": "雨後0-1日",
+      "EC_recent_median_uScm": 278.5,
+      "EC_deviation_uScm": -39.5,
+      "flags": [
+        {
+          "code": "partial_data",
+          "label": "朝午後のどちらかが不足"
+        },
+        {
+          "code": "rain_turbid",
+          "label": "濁り・遮光型候補"
+        },
+        {
+          "code": "ec_shift",
+          "label": "EC急変"
+        },
+        {
+          "code": "mud_or_visibility",
+          "label": "泥・視認性低下"
+        },
+        {
+          "code": "weak_response_under_light",
+          "label": "光はあるが応答弱め"
+        }
+      ],
+      "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
     }
   ]
 }
