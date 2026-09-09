@@ -4444,6 +4444,41 @@
         }
       ],
       "summary_note": "濁り・泥・遮光の影響で川底への光が弱かった可能性があります。"
+    },
+    {
+      "date": "2026-09-09",
+      "record_count": 1,
+      "event_type": "rain_turbid",
+      "event_label": "雨後・濁り/遮光",
+      "measurement_confidence": "good",
+      "data_status": "partial",
+      "amedas_precipitation_24h_07_jst_mm": 54.25,
+      "amedas_sunshine_day_h": 0.05,
+      "amedas_global_solar_estimated_day_MJ_m2": 2.942,
+      "amedas_surface_PAR_estimated_day_mol_m2": 6.767,
+      "water_level": "高い",
+      "flow": "速い",
+      "water_clarity": "濁り",
+      "bed_visibility": "見えない",
+      "odor": "なし",
+      "foam": "なし",
+      "turbidity_direction": "上流から全体",
+      "days_since_rain": 0,
+      "recovery_phase": "rain_0_1d",
+      "recovery_phase_label": "雨後0-1日",
+      "EC_recent_median_uScm": 278.5,
+      "EC_deviation_uScm": null,
+      "flags": [
+        {
+          "code": "partial_data",
+          "label": "朝午後のどちらかが不足"
+        },
+        {
+          "code": "rain_turbid",
+          "label": "濁り・遮光型候補"
+        }
+      ],
+      "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
     }
   ]
 }
