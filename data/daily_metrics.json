@@ -4510,30 +4510,49 @@
     },
     {
       "date": "2026-09-10",
-      "record_count": 1,
+      "record_count": 2,
       "morning_time": "07:43:00",
+      "afternoon_time": "13:08:00",
       "morning_observed_at": "2026-09-09T22:43:00.000Z",
+      "afternoon_observed_at": "2026-09-10T04:08:00.000Z",
       "pH_morning": 7.82,
+      "pH_afternoon": 7.87,
+      "delta_pH": 0.05,
       "DO_pct_morning": 96.7,
+      "DO_pct_afternoon": 97.8,
+      "delta_DO_pct": 1.1,
       "DO_mgL_morning": 8.7,
+      "DO_mgL_afternoon": 8.7,
+      "delta_DO_mgL": 0,
       "water_temp_morning_C": 21.5,
+      "water_temp_afternoon_C": 22.2,
+      "delta_water_temp_C": 0.7,
       "EC_morning_uScm": 239,
+      "EC_afternoon_uScm": 263,
+      "delta_EC_uScm": 24,
       "PAR_air_morning": 329.367,
+      "PAR_air_afternoon": 296.433,
       "PAR_subsurface_morning": 271.8,
+      "PAR_subsurface_afternoon": 217.4,
       "PAR_bottom_morning": 123.3,
-      "PAR_bottom_mean": 123.3,
+      "PAR_bottom_afternoon": 125.375,
+      "PAR_bottom_mean": 124.338,
       "bottom_PAR_ratio_morning": 0.3744,
-      "bottom_PAR_ratio_mean": 0.374,
-      "depth_cm_mean": 72,
-      "depth_A_cm_mean": 72,
-      "depth_patch_mean_cm_mean": 72,
+      "bottom_PAR_ratio_afternoon": 0.4229,
+      "bottom_PAR_ratio_mean": 0.399,
+      "depth_cm_mean": 68.5,
+      "depth_A_cm_mean": 68.5,
+      "depth_patch_mean_cm_mean": 68.5,
       "depth_patch_range_cm_mean": 0,
-      "bank_to_water_surface_cm_mean": 0,
+      "bank_to_water_surface_cm_mean": 2.5,
+      "visual_algae_score": 0,
+      "mud_cover_score": 0,
+      "bare_stone_score": 3,
       "bed_visibility_score": 1,
       "event_type": "rain_turbid",
       "event_label": "雨後・濁り/遮光",
       "measurement_confidence": "usable",
-      "data_status": "missing_afternoon",
+      "data_status": "complete",
       "amedas_precipitation_24h_07_jst_mm": 23,
       "amedas_sunshine_day_h": 0,
       "amedas_global_solar_estimated_day_MJ_m2": 6.759,
@@ -4545,35 +4564,31 @@
       "odor": "なし",
       "foam": "なし",
       "turbidity_direction": "上流から全体",
-      "amedas_bottom_PAR_estimated_day_mol_m2": 5.814,
+      "amedas_bottom_PAR_estimated_day_mol_m2": 6.203,
       "days_since_rain": 0,
       "recovery_phase": "rain_0_1d",
       "recovery_phase_label": "雨後0-1日",
       "EC_recent_median_uScm": 278.5,
-      "EC_deviation_uScm": -39.5,
+      "EC_deviation_uScm": -15.5,
       "flags": [
-        {
-          "code": "partial_data",
-          "label": "朝午後のどちらかが不足"
-        },
         {
           "code": "rain_turbid",
           "label": "濁り・遮光型候補"
-        },
-        {
-          "code": "ec_shift",
-          "label": "EC急変"
         },
         {
           "code": "mud_or_visibility",
           "label": "泥・視認性低下"
         },
         {
+          "code": "bare_stone",
+          "label": "裸石感が強い"
+        },
+        {
           "code": "weak_response_under_light",
           "label": "光はあるが応答弱め"
         }
       ],
-      "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
+      "summary_note": "濁り・泥・遮光の影響で川底への光が弱かった可能性があります。"
     }
   ]
 }
