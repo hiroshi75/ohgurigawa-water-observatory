@@ -4736,6 +4736,65 @@
       "EC_deviation_uScm": 1.5,
       "flags": [],
       "summary_note": "pHとDO%がともに上昇しており、日中光応答が読みやすい日です。"
+    },
+    {
+      "date": "2026-09-23",
+      "record_count": 1,
+      "morning_time": "07:20:00",
+      "morning_observed_at": "2026-09-22T22:20:00.000Z",
+      "pH_morning": 7.83,
+      "DO_pct_morning": 88.2,
+      "DO_mgL_morning": 7.9,
+      "water_temp_morning_C": 21.1,
+      "EC_morning_uScm": 253,
+      "PAR_air_morning": 84.633,
+      "PAR_subsurface_morning": 62.533,
+      "PAR_bottom_morning": 32.775,
+      "PAR_bottom_mean": 32.775,
+      "bottom_PAR_ratio_morning": 0.3873,
+      "bottom_PAR_ratio_mean": 0.387,
+      "depth_cm_mean": 69,
+      "depth_A_cm_mean": 69,
+      "depth_patch_mean_cm_mean": 69,
+      "depth_patch_range_cm_mean": 0,
+      "bank_to_water_surface_cm_mean": 0,
+      "bed_visibility_score": 0,
+      "event_type": "rain_turbid",
+      "event_label": "雨後・濁り/遮光",
+      "measurement_confidence": "good",
+      "data_status": "missing_afternoon",
+      "amedas_precipitation_24h_07_jst_mm": 2.5,
+      "amedas_sunshine_day_h": 0,
+      "amedas_global_solar_estimated_day_MJ_m2": 0.594,
+      "amedas_surface_PAR_estimated_day_mol_m2": 1.366,
+      "water_level": "高い",
+      "flow": "速い",
+      "water_clarity": "やや濁り",
+      "bed_visibility": "見えない",
+      "odor": "なし",
+      "foam": "なし",
+      "turbidity_direction": "上流から全体",
+      "amedas_bottom_PAR_estimated_day_mol_m2": 0.529,
+      "days_since_rain": 0,
+      "recovery_phase": "rain_0_1d",
+      "recovery_phase_label": "雨後0-1日",
+      "EC_recent_median_uScm": 270.5,
+      "EC_deviation_uScm": -17.5,
+      "flags": [
+        {
+          "code": "partial_data",
+          "label": "朝午後のどちらかが不足"
+        },
+        {
+          "code": "rain_turbid",
+          "label": "濁り・遮光型候補"
+        },
+        {
+          "code": "mud_or_visibility",
+          "label": "泥・視認性低下"
+        }
+      ],
+      "summary_note": "この日は朝午後のデータが一部不足しているため参考値です。"
     }
   ]
 }
