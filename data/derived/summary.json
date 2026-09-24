@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "latest_nep": {
-    "date": "2026-09-23",
-    "NEP": -0.208,
-    "sigma": 2.828
+    "date": "2026-09-24",
+    "NEP": -0.056,
+    "sigma": 0.028
   },
   "nep_series": [
     {
@@ -315,9 +315,14 @@
       "date": "2026-09-23",
       "NEP": -0.208,
       "sigma": 2.828
+    },
+    {
+      "date": "2026-09-24",
+      "NEP": -0.056,
+      "sigma": 0.028
     }
   ],
-  "nep_day_count": 62,
+  "nep_day_count": 63,
   "evasion_mean_mgC_m2_day": 762,
   "evasion_series": [
     {
