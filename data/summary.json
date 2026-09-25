@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-25T11:03:34+09:00",
+  "generated_at": "2026-09-25T12:03:21+09:00",
   "project": "大栗川 Water Observatory",
   "github_repository": "hiroshi75/ohgurigawa-water-observatory",
   "public_record_count": 166,
@@ -79,5 +79,5 @@
       "mean": 33.634
     }
   },
-  "export_hash": "ee4d7706964d2b89df40cb449168cc0dd0d41d8351e52b57b96ee17646dca030"
+  "export_hash": "25c9c20c5f772f963a0bac73c40b6860dc8fadf0f782da486eea155e9d46cf47"
 }
