@@ -23862,33 +23862,33 @@
       "turbidity_direction": "なし",
       "event_type": "rain_scour",
       "measurement_confidence": "usable",
-      "amedas_precipitation_24h_07_jst_mm": 9.75,
+      "amedas_precipitation_24h_07_jst_mm": 8.75,
       "amedas_precipitation_24h_07_jst": {
         "source": "jma_bosai_amedas_point",
         "status": "ok",
         "window_hours": 24,
         "window_start_at": "2026-09-26T07:00:00+09:00",
         "window_end_at": "2026-09-27T07:00:00+09:00",
-        "station_mean_mm": 9.75,
+        "station_mean_mm": 8.75,
         "station_min_mm": 8,
-        "station_max_mm": 11.5,
+        "station_max_mm": 9.5,
         "stations": [
           {
             "station_id": "44116",
             "station_name": "府中",
             "precipitation_24h_mm": 8,
-            "covered_minutes": 1440,
-            "coverage_ratio": 1,
-            "source_record_count": 144,
+            "covered_minutes": 1320,
+            "coverage_ratio": 0.917,
+            "source_record_count": 132,
             "source_granularity": "10min"
           },
           {
             "station_id": "44112",
             "station_name": "八王子",
-            "precipitation_24h_mm": 11.5,
-            "covered_minutes": 1440,
-            "coverage_ratio": 1,
-            "source_record_count": 144,
+            "precipitation_24h_mm": 9.5,
+            "covered_minutes": 1320,
+            "coverage_ratio": 0.917,
+            "source_record_count": 132,
             "source_granularity": "10min"
           }
         ]
